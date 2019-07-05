@@ -12,7 +12,7 @@
         {{ content | safe }}
 
         <!-- Three new projects -->
-        {%- for project in collections.projectListing -%}
+        {%- for project in collections.project -%}
         <article class="project">
             <a href="{{ project.url }}">
                 <h3>{{ project.data.title }}</h3>

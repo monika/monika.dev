@@ -86,4 +86,7 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+# Custom Ignore Options
 .DS_Store
+dist/
