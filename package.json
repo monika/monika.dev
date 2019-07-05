@@ -1,0 +1,30 @@
+{
+    "name": "monika-dev",
+    "version": "1.0.0",
+    "description": "A portfolio site for Monika.dev built with Eleventy.",
+    "scripts": {
+        "build": "npx eleventy",
+        "watch": "npx eleventy --watch --serve",
+        "debug": "DEBUG=* npx eleventy"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/monika/monika.dev"
+    },
+    "author": {
+        "name": "Monika",
+        "email": "monika@monika.dev",
+        "url": "https://monika.dev/"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/monika/monika.dev/issues"
+    },
+    "homepage": "https://github.com/monika/monika.dev",
+    "devDependencies": {
+        "@11ty/eleventy": "^0.8.2"
+    },
+    "dependencies": {
+        "clean-css": "^4.2.1"
+    }
+}

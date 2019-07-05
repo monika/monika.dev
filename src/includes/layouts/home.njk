@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "partials/head.njk" %}
+</head>
+<body>
+
+    {% include "partials/header.njk" %}
+
+    <main>
+
+        {{ content | safe }}
+
+        <!-- Three new projects -->
+        {%- for project in collections.projectListing -%}
+        <article class="project">
+            <a href="{{ project.url }}">
+                <h3>{{ project.data.title }}</h3>
+                <p>{{ project.data.tasks }}</p>
+            </a>
+        </article>
+        {%- endfor -%}
+
+        <!-- Three codepen/glitch projects -->
+
+        <!-- Three archived projects -->
+
+
+        <aside>
+
+            <a href="mailto:monika@monika.dev">monika@monika.dev</a>
+            {% include "modules/socials.njk" %}
+
+        </aside>
+
+    </main>
+
+    {% include "partials/footer.njk" %}
+    
+</body>
+</html>
