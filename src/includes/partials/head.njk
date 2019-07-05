@@ -1,15 +1,21 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Monika Hoex &mdash; Front-end Designer</title>
+<title>Monika Hoex &mdash; Front-end Designer / UX Engineer</title>
 <meta name="description" content="Monika Hoex is a front-end web developer in Oakland, California.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|Roboto+Slab:400&display=swap" rel="stylesheet">
 
+{% set normalize %}
+    {% include "css/normalize.css" %}
+{% endset %}
+
 {% set css %}
     {% include "css/style.css" %}
 {% endset %}
+
+<style>{{ normalize | cssmin | safe }}</style>
 <style>{{ css | cssmin | safe }}</style>
 
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">

@@ -1,48 +1,56 @@
 /* Import All Stylesheets
 ------------------------------------- */
+
 /* Base Styles */
-/* Base: Layout
-------------------------------------- */
-* {
-  box-sizing: border-box; }
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  background: #f00;
-  color: #333; }
-
-.wrapper {
-  min-width: 300px;
-  max-width: 840px;
-  margin: 0 auto;
-  padding: 0 30px; }
+@import "variables";
+@import "typography";
+@import "layout";
 
 /* Modules */
+@import "module-project-listing";
+@import "module-project-detail";
+
 /* Legacy CSS */
 /* Layout */
 html,
 body {
+
   padding: 2%;
-  background-color: #4f0839; }
+  background-color: #4f0839;
+
+}
 
 header,
 main {
-  max-width: 40em; }
+
+  max-width: 40em;
+
+}
 
 /* Typography */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%
+}
 
 body {
+
   font-family: 'IBM Plex Mono', monospace;
   font-display: fallback;
   font-weight: 400;
   font-style: normal;
   font-size: 1.6rem;
   line-height: 1.4;
-  color: #97f5f2; }
+  color: #97f5f2;
+
+}
+
+a {}
+
+a:hover {}
+
+a:active {}
+
+a:focus {}
 
 h1,
 h2,
@@ -50,33 +58,53 @@ h3,
 h4,
 h5,
 h6 {
+
   font-family: 'Roboto Slab', serif;
   font-display: swap;
   font-weight: 400;
-  line-height: 1.45; }
+  line-height: 1.45;
+
+}
 
 header p {
-  font-style: italic; }
+
+  font-style: italic;
+
+}
 
 /* Icons */
+
 svg {
+
   height: 0.8em;
   display: inline-block;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+
+}
 
 svg path {
+
   fill-rule: evenodd;
   clip-rule: evenodd;
-  fill: #ffeb3b; }
+  fill: #ffeb3b;
+
+}
 
 a:focus svg path {
-  fill: #28afa1; }
+
+  fill: #28afa1;
+
+}
 
 svg .st0 {
-  fill: none; }
+  fill: none;
+}
 
 a:focus svg .st0 {
-  fill: none; }
+
+  fill: none;
+
+}
 
 /* Content */

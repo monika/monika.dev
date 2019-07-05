@@ -7,14 +7,26 @@ module.exports = function (eleventyConfig) {
     return new CleanCSS({}).minify(code).styles;
   });
 
+  /* To do:
+  - Purge CSS
+  - Add Babel for ES6
+  - Compress JS
+  - Inline JS
+  - Image compression?
+  */
+
+  // Pass these assets through
+  //eleventyConfig.addPassthroughCopy("images");
+
   // Basic config settings
   return {
     dir: {
-      markdownTemplateEngine: "njk",
       input: "src",
       includes: "includes",
       layouts: "includes/layouts",
-      output: "dist"
+      markdownTemplateEngine: "njk",
+      output: "dist",
+      passthroughFileCopy: true
     }
   };
 
