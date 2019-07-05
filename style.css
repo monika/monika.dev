@@ -1,0 +1,200 @@
+/* monika.dev 
+===================================== */
+
+    @import url('normalize.css');
+    @import url('https://fonts.googleapis.com/css?family=Inconsolata');
+
+ /* Layout */
+    html, body {
+
+        padding: 2%;
+        background-color: #2bbfb0;
+
+    }
+
+    header,
+    main {
+
+        max-width: 40em;
+        margin: 0 auto;
+
+    }
+
+ /* Typography */
+    html, body {
+
+        font-family: 'Inconsolata', monospace;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.4;
+        text-align: center;
+        color: #fffdf5;
+
+    }
+
+    a {
+
+        background-color: #28afa1;
+        outline: 0.4em solid #28afa1;
+        box-shadow: inset 0 -0.01em #28afa1, 
+                    inset 0 -0.06em currentColor;
+        color: #ffeb3b;
+        text-decoration: none;
+        text-shadow:    -0.08em -0.08em #28afa1, 
+                        -0.08em  0.08em #28afa1, 
+                        0.08em -0.08em #28afa1, 
+                        0.08em  0.08em #28afa1;
+
+    }
+
+    a:hover { 
+        
+        box-shadow: none;
+    
+    }
+
+    a:active {
+
+        position: relative;
+        top: 1px;
+
+    }
+
+    a:focus { 
+        
+        background-color: #ffeb3b;
+        box-shadow: none;
+        color: #28afa1;
+        outline: 0.4em solid #ffeb3b;
+        text-shadow: none;
+    }
+
+    h1 {
+
+        margin-top: 0;
+        margin-bottom: 0.5em;
+
+        font-size: 4em;
+        letter-spacing: 0.05em;
+        color: #fffaf0;
+        text-shadow:    1px 1px 0 hsla(310,100%,65%,1), 
+                        2px 2px 0 hsla(310,100%,60%,1),
+                        3px 3px 0 hsla(310,100%,55%,1),
+                        4px 4px 0 hsla(310,100%,50%,1),
+                        5px 5px 0 hsla(310,100%,45%,1),
+                        6px 6px 0 hsla(310,100%,40%,1);
+
+    }
+
+    p {
+
+        font-size: 1.4em;
+
+    }
+
+    ul {
+
+        display: flex;
+        justify-content: center;
+
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    ul li {
+
+        padding: 0 1em;
+
+    }
+
+
+ /* Icons */
+
+    svg {
+
+        height: 0.8em;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    svg path {
+        
+        fill-rule:evenodd;
+        clip-rule:evenodd;
+        fill:#ffeb3b;
+
+    }
+
+    a:focus svg path {
+
+        fill: #28afa1;
+
+    }
+
+    svg .st0 { fill: none; }
+
+    a:focus svg .st0 {
+
+        fill: none;
+
+    }
+
+ /* Content */
+
+    p {
+
+        max-width: 29em;
+        margin: 0 auto 1.5em;
+
+    }
+
+    p a {
+
+        white-space: nowrap;
+        display: inline-block;
+        outline-width: 0.2em;
+        line-height: 0.9;
+
+    }
+
+    p a:focus {
+
+        outline-width: 0.2em;
+
+    }
+
+    ul li a {
+
+        font-size: 1em;
+        white-space: nowrap;
+
+    }
+
+/* Responsive */
+
+@media (max-width: 29em) {
+
+    html, body { 
+        
+        padding: 4%;
+        font-size: 16px;
+    
+    }
+
+    h1 { 
+        
+        font-size: 2.8em;
+    
+    }
+
+    ul li { 
+        
+        padding: 0 0.5em; 
+    
+    }
+
+}
