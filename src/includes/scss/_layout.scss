@@ -10,17 +10,11 @@ html,
 body {
 
   margin: 0;
-  padding: 0;
-  background: #f00;
-  color: #333;
+  padding: 2%;
+
+  background-color: #4f0839;
 
 }
 
-.wrapper {
-
-  min-width: 300px;
-  max-width: 840px;
-  margin: 0 auto;
-  padding: 0 30px;
-
-}
+header,
+main {}

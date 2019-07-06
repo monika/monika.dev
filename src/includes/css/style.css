@@ -1,48 +1,21 @@
 /* Import All Stylesheets
 ------------------------------------- */
 /* Base Styles */
-/* Base: Layout
-------------------------------------- */
-* {
-  box-sizing: border-box; }
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  background: #f00;
-  color: #333; }
-
-.wrapper {
-  min-width: 300px;
-  max-width: 840px;
-  margin: 0 auto;
-  padding: 0 30px; }
-
-/* Modules */
-/* Legacy CSS */
-/* Layout */
-html,
-body {
-  padding: 2%;
-  background-color: #4f0839; }
-
-header,
-main {
-  max-width: 40em; }
-
 /* Typography */
 html {
   font-size: 62.5%; }
 
 body {
   font-family: 'IBM Plex Mono', monospace;
-  font-display: fallback;
+  font-display: swap;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.6rem;
-  line-height: 1.4;
+  font-size: 1.8rem;
+  line-height: 1.8;
   color: #97f5f2; }
+
+a {
+  color: white; }
 
 h1,
 h2,
@@ -55,9 +28,24 @@ h6 {
   font-weight: 400;
   line-height: 1.45; }
 
+h1 {
+  font-size: 3rem; }
+
 header p {
   font-style: italic; }
 
+/* Base: Layout
+------------------------------------- */
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  margin: 0;
+  padding: 2%;
+  background-color: #4f0839; }
+
+/* Modules */
 /* Icons */
 svg {
   height: 0.8em;
@@ -78,5 +66,3 @@ svg .st0 {
 
 a:focus svg .st0 {
   fill: none; }
-
-/* Content */

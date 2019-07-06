@@ -10,70 +10,8 @@
 @import "module-project-listing";
 @import "module-project-detail";
 
-/* Legacy CSS */
-/* Layout */
-html,
-body {
-
-  padding: 2%;
-  background-color: #4f0839;
-
-}
-
-header,
-main {
-
-  max-width: 40em;
-
-}
-
-/* Typography */
-html {
-  font-size: 62.5%
-}
-
-body {
-
-  font-family: 'IBM Plex Mono', monospace;
-  font-display: fallback;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.6rem;
-  line-height: 1.4;
-  color: #97f5f2;
-
-}
-
-a {}
-
-a:hover {}
-
-a:active {}
-
-a:focus {}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-
-  font-family: 'Roboto Slab', serif;
-  font-display: swap;
-  font-weight: 400;
-  line-height: 1.45;
-
-}
-
-header p {
-
-  font-style: italic;
-
-}
 
 /* Icons */
-
 svg {
 
   height: 0.8em;
@@ -106,5 +44,3 @@ a:focus svg .st0 {
   fill: none;
 
 }
-
-/* Content */
