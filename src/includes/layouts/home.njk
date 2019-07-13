@@ -15,20 +15,23 @@
         <h3>Recent Projects</h3>
         {%- for project in collections.project -%}
         <article class="project">
-            <a href="{{ project.url }}">
-                <h3>{{ project.data.title }}</h3>
-                <p>{{ project.data.tasks }}</p>
-            </a>
+
+            <img src="https://via.placeholder.com/200" alt="{{ project.data.title }}">
+            
+            <h3 class="project__title">{{ project.data.title }}</h3>
+            <p class="project__info">{{ project.data.tasks }}</p>
+            <a class="project__link button" href="{{ project.url }}">Read More</a>
+
         </article>
         {%- endfor -%}
 
         <!-- Three codepen/glitch projects -->
         <h3>Code Experiments</h3>
-        <ul class="pens">
-            <li class="pens--pen"><a href="https://glitch.com/~emojifize">Emojifize</a> @Glitch</li>
-            <li class="pens--pen"><a href="https://codepen.io/monikadotdev/pen/pXaOrg">Animated Bar Graphs</a> @CodePen</li>
-            <li class="pens--pen"><a href="https://codepen.io/monikadotdev/pen/MRLBJa">Animated Donut Graph</a> @CodePen</li>
-            <li class="pens--pen"><a href="https://twitter.com/tomwaits_tales">Tom Waits Lyrics Twitter bot</a></li>
+        <ul class="experiments">
+            <li class="experiments__experiment"><a href="https://glitch.com/~emojifize">Emojifize</a> @Glitch</li>
+            <li class="experiments__experiment"><a href="https://codepen.io/monikadotdev/pen/pXaOrg">Animated Bar Graphs</a> @CodePen</li>
+            <li class="experiments__experiment"><a href="https://codepen.io/monikadotdev/pen/MRLBJa">Animated Donut Graph</a> @CodePen</li>
+            <li class="experiments__experiment"><a href="https://twitter.com/tomwaits_tales">Tom Waits Lyrics Twitter bot</a></li>
         </ul>
 
         <!-- Twitch Stream -->
