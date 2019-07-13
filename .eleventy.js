@@ -16,7 +16,8 @@ module.exports = function (eleventyConfig) {
   */
 
   // Pass these assets through
-  //eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("src/fonts");
+  eleventyConfig.addPassthroughCopy("src/images");
 
   // Basic config settings
   return {
