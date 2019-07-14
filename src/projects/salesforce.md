@@ -8,7 +8,7 @@ thumbnailAlt: A screenshot of a Salesforce eBook titled 'Intelligent Sales Solut
 liveURL:
 design: IRON Creative
 designURL: https://ironcreative.com/
-tasks: Technical consulting, Front-end design
+intro: Salesforce needed to bring their latest eBook into the browser, complete with joyful animated illustrations, charts, and graphs.
 ---
 
 ## The Story

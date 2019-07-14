@@ -8,7 +8,7 @@ thumbnailAlt: A hand is pulling a frosty can of Ginger and Lemon OLIPOP out of a
 liveURL: https://drinkolipop.com/
 design: Break Maiden
 designURL: https://www.breakmaiden.co/
-tasks: Technical consulting, Front-end design
+intro: Groundbreaking prebiotic drink company, OLIPOP, needed guidance in choosing the right e-commerce platform for them, and help in bringing their stunning branding to their new online store.
 ---
 
 ## The OLIPOP Story

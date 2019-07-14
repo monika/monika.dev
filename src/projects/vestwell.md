@@ -8,7 +8,7 @@ thumbnailAlt: A grey laptop sitting open on a blonde wooden desk. The Vestwell s
 liveURL: https://vestwell.com/
 design: Wiiliamson Adams
 designURL: http://www.williamsonadams.com/
-tasks: Technical consulting, Front-end design, SEO consulting, E-mail marketing
+intro: Vestwell, a digitial retirement platform with a fresh new rebrand, needed a new site to educate clients about the power and ease of the Vestwell app.
 ---
 
 ## The Story
@@ -33,6 +33,9 @@ Despite being a relatively consise site, I built a basic design system to speed 
 
 - Semantic HTML, responsive CSS, presentational JS
 - Bring rebrand into site styling
+- Accessibility auditing and implementation
 - SEO auditing and implementation
 - Google Search Panel integration
 - Site maintenance and updates
+- Responsive email template campaign
+- Marketing campaign technical support
