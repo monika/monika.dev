@@ -10,9 +10,15 @@ html,
 body {
 
   margin: 0;
-  padding: 2%;
+  padding: 0;
 
-  background-color: #4f0839;
+  background-color: $white;
+
+}
+
+.layout {
+
+  padding: 2%;
 
 }
 

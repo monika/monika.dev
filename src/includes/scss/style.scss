@@ -6,7 +6,12 @@
 @import "typography";
 @import "layout";
 
+/* Pages */
+@import "page-home";
+
 /* Modules */
+@import "module-footer";
+@import "module-header";
 @import "module-project-listing";
 @import "module-project-detail";
 
@@ -25,13 +30,13 @@ svg path {
 
   fill-rule: evenodd;
   clip-rule: evenodd;
-  fill: #ffeb3b;
+  fill: $yellow;
 
 }
 
 a:focus svg path {
 
-  fill: #28afa1;
+  fill: $light-blue;
 
 }
 
