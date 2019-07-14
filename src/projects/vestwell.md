@@ -3,6 +3,8 @@ layout: project.njk
 tags: project
 displayOrder: 3
 title: Vestwell
+thumbnail: images/img-vestwell.jpg
+thumbnailAlt: A grey laptop sitting open on a blonde wooden desk. The Vestwell site is on the laptop's screen.
 liveURL: https://vestwell.com/
 design: Wiiliamson Adams
 designURL: http://www.williamsonadams.com/

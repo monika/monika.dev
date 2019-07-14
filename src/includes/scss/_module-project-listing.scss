@@ -11,7 +11,7 @@
     padding: 2% 0;
 
     grid-template-columns: 25% 25% 50%;
-    grid-template-rows: 80% 5% auto;
+    grid-template-rows: 1fr 5% auto;
 
     &__thumbnail {
       display: block;

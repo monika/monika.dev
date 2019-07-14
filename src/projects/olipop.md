@@ -3,6 +3,8 @@ layout: project.njk
 tags: project
 displayOrder: 2
 title: OLIPOP
+thumbnail: images/img-olipop.jpg
+thumbnailAlt: A hand is pulling a frosty can of Ginger and Lemon OLIPOP out of an ice chest full of other cans of OLIPOP.
 liveURL: https://drinkolipop.com/
 design: Break Maiden
 designURL: https://www.breakmaiden.co/

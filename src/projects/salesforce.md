@@ -3,6 +3,8 @@ layout: project.njk
 tags: project
 displayOrder: 1
 title: Salesforce
+thumbnail: images/img-salesforce.jpg
+thumbnailAlt: A screenshot of a Salesforce eBook titled 'Intelligent Sales Solutions for Medical Devices and Diagnostics'. An illustration of Cody the Bear and Astro holding up lab equipment and standing in a green forest is below that.
 liveURL:
 design: IRON Creative
 designURL: https://ironcreative.com/
