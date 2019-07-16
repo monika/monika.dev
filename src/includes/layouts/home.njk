@@ -20,7 +20,9 @@
             {%- for project in collections.project -%}
             <article class="project">
 
-                <img class="project__thumbnail" src="{{ project.data.thumbnail }}" alt="{{ project.data.thumbnailAlt }}">
+                <figure class="project__thumbnail">
+                    <img class="project__image" src="{{ project.data.thumbnail }}" alt="{{ project.data.thumbnailAlt }}">
+                </figure>
 
                 <div class="project__content">
 

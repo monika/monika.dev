@@ -27,7 +27,9 @@ With a recent rebranding in mid 2018, I was tasked with rebuilding and reorganiz
 
 Despite being a relatively consise site, I built a basic design system to speed up page delivery and used a slightly modified BEM naming-methodology to keep the markup legible for myself and for any other developers.
 
-<a class="btn" href="http://vestwell.com/">Visit Vestwell.com</a>
+[Visit Vestwell.com](http://vestwell.com/)
+
+### Visuals
 
 ### Responsibilities
 
