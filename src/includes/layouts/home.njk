@@ -44,11 +44,11 @@
 
             <h2>Code Experiments</h2>
 
-            <ul class="experiments">
-                <li class="experiments__experiment"><a href="https://glitch.com/~emojifize">Emojifize</a> @Glitch</li>
-                <li class="experiments__experiment"><a href="https://codepen.io/monikadotdev/full/pXaOrg">Animated Bar Graphs</a> @CodePen</li>
-                <li class="experiments__experiment"><a href="https://codepen.io/monikadotdev/full/MRLBJa">Animated Donut Graph</a> @CodePen</li>
-                <li class="experiments__experiment"><a href="https://twitter.com/tomwaits_tales">Tom Waits Lyrics bot</a> @Twitter</li>
+            <ul class="experiments__list">
+                <li class="experiments__item"><a href="https://glitch.com/~emojifize">Emojifize</a> @Glitch</li>
+                <li class="experiments__item"><a href="https://codepen.io/monikadotdev/full/pXaOrg">Animated Bar Graphs</a> @CodePen</li>
+                <li class="experiments__item"><a href="https://codepen.io/monikadotdev/full/MRLBJa">Animated Donut Graph</a> @CodePen</li>
+                <li class="experiments__item"><a href="https://twitter.com/tomwaits_tales">Tom Waits Lyrics bot</a> @Twitter</li>
             </ul>
 
             <!-- Twitch Stream -->
@@ -60,13 +60,14 @@
         <!-- Three archived projects -->
         <div class="archive">
         <div class="layout">
+
             <h2>Archive Projects</h2>
 
             {%- for archive in collections.archive -%}
-            <article class="archive">
-                <a href="{{ archive.url }}">
-                    <h3>{{ archive.data.title }}</h3>
-                </a>
+            <article>
+                
+                <h3><a href="{{ archive.url }}">{{ archive.data.title }}</a></h3>
+                <p>{{ archive.data.intro }}</p>
             </article>
             {%- endfor -%}
 

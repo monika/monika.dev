@@ -3,6 +3,7 @@ layout: archive.njk
 tags: archive
 displayOrder: 2
 title: America's Cup
+intro: Building a branded site for every team racing in the 2013 America's Cup.
 design: Sparkart
 tasks: Front-end Design
 ---

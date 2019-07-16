@@ -3,6 +3,7 @@ layout: archive.njk
 tags: archive
 displayOrder: 1
 title: Oakland Internet Cat Video Festival
+intro: A fundraiser event for the East Bay SPCA, bringing the Internet Cat Video Festival to Oakland, California.
 design: Niraj Patil, Savio Alphonso
 designURL: http://www.nirajpatil.com/, https://www.savio-alphonso.com/
 tasks: Front-end Design

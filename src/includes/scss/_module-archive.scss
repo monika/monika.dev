@@ -1,0 +1,41 @@
+/* Archive */
+.archive {
+
+  background: blueviolet;
+  color: $white;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 5%;
+  }
+
+  article {
+
+    margin-bottom: 5%;
+
+    &:last-of-type {
+
+      margin-bottom: 0;
+
+      p {
+        margin-bottom: 0;
+      }
+
+    }
+
+  }
+
+  a {
+
+    color: $black;
+
+    &:hover {
+
+      color: $light-blue;
+
+    }
+
+
+  }
+
+}
