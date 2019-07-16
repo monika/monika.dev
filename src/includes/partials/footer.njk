@@ -1,10 +1,42 @@
 <footer>
 <div class="layout">
 
-      <a href="mailto:monika@monika.dev">monika@monika.dev</a>
-      {% include "modules/socials.njk" %}
+      <div class="contact">
 
-      <a href="/colophon">Colophon</a>
+            <h3>monika.dev</h3>
+
+            <a href="mailto:monika@monika.dev">monika@monika.dev</a>
+
+            {% include "modules/socials.njk" %}
+
+            <a href="/colophon">Colophon</a>
+
+      </div>
+
+      <div class="sitemap">
+
+            <h4>Recent Projects</h4>
+
+            <ul>
+            {%- for project in collections.project -%}
+            
+                  <li><a href="{{ project.url }}">{{ project.data.title }}</a></li>
+
+            {%- endfor -%}
+            </ul>
+
+            <h4>Experiments</h4>
+
+            <h4>Archive Projects</h4>
+            <ul>
+            {%- for archive in collections.archive -%}
+            
+                  <li><a href="{{ archive.url }}">{{ archive.data.title }}</a></li>
+
+            {%- endfor -%}
+            </ul>
+      
+      </div>
 
 </div>
 </footer>

@@ -12,6 +12,11 @@
     grid-template-columns: 25% 25% 50%;
     grid-template-rows: 1fr 5% auto;
 
+    /* Todo:
+        - make these pseudo browser windows scroll up and down 
+        - change to tablet and mobile view at smaller breakpoints
+    */
+
     &__thumbnail {
       display: block;
       position: relative;
