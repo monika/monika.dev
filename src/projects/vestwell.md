@@ -4,11 +4,11 @@ tags: project
 displayOrder: 3
 title: Vestwell
 thumbnail: images/img-vestwell.jpg
-thumbnailAlt: A grey laptop sitting open on a blonde wooden desk. The Vestwell site is on the laptop's screen.
+thumbnailAlt: The homepage of Vestwell.com.
 liveURL: https://vestwell.com/
 design: Wiiliamson Adams
 designURL: http://www.williamsonadams.com/
-intro: Vestwell, a digitial retirement platform with a fresh new rebrand, needed a new site to educate clients about the power and ease of the Vestwell app.
+intro: An educational and enticing site for Vestwell, a digitial retirement platform, to feature their product and their rebranding.
 ---
 
 ## The Story

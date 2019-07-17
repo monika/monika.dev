@@ -4,9 +4,9 @@ tags: project
 displayOrder: 1
 title: Salesforce
 thumbnail: images/img-salesforce.jpg
-thumbnailAlt: A screenshot of a Salesforce eBook titled 'Intelligent Sales Solutions for Medical Devices and Diagnostics'. An illustration of Cody the Bear and Astro holding up lab equipment and standing in a green forest is below that.
+thumbnailAlt: A screenshot of a Salesforce ebook, featuring Cody the bear and Astro holding laboratory equipment.
 liveURL:
-intro: Salesforce needed to bring their latest eBook into the browser, complete with joyful animated illustrations, charts, and graphs.
+intro: A browser-based eBook for Salesforce, complete with joyfully animated illustrations, charts, and graphs.
 ---
 
 ## The Project

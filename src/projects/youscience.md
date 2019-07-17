@@ -3,7 +3,7 @@ layout: archive.njk
 tags: archive
 displayOrder: 1
 title: YouScience
-intro: With the expense of college tuition increasing every year, aptitude testing can help students and parents save thousands of dollars a year.
+intro: An aptitude testing suite that can help students and parents save thousands of dollars a year.
 design: Sparkart
 tasks: Front-end Design
 ---

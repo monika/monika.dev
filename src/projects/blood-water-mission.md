@@ -3,7 +3,7 @@ layout: archive.njk
 tags: archive
 displayOrder: 3
 title: Blood:Water Mission
-intro: Using the power of BEM and Sass to maintain a cohesive and intuitive code-base for other developers in the mix.
+intro: A donation-driven site Using the power of BEM and Sass to maintain a cohesive and intuitive code-base for other developers in the mix.
 design: Sparkart
 tasks: Front-end Design
 ---

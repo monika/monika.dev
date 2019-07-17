@@ -4,8 +4,8 @@ tags: project
 displayOrder: 2
 title: OLIPOP
 thumbnail: images/img-olipop.jpg
-thumbnailAlt: A hand is pulling a frosty can of Ginger and Lemon OLIPOP out of an ice chest full of other cans of OLIPOP.
-intro: Groundbreaking pre-biotic drink company, OLIPOP, needed guidance in choosing the right e-commerce platform and help integrating their gorgeous new brand into their new online store.
+thumbnailAlt: The homepage of DrinkOlipop.com.
+intro: An e-commerce site for groundbreaking pre-biotic drink company OLIPOP built around their fresh new brand.
 ---
 
 ## The Project
