@@ -23,11 +23,10 @@
     "homepage": "https://github.com/monika/monika.dev",
     "devDependencies": {
         "@11ty/eleventy": "^0.8.2",
+        "clean-css": "^4.2.1",
+        "gulp": "^4.0.2",
         "gulp-autoprefixer": "^6.1.0",
         "gulp-sass": "^4.0.2"
     },
-    "dependencies": {
-        "clean-css": "^4.2.1",
-        "gulp": "^4.0.2"
-    }
+    "dependencies": {}
 }
