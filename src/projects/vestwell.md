@@ -3,7 +3,7 @@ layout: project.njk
 tags: project
 displayOrder: 3
 title: Vestwell
-thumbnail: images/img-vestwell.jpg
+thumbnail: images/img-vestwell-full.jpg
 thumbnailAlt: The homepage of Vestwell.com.
 liveURL: https://vestwell.com/
 design: Wiiliamson Adams

@@ -3,7 +3,7 @@ layout: project.njk
 tags: project
 displayOrder: 1
 title: Salesforce
-thumbnail: images/img-salesforce.jpg
+thumbnail: images/img-salesforce-full.jpg
 thumbnailAlt: A screenshot of a Salesforce ebook, featuring Cody the bear and Astro holding laboratory equipment.
 liveURL:
 intro: A browser-based eBook for Salesforce, complete with joyfully animated illustrations, charts, and graphs.
