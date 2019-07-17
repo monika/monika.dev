@@ -14,4 +14,6 @@
 # will take these settings and override their
 # current ones.
 [context.eleventy]
+  base  = "src"
   command = "gulp build && eleventy"
+  publish = "dist"
