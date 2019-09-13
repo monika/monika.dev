@@ -9,8 +9,7 @@ function css() {
     .src('src/includes/scss/*')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({
-      grid: 'no-autoplace',
-      browsers: ['>1%']
+      grid: 'no-autoplace'
     }))
     .pipe(gulp.dest('src/includes/css/'));
 }
