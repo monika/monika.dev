@@ -3,20 +3,18 @@
 
       <div class="contact">
 
-            <h3>monika.dev</h3>
+            <h3><a href="/">monika.dev</a></h3>
 
             <a href="mailto:monika@monika.dev">monika@monika.dev</a>
 
             {% include "modules/socials.njk" %}
 
-            <a href="/colophon">Colophon</a>
-
       </div>
 
-      <div class="sitemap">
+      <nav class="sitemap" arialabelledby="projects-recent">
 
-            <h4>Recent Projects</h4>
-
+            <h4 id="projects-recent">Recent Projects</h4>
+      
             <ul>
             {%- for project in collections.project -%}
             
@@ -25,9 +23,12 @@
             {%- endfor -%}
             </ul>
 
-            <h4>Experiments</h4>
+      </nav>
 
-            <h4>Archive Projects</h4>
+      <nav class="sitemap" arialabelledby="projects-archive">
+
+            <h4 id="projects-archive">Archive Projects</h4>
+            
             <ul>
             {%- for archive in collections.archive -%}
             
@@ -35,9 +36,9 @@
 
             {%- endfor -%}
             </ul>
-      
-      </div>
 
+      </nav>
+      
 </div>
 </footer>
 
