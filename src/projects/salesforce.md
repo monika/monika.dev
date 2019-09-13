@@ -5,7 +5,6 @@ displayOrder: 1
 title: Salesforce
 thumbnail: images/img-salesforce-full.jpg
 thumbnailAlt: A screenshot of a Salesforce ebook, featuring Cody the bear and Astro holding laboratory equipment.
-liveURL:
 intro: A browser-based eBook for Salesforce, complete with joyfully animated illustrations, charts, and graphs.
 ---
 
@@ -15,7 +14,7 @@ Folks are hungry for business insight and Salesforce provides that insight in ma
 
 I pushed the edges of technology and centered the animations on our eBook in a new video format, which is set to gracefully downgrade for older browsers. Fun illustrations and iconography are presented as scalable and small vector files, keeping the loading speed quick, the rendering time fast, and the site responsive for various browser sizes and devices - getting people to the insight they want to see as best as I can.
 
-[Visit Site](#)
+[Visit Site (Dev URL)](https://gallant-liskov-7a6a1b.netlify.com/)
 
 ### Visuals
 
