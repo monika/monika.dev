@@ -26,9 +26,9 @@ Filled with luscious photography, joyful illustrations, and engaging typography,
 
 <div class="visuals">
 
-![Ben Goodwin and David Lester, Co-founders of OLIPOP](/images/img-olipop-ben-david.jpg)
-![Some of the stores OLIPOP is available in Northern California](/images/img-olipop-map.jpg)
-![Digestive Health](/images/img-olipop-digestive-health.jpg)
+![Ben Goodwin and David Lester, Co-founders of OLIPOP.](/images/img-olipop-ben-david.jpg)
+![Some of the stores OLIPOP is available in Northern California.](/images/img-olipop-map.jpg)
+![A colorful banner for the Digestive Health page.](/images/img-olipop-digestive-health.jpg)
 
 </div>
 

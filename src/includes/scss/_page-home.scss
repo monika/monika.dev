@@ -1,8 +1,16 @@
 /* Page: Home */
 
-.projects {
+.page-home {
 
-  background: $blue;
-  color: $white;
+  h2 {
+    @extend .visually-hidden;
+  }
+
+  .projects {
+
+    background: $blue;
+    color: $white;
+
+  }
 
 }
