@@ -9,13 +9,27 @@ designURL: http://www.nirajpatil.com/, https://www.savio-alphonso.com/
 tasks: Front-end Design
 ---
 
-## A festival so nice they held it twice
+### The Project
 
-### A fundraiser event for the East Bay SPCA, bringing the Internet Cat Video Festival to Oakland, California
+_A fundraiser event so nice they held it twice! OICVF was created to the Internet Cat Video Festival to Oakland, California for the benefit of for the East Bay SPCA._
 
-An event so popular that Mayor Jean Quan declared it <a href="https://www.kqed.org/arts/10135685">“Internet Cat Video Day”</a>!
+Approached by the Great Wall of Oakland’s designer at the time, I took on the task of creating the official event site for the Oakland Internet Cat Video Festival. The one-day event took place in Uptown Oakland and featured cat-themed food, events acts, and adoptions on behalf of the East Bay SPCA.
 
-#### Responsibilities
+The major conceptual breakthrough for this site was understanding that the audience of the site shifted as time passed, meaning the site would need to shift with them and the audience’s intent. I built the site using a design system and component library that allowed me to rearrange content and components at the drop of a hat.
+
+Mayor Jean Quan declared it <a href="https://www.kqed.org/arts/10135685">“Internet Cat Video Day”</a>!
+
+### Visuals
+
+<div class="visuals">
+
+![Oakland Internet Cat Video Festival splash page.](/images/img-oicvf-splash.jpg)
+![The first schedule for OICVF in 2013.](/images/img-oicvf-schedule.jpg)
+![The OICVF logo and event date.](/images/img-oicvf-home.jpg)
+
+</div>
+
+### Responsibilities
 
 - Semantic HTML, Responsive CSS, Presentational JS
 - Information architecture
@@ -23,6 +37,11 @@ An event so popular that Mayor Jean Quan declared it <a href="https://www.kqed.o
 - Adapted site to users’ intent via shifting content modules as event timeline progressed
 - Supported event organizers with planning and data collection tools
 - Site maintenance and updates
+
+### Co-credits
+
+- Site design: Niraj Patil
+- Logo design: Savio Alphonso
 
 ### Press
 
@@ -32,11 +51,7 @@ An event so popular that Mayor Jean Quan declared it <a href="https://www.kqed.o
 
 ---
 
-## Case Study
-
-Approached by the Great Wall of Oakland’s designer at the time, I took on the task of creating the official event site for the Oakland Internet Cat Video Festival. The one-day event took place in Uptown Oakland and featured cat-themed food, events, acts, and adoptions on behalf of the East Bay SPCA.
-
-The major conceptual breakthrough for this site was understanding that the audience of the site shifted as time passed, meaning the site would need to shift with them and the audience’s intent. I built the site using a design system and component library that allowed me to rearrange content and components at the drop of a hat.
+### Case Study
 
 #### Focus the First: Secure Vendors
 
