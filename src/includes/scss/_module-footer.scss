@@ -23,6 +23,18 @@ footer {
     justify-content: space-between;
     align-items: flex-start;
 
+    @media screen and (max-width: $break-small) {
+      flex-direction: column;
+    }
+
+    nav {
+      @media screen and (max-width: $break-small) {
+        margin-top: 5rem;
+      }
+
+    }
   }
+
+
 
 }

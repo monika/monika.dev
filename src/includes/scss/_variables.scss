@@ -20,3 +20,6 @@ $circular-ease-in-out: cubic-bezier(.45, .24, 0, 1);
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
 }
+
+/* Breakpoints */
+$break-small: 648px;
