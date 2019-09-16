@@ -1,0 +1,21 @@
+.page-project {
+
+    h3 {
+        margin-top: 5.2rem;
+    }
+
+    .visuals {
+
+        p {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        img {
+            flex: 0 0 auto;
+            width: 30%;
+            border: 10px solid $black;
+        }
+    }
+
+}
