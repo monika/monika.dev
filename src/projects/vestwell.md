@@ -11,9 +11,9 @@ designURL: http://www.williamsonadams.com/
 intro: An educational and enticing site for Vestwell, a digitial retirement platform, to feature their product and their rebranding.
 ---
 
-## The Story
+### The Story
 
-_A digitial retirement platform for financial advisors, employers, and employees. that makes it easier to understand and save for retirement._
+_A digitial retirement platform for financial advisors, employers, and employees, that makes it easier to understand and save for retirement._
 
 Vestwell is redefining what it means to invest in your retirement. With that goal, they needed a site that educated users on what their platform offers, whether that user is a broker who provides investment advice to her clients, an employer that provides retirement services to their employees, or an employee interested in their own retirement plan.
 
@@ -24,6 +24,14 @@ Despite being a relatively consise site, I built a basic design system to speed 
 [Visit Vestwell.com &#10132;](http://vestwell.com/)
 
 ### Visuals
+
+<div class="visuals">
+
+![The homepage of Vestwell.com/](/images/img-vestwell-home.jpg)
+![Two members of the Vestwell advisory board.](/images/img-vestwell-team.jpg)
+![Helpful bulletpoints about Vestwell's offerings.](/images/img-vestwell-intro.jpg)
+
+</div>
 
 ### Responsibilities
 
