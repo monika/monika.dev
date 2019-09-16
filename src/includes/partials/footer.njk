@@ -1,0 +1,53 @@
+<footer>
+<div class="layout">
+
+      <div class="contact">
+
+            <h4>Elsewhere</h4>
+
+            {% include "modules/socials.njk" %}
+
+            <a href="mailto:monika@monika.dev">monika@monika.dev</a>
+
+      </div>
+
+      <nav class="sitemap" arialabelledby="projects-recent">
+
+            <h4 id="projects-recent">Recent Projects</h4>
+      
+            <ul>
+            {%- for project in collections.project -%}
+            
+                  <li><a href="{{ project.url }}">{{ project.data.title }}</a></li>
+
+            {%- endfor -%}
+            </ul>
+
+      </nav>
+
+      <nav class="sitemap" arialabelledby="projects-archive">
+
+            <h4 id="projects-archive">Archive Projects</h4>
+            
+            <ul>
+            {%- for archive in collections.archive -%}
+            
+                  <li><a href="{{ archive.url }}">{{ archive.data.title }}</a></li>
+
+            {%- endfor -%}
+            </ul>
+
+      </nav>
+      
+</div>
+</footer>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38224937-3"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-38224937-3');
+</script>

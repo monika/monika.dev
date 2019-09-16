@@ -1,0 +1,38 @@
+/* Base: Layout
+------------------------------------- */
+* {
+
+  box-sizing: border-box;
+
+}
+
+html,
+body {
+
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+
+}
+
+body {
+
+  padding: 1em;
+  box-shadow:
+    inset 1em 1em $black,
+    inset 1em 1em $black,
+    inset -1em 1em $black,
+    inset 1em -1em $black;
+
+}
+
+
+
+.layout {
+
+  padding: 8% 5%;
+
+}
+
+header,
+main {}

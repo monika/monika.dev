@@ -1,0 +1,32 @@
+{
+    "name": "monika-dev",
+    "version": "1.0.0",
+    "description": "A portfolio site for Monika.dev built with Eleventy and Gulp.",
+    "scripts": {
+        "build": "gulp build && eleventy",
+        "watch": "npx eleventy --watch --serve & gulp",
+        "debug": "DEBUG=* npx eleventy"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/monika/monika.dev"
+    },
+    "author": {
+        "name": "Monika",
+        "email": "monika@monika.dev",
+        "url": "https://monika.dev/"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/monika/monika.dev/issues"
+    },
+    "homepage": "https://github.com/monika/monika.dev",
+    "devDependencies": {
+        "@11ty/eleventy": "^0.8.2",
+        "clean-css": "^4.2.1",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^6.1.0",
+        "gulp-sass": "^4.0.2"
+    },
+    "dependencies": {}
+}

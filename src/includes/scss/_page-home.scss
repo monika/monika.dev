@@ -1,0 +1,16 @@
+/* Page: Home */
+
+.page-home {
+
+  h2 {
+    @extend .visually-hidden;
+  }
+
+  .projects {
+
+    background: $blue;
+    color: $white;
+
+  }
+
+}

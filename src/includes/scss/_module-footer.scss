@@ -1,0 +1,28 @@
+/* Footer */
+footer {
+
+  background: $black;
+  color: $white;
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: limegreen;
+    }
+  }
+
+  h3 {
+    margin-top: 0;
+    text-transform: lowercase;
+  }
+
+  .layout {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+  }
+
+}
