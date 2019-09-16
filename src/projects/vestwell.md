@@ -1,7 +1,7 @@
 ---
 layout: project.njk
 tags: project
-displayOrder: 3
+displayOrder: 2
 title: Vestwell
 thumbnail: images/img-vestwell-full.jpg
 thumbnailAlt: The homepage of Vestwell.com.

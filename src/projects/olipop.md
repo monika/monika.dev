@@ -1,7 +1,7 @@
 ---
 layout: project.njk
 tags: project
-displayOrder: 2
+displayOrder: 1
 title: OLIPOP
 thumbnail: images/img-olipop-full.jpg
 thumbnailAlt: The homepage of DrinkOlipop.com.

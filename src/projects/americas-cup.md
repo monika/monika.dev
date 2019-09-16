@@ -2,34 +2,40 @@
 layout: archive.njk
 tags: archive
 displayOrder: 2
-title: America's Cup
-intro: A custom branded site for every team racing in the 2013 America's Cup.
+title: America’s Cup
+intro: A custom branded site for every team racing in the 2013 America’s Cup.
 design: Sparkart
 tasks: Front-end Design
 ---
 
-## America's Cup Comes Home to San Francisco
+### The Project
 
-### Building a branded portal for every team racing in the 2013 America's Cup.
+_America’s Cup comes home to San Francisco. Every team racing in the 2013 America’s Cup needed a branded team portal._
 
-In 2013, the America's Cup was headed back to the US for the first time in decades thanks to Team Oracle. While at Sparkart, we were hired to bring the race into the 21st century, get it online and accessible to millions of fans.
+In 2013, the America’s Cup was headed back to the US for the first time in decades thanks to Oracle Team USA.
 
-My task was to create a modular template system that could be quickly branded and deployed for any teams joining the America's Cup competition. The sites were used for fans to keep track of each team's position in the competition, to share news, video clips, and interviews from each team.
+My task was to create a modular template system that could be quickly branded and deployed for all the teams joining the America’s Cup competition. The sites were used for fans to keep track of each team's position in the competition, to share news, video clips, and interviews from each team.
 
-Using our in-house headless CMS platform, APIs from YouTube, Wordpress, and Twitter, and custom templates, I provided twelve racing teams their own sites for the America's Cup competition.
+Using Sparkart Group's in-house headless CMS platform, APIs from YouTube, Wordpress and Twitter, and custom templates, I provided eight racing teams their own sites for the America’s Cup competition. Each team's homepage used a suplemented version of the design system. I focused on bringing their branding and personality into this suplement while taking full advantage of CSS's cascade and design system to style the inner pages of each team site quickly.
 
----
+### Visuals
 
-2013 was a big year for the America's Cup! For the first time in almost 50 years, the races would be held in the US. While working at Sparkart Group, Inc., I was tasked with developing not one, not two, but eight sites&mdash;one for each team racing in the America's Cup.
+<div class="visuals">
 
-I delivered eight sites quickly and effectively in the build up for the big race day. I built a robust design system to handle the display and style of content within each team site. Each site was heavily compontentized on Sparkart's custom CMS platform.
+![Oracle Team USA's homepage for the America’s Cup.](/images/img-americas-cup-oracle.jpg)
+![Team New Zealand's homepage for the America’s Cup.](/images/img-americas-cup-new-zealand.jpg)
+![Team Artemis' homepage for the America’s Cup.](/images/img-americas-cup-artemis.jpg)
 
-Each team's homepage used a suplemented version of the design system. I focused on bringing their branding and personality into this suplement while taking full advantage of CSS's cascade and design system to style the inner pages of each team site quickly.</p>
+</div>
 
-#### Responsibilities
+### Responsibilities
 
 - Building semantic HTML, responsive CSS, presentational JS
 - Building design system that adapts to eight different branding guides
 - Auditing team sites to build out components
 - Responsive browser and device testing
 - Site maintenance and updates
+
+### Co-credits
+
+- Design: Sparkart Group

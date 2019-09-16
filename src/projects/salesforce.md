@@ -1,7 +1,7 @@
 ---
 layout: project.njk
 tags: project
-displayOrder: 1
+displayOrder: 3
 title: Salesforce
 thumbnail: images/img-salesforce-full.jpg
 thumbnailAlt: A screenshot of a Salesforce ebook, featuring Cody the bear and Astro holding laboratory equipment.
