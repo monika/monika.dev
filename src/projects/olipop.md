@@ -12,9 +12,9 @@ intro: An e-commerce site for groundbreaking pre-biotic sparkling tonic company 
 
 _A healthful and delicious pre-biotic sparkling tonic drink that needed a site as fresh and invigorating as its new branding._
 
-In the summer of 2018 the co-founders of OLIPOP, Ben Goodwin and David Lester, needed some help: they had a beautiful, delicious, pre-biotic tonic ready to take to market but nowhere to sell it online and were overwhelmed with the e-commerce options available to them.
+In the summer of 2018, the co-founders of OLIPOP, Ben Goodwin and David Lester, needed some help: they had a beautiful, delicious, pre-biotic tonic ready to take to market but nowhere to sell it online and were overwhelmed with the e-commerce options available to them.
 
-I guided the co-founders towards Shopify and set them up with a new theme that reflected the gorgeous visual design that their product designers, Break Maiden, produced for them. We dedicated time towards informational pages that educated consumers on the unique position of OLIPOP as a sparkling tonic drink.
+Based on their needs, budget, and timeline, I guided the co-founders towards Shopify. I set them up with a new theme that reflected the gorgeous visual design their product designers, Break Maiden, produced for them. We also dedicated time towards informational pages that educated consumers on the unique position of OLIPOP as a sparkling tonic drink.
 
 Filled with luscious photography, joyful illustrations, and engaging typography, the store has helped OLIPOP spread into markets across California.
 

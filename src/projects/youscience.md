@@ -3,35 +3,37 @@ layout: archive.njk
 tags: archive
 displayOrder: 1
 title: YouScience
-intro: An aptitude testing suite built to help students and parents save thousands of dollars a year.
+intro: An aptitude testing suite built to help students lean into their strengths and save thousands of dollars a year in college.
 design: Sparkart
 tasks: Front-end Design
 ---
 
 ### The Project
 
-_With the expense of college tuition increasing every year, YouScience's online aptitude testing can help students and parents save thousands of dollars a year._
+_With college tuition increasing every year, YouScience's online aptitude testing can both help students and parents save thousands of dollars a year, and codify students' strongest skills and abilities._
 
-Before YouScience, aptitude testing was out of many student's reach. It requires spending hundreds of dollars, going to a testing facility, spending 4+ hours taking the test, and reviewing the results with a career councilor face-to-face. YouScience's goal is to make the entire process more approachable, less expensive, and less time-consuming while providing in-depth results that help students make better choices that lean into their strengths for their career options.
+Before YouScience, aptitude testing was out of many students&rsquo; reach. Aptitude testing requires spending hundreds of dollars, visiting a specific testing facility, spending four or more hours taking assessments for the test, and finally reviewing the assessment results with a career councilor face-to-face.
 
-For Sparkart Group, I updated the look and feel of the aptitude tests, modernized the user's interactions with the different test types, and developed high fidelity prototypes for YouScience's in-house developers to build in time for test standardization.
+YouScience's goal is to make this entire process more approachable, less expensive and time-consuming, while providing in-depth results that help students make better choices that lean into their strengths for their career options.
+
+While at Sparkart Group, I updated the look and feel of the Ball Aptitude Battery&reg; (BAB) assessments, modernized the user's interactions with the various assessment types, and developed high fidelity prototypes and example animations for YouScience's in-house developers, all in time for official BAB test standardization.
 
 ### Visuals
 
 <div class="visuals">
 
-![A practice vocabulary test for YouScience.](/images/img-youscience-practice.jpg)
-![A practice paper folding question for YouScience.](/images/img-youscience-practice-2.jpg)
-![A practice analytical reasoning question for YouScience.](/images/img-youscience-practice-3.jpg)
+![A practice vocabulary assessment for YouScience.](/images/img-youscience-practice.jpg)
+![A practice paper folding assessment for YouScience.](/images/img-youscience-practice-2.jpg)
+![A practice analytical reasoning assessment for YouScience.](/images/img-youscience-practice-3.jpg)
 
 </div>
 
 ### Responsibilities
 
-- Auditing user flow through testing suite
-- Developing user flow through testing suite
-- Modernizing aptitude tests visual design and interactions
-- Animating test prototypes for in-house developers
+- Auditing current user flow through testing suite
+- Developing improved user flow through testing suite
+- Modernizing aptitude assessments&rsquo; visual design and interactions
+- Prototyping assessments for YouScience developers
 - Interfacing with YouScience's developers
 
 ### Co-credits
