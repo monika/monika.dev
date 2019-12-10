@@ -11,11 +11,11 @@ tasks: Front-end Design
 
 ### The Project
 
-_A fundraiser event so nice they held it twice! OICVF was created to the Internet Cat Video Festival to Oakland, California for the benefit of for the East Bay SPCA._
+_A fundraiser event so nice they held it twice! OICVF was created to bring the Internet Cat Video Festival to Oakland, California for the benefit of the East Bay SPCA._
 
 Approached by the Great Wall of Oakland’s designer at the time, I took on the task of creating the official event site for the Oakland Internet Cat Video Festival. The one-day event took place in Uptown Oakland and featured cat-themed food, events acts, and adoptions on behalf of the East Bay SPCA.
 
-The major conceptual breakthrough for this site was understanding that the audience of the site shifted as time passed, meaning the site would need to shift with them and the audience’s intent. I built the site using a design system and component library that allowed me to rearrange content and components at the drop of a hat.
+The major conceptual breakthrough for this site was understanding that the audience of the site shifted as time passed, meaning the site would need to shift with them as the audience’s intent changed. I built the site using a design system and component library that allowed me to rearrange content and components at the drop of a hat.
 
 Mayor Jean Quan declared it <a href="https://www.kqed.org/arts/10135685">“Internet Cat Video Day”</a>!
 
@@ -45,13 +45,13 @@ Mayor Jean Quan declared it <a href="https://www.kqed.org/arts/10135685">“Inte
 
 ### Press
 
-- <a href="https://www.kqed.org/arts/10135685" rel="external">“A Tale of Two Competing Cat Video Festivals”</a> [KQED]
-- <a href="https://www.huffingtonpost.com/2013/03/28/oakland-internet-cat-video-film-festival_n_2972662.html" rel="external">“Oakland Internet Cat Video Festival Showcases The Web’s Finest Felines”</a> [HuffPo]
-- <a href="https://www.eastbayexpress.com/oakland/internet-cat-videos-go-public/Content?oid=3541423">“Internet Cat Videos Go Public”</a> [EBX]
+- <a href="https://www.kqed.org/arts/10135685" rel="external">&ldquo;A Tale of Two Competing Cat Video Festivals&rdquo;</a> [KQED]
+- <a href="https://www.huffingtonpost.com/2013/03/28/oakland-internet-cat-video-film-festival_n_2972662.html" rel="external">&ldquo;Oakland Internet Cat Video Festival Showcases The Web’s Finest Felines&rdquo;</a> [HuffPo]
+- <a href="https://www.eastbayexpress.com/oakland/internet-cat-videos-go-public/Content?oid=3541423">&ldquo;Internet Cat Videos Go Public&rdquo;</a> [EBX]
 
 ---
 
-### Case Study
+### On Shifting Audiences
 
 #### Focus the First: Secure Vendors
 

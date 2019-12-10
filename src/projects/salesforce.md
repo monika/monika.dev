@@ -5,7 +5,7 @@ displayOrder: 3
 title: Salesforce
 thumbnail: images/img-salesforce-full.jpg
 thumbnailAlt: A screenshot of a Salesforce ebook, featuring Cody the bear and Astro holding laboratory equipment.
-intro: A browser-based eBook for Salesforce, complete with joyfully animated illustrations, charts, and graphs.
+intro: A browser-based eBook for Salesforce, full of industry insights, and complete with joyful character animations, charts, and graphs.
 ---
 
 ### The Project
@@ -32,10 +32,11 @@ I pushed the edges of technology and centered the animations on our eBook in a n
 
 - Building semantic HTML, responsive CSS, presentational JS
 - Speed optimization
-- Video support and graceful degredation
+- Video support and graceful degradation
 - Responsive browser and device testing
 - Accessibility testing
 
 ### Credit
 
 Design: [IRON Creative](https://ironcreative.com/)
+Character Animation: Trey Simmons
