@@ -1,6 +1,5 @@
 /* Footer */
 footer {
-
   background: $black;
   color: $white;
 
@@ -18,7 +17,6 @@ footer {
   }
 
   .layout {
-
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -31,10 +29,32 @@ footer {
       @media screen and (max-width: $break-small) {
         margin-top: 5rem;
       }
-
     }
   }
 
+  /* Icons */
+  svg {
+    height: 0.8em;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
 
+  svg path {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+    fill: $yellow;
+  }
 
+  a:focus svg path {
+    fill: $light-blue;
+  }
+
+  svg .st0 {
+    fill: none;
+  }
+
+  a:focus svg .st0 {
+    fill: none;
+  }
 }

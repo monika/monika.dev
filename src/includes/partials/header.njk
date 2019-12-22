@@ -1,17 +1,23 @@
-<header>
-<div class="layout">
+<header class="header">
 
-    <h1><a href="/">Monika Hoex</a> <em>Front-end Designer &amp; Developer</em></h1>
+    <div class="navigation">
+    {% include "partials/navigation.njk" %}
+    </div>
 
-    {% if title === "Home" %}
-    <p><strong>I have fifteen years of experience crafting design solutions in code as a front-end developer for a diverse set of clients.</strong></p>
+    <div class="layout">
 
-    <p>I guide my clients towards tech solutions that fit their project goals, team workflow, budget, and existing stack. My design experience allows me to bridge the space between design and development while maintaining a focus on accessibility, responsiveness, and maintainability.</p>
-    
-    <p>I'm available for new projects and full-time employment.</p>
+        <h1 class="header__title">Monika Hoex <em>is a design-focused front-end developer.</em></h1>
 
-    <a class="button" href="mailto:monika@monika.dev">Email me</a>
-    {% endif %}
+        {% if title === "Home" %}
 
-</div>
+            <p class="header__description header__intro">I have fifteen years of experience creating effective solutions for a diverse set of clients.</p>
+            <p class="header__description">My training as a visual designer gives me the skills to work closely with both designers and engineers while maintaining a focus on accessible, responsive, and maintainable front-end code.</p>
+            <p class="header__description">I currently guide clients towards tech solutions that fit their project goals, team workflow, budget, and existing stack. I'm available for new projects and full-time employment.</p>
+
+            <a class="header__action button" href="mailto:monika@monika.dev">Say Hello!</a>
+
+        {% endif %}
+
+    </div>
+
 </header>
