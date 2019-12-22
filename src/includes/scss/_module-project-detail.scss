@@ -1,30 +1,36 @@
 .page-project {
+  main p {
+    max-width: 75ch;
+  }
+  h3 {
+    margin-top: 5.2rem;
+  }
 
-    h3 {
-        margin-top: 5.2rem;
+  h3 + p em {
+    font-family: obviously, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .visuals {
+    p {
+      display: flex;
+      justify-content: space-between;
+
+      @media screen and (max-width: $break-small) {
+        flex-direction: column;
+      }
     }
 
-    .visuals {
+    img {
+      flex: 0 0 auto;
+      width: 30%;
+      border: 10px solid $black;
 
-        p {
-            display: flex;
-            justify-content: space-between;
-
-            @media screen and (max-width: $break-small) {
-                flex-direction: column;
-            }
-        }
-
-        img {
-            flex: 0 0 auto;
-            width: 30%;
-            border: 10px solid $black;
-
-            @media screen and (max-width: $break-small) {
-                width: 100%;
-                margin-bottom: 1.6rem;
-            }
-        }
+      @media screen and (max-width: $break-small) {
+        width: 100%;
+        margin-bottom: 1.6rem;
+      }
     }
-
+  }
 }
