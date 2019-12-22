@@ -1,14 +1,13 @@
 /* Colors */
+$black: #0f0f0f;
+$blue: #3f59da;
+$grey: #dadada;
 $light-blue: #97f5f2;
-$teal: #28afa1;
-$maroon: #4f0839;
+$pink: #ff0095;
 $white: #fff;
-$black: #222;
-$blue: blue;
-$yellow: #ffeb3b;
 
 /* Animation */
-$circular-ease-in-out: cubic-bezier(.45, .24, 0, 1);
+$circular-ease-in-out: cubic-bezier(0.45, 0.24, 0, 1);
 
 .visually-hidden {
   /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */

@@ -1,7 +1,6 @@
 /* Archive */
 .archive {
-
-  background: blueviolet;
+  background: $light-blue;
   color: $white;
 
   h2 {
@@ -10,32 +9,22 @@
   }
 
   article {
-
     margin-bottom: 5%;
 
     &:last-of-type {
-
       margin-bottom: 0;
 
       p {
         margin-bottom: 0;
       }
-
     }
-
   }
 
   a {
-
     color: $light-blue;
 
     &:hover {
-
-      color: $yellow;
-
+      color: $pink;
     }
-
-
   }
-
 }
