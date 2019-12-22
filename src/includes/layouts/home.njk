@@ -57,23 +57,6 @@
         </div>
         </div>
 
-        <!-- Three archived projects -->
-        <div class="archive">
-        <div class="layout">
-
-            <h3>Archive Projects</h3>
-
-            {%- for archive in collections.archive -%}
-            <article>
-                
-                <h4><a href="{{ archive.url }}">{{ archive.data.title }}</a></h4>
-                <p>{{ archive.data.intro }}</p>
-            </article>
-            {%- endfor -%}
-
-        </div>
-        </div>
-
     </main>
 
     {% include "partials/footer.njk" %}

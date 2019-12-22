@@ -1,7 +1,7 @@
 ---
-layout: archive.njk
-tags: archive
-displayOrder: 1
+layout: project.njk
+tags: project
+displayOrder: 6
 title: YouScience
 intro: An aptitude testing suite built to help students lean into their strengths and save thousands of dollars a year in college.
 design: Sparkart
