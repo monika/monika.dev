@@ -11,13 +11,13 @@
 
       </div>
 
-      <nav class="sitemap" arialabelledby="projects-recent">
+      <nav class="sitemap" arialabelledby="projects">
 
-            <h4 id="projects-recent">Recent Projects</h4>
-      
+            <h4 id="projects">Projects</h4>
+
             <ul>
             {%- for project in collections.project -%}
-            
+
                   <li><a href="{{ project.url }}">{{ project.data.title }}</a></li>
 
             {%- endfor -%}
@@ -25,20 +25,6 @@
 
       </nav>
 
-      <nav class="sitemap" arialabelledby="projects-archive">
-
-            <h4 id="projects-archive">Archive Projects</h4>
-            
-            <ul>
-            {%- for archive in collections.archive -%}
-            
-                  <li><a href="{{ archive.url }}">{{ archive.data.title }}</a></li>
-
-            {%- endfor -%}
-            </ul>
-
-      </nav>
-      
 </div>
 </footer>
 
