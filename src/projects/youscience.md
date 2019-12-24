@@ -4,8 +4,7 @@ tags: project
 displayOrder: 6
 title: YouScience
 intro: An aptitude testing suite built to help students lean into their strengths and save thousands of dollars a year in college.
-design: Sparkart
-tasks: Front-end Design
+role: Visual Design, Interaction design, Prototyping
 ---
 
 ### The Project

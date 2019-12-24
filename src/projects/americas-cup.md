@@ -4,8 +4,7 @@ tags: project
 displayOrder: 4
 title: America’s Cup
 intro: A custom-branded site for every team racing in the 2013 America’s Cup.
-design: Sparkart
-tasks: Front-end Design
+role: Front-end Development, Information Design
 ---
 
 ### The Project

@@ -5,9 +5,7 @@ displayOrder: 2
 title: Vestwell
 thumbnail: images/img-vestwell-full.jpg
 thumbnailAlt: The homepage of Vestwell.com.
-liveURL: https://vestwell.com/
-design: Williamson Adams
-designURL: http://www.williamsonadams.com/
+role: Front-end Development, HTML Email Development
 intro: An educational and engaging site for Vestwell, a digital retirement platform, to feature their unique product and their fresh rebranding.
 ---
 

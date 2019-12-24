@@ -26,7 +26,7 @@ a {
   transition: color 0.2s $circular-ease-in-out;
 
   &:hover {
-    color: $light-blue;
+    color: $pink;
   }
 
   &:active {
@@ -34,21 +34,22 @@ a {
   }
 
   &:focus {
-    color: green;
-    outline: 1px dotted green;
+    color: $blue;
+    outline: 2px dotted $blue;
     outline-offset: 3px;
   }
 }
 
 .button {
   display: inline-block;
-  border-radius: 6px;
   padding: 1.4rem 1.4rem 2.2rem 2.2rem;
+  margin: 0;
+  border-radius: 6px;
+  background-color: lighten($pink, 45%);
+
   line-height: 1;
   text-decoration: none;
-  margin: 0;
-
-  background-color: lighten($blue, 45%);
+  color: $pink;
   transition-property: all;
   transition-duration: 0.2s;
   transition-timing-function: $circular-ease-in-out;
@@ -57,9 +58,9 @@ a {
 
   &:hover {
     border-color: $light-blue;
-    background-color: lighten(blueviolet, 40%);
+    background-color: $light-blue;
+    color: $black;
     padding: 1.8rem;
-    //margin: 0 0 2px 2px;
 
     bottom: 0;
     left: 0;
@@ -77,7 +78,7 @@ a {
     height: 100%;
     width: 100%;
 
-    border: 2px solid $blue;
+    border: 2px solid $pink;
     border-radius: 6px;
 
     position: absolute;
@@ -125,6 +126,12 @@ h3 {
 }
 
 h4 {
-  margin-top: 0;
   font-size: 2rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+  font-family: obviously, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
 }
