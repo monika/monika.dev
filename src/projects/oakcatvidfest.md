@@ -3,7 +3,7 @@ layout: project.njk
 tags: project
 displayOrder: 5
 title: Oakland Internet Cat Video Festival
-intro: A fundraiser event for the East Bay SPCA, bringing the Internet Cat Video Festival to Oakland, California.
+intro: A marketing site and digital event program for the Oakland Internet Cat Video Festival on behalf of the Great Wall of Oakland and the East Bay SPCA.
 role: Front-end Development, Interaction Design
 ---
 
@@ -11,7 +11,7 @@ role: Front-end Development, Interaction Design
 
 _A fundraiser event so nice they held it twice! OICVF was created to bring the Internet Cat Video Festival to Oakland, California for the benefit of the East Bay SPCA._
 
-Approached by the Great Wall of Oakland’s designer at the time, I took on the task of creating the official event site for the Oakland Internet Cat Video Festival. The one-day event took place in Uptown Oakland and featured cat-themed food, events acts, and adoptions on behalf of the East Bay SPCA.
+Approached by the Great Wall of Oakland’s designer, I took on the task of creating the official event site for the Oakland Internet Cat Video Festival. The one-day event took place in Uptown Oakland and featured cat-themed food, events acts, and adoptions on behalf of the East Bay SPCA.
 
 The major conceptual breakthrough for this site was understanding that the audience of the site shifted as time passed, meaning the site would need to shift with them as the audience’s intent changed. I built the site using a design system and component library that allowed me to rearrange content and components at the drop of a hat.
 

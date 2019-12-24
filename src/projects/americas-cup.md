@@ -3,7 +3,7 @@ layout: project.njk
 tags: project
 displayOrder: 4
 title: America’s Cup
-intro: A custom-branded site for every team racing in the 2013 America’s Cup.
+intro: A pattern library developed to create an official fan hub for all eight teams racing in the 2013 America’s Cup.
 role: Front-end Development, Information Design
 ---
 
