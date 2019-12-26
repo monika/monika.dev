@@ -8,6 +8,26 @@
   .projects {
     background-color: $blue;
     background-position: top;
-    //background-image: url('images/bg-x.svg');
+
+    position: relative;
+
+    .layout {
+      position: relative;
+      z-index: 5;
+    }
+
+    &:after {
+      content: '';
+
+      display: block;
+      width: 97%;
+      height: 101%;
+      background-image: url('images/bg-x.svg');
+      background-position: center;
+
+      position: absolute;
+      top: -12px;
+      left: 0;
+    }
   }
 }
