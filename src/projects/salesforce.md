@@ -39,5 +39,5 @@ I pushed the edges of technology and centered the animations on our eBook in a n
 
 ### Credit
 
-Design: [IRON Creative](https://ironcreative.com/)
-Character Animation: Trey Simmons
+- Design: [IRON Creative](https://ironcreative.com/)
+- Character Animation: Trey Simmons
