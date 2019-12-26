@@ -23,11 +23,15 @@
       width: 97%;
       height: 101%;
       background-image: url('images/bg-x.svg');
-      background-position: center;
 
       position: absolute;
       top: -12px;
       left: 0;
+    }
+  }
+  .experiments {
+    &__list {
+      list-style-type: square;
     }
   }
 }
