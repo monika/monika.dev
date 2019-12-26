@@ -1,29 +1,15 @@
-<footer>
+<footer class="footer">
 <div class="layout">
 
       <div class="contact">
 
-            <h4>Elsewhere</h4>
+            <h4 class="contact__title">Dev Socials</h4>
 
             {% include "modules/socials.njk" %}
 
-            <a href="mailto:monika@monika.dev">monika@monika.dev</a>
+            <a class="contact__email" href="mailto:monika@monika.dev">monika@monika.dev</a>
 
       </div>
-
-      <nav class="sitemap" arialabelledby="projects">
-
-            <h4 id="projects">Projects</h4>
-
-            <ul>
-            {%- for project in collections.project -%}
-
-                  <li><a href="{{ project.url }}">{{ project.data.title }}</a></li>
-
-            {%- endfor -%}
-            </ul>
-
-      </nav>
 
 </div>
 </footer>
