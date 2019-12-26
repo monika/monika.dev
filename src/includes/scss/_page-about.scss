@@ -1,0 +1,16 @@
+/* Page: About */
+
+.page-profile {
+  main .layout:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  p img {
+    display: block;
+    float: left;
+    max-width: 300px;
+    margin-right: 2.4rem;
+  }
+}

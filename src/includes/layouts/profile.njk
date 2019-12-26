@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "partials/head.njk" %}
+</head>
+<body class="page-profile">
+
+    {% include "partials/header.njk" %}
+
+    <main>
+
+        <div class="layout">
+
+            <h2>{{ title }}</h2>
+
+            {{ content | safe }}
+
+        </div>
+
+    </main>
+
+    <!-- Next / Prev Project -->
+
+    {% include "partials/footer.njk" %}
+
+</body>
+</html>
