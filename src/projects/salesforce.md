@@ -32,8 +32,8 @@ I pushed the edges of technology and centered the animations on our eBook in a n
 <div class="visuals">
 
 ![Tabs within a chapter of the Salesforce eBook.](/images/img-salesforce-tabs.jpg)
-![Astro the Salesforce Mascot.](/images/img-salesforce-astro.jpg)
 ![Accordion elements revealing more content.](/images/img-salesforce-accordion.jpg)
+![Astro the Adorable Salesforce Mascot.](/images/img-salesforce-astro.jpg)
 
 </div>
 
