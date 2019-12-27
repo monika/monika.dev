@@ -175,7 +175,7 @@ Filled with luscious photography, joyful illustrations, and engaging typography,
 
 </div>
 
-### Co-credit
+### Co-credits
 
 - Design: [Break Maiden](https://www.breakmaiden.co/olipop)
 - E-Commerce Support: [Creatix Marketing](http://creatix.io/)

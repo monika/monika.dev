@@ -256,6 +256,6 @@ Despite being a relatively concise site, I built a basic design system to speed 
 
 </div>
 
-### Co-Credit
+### Co-credits
 
 - Design: [Williamson Adams](http://www.williamsonadams.com/)
