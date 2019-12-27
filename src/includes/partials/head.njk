@@ -11,12 +11,17 @@
     {% include "css/normalize.css" %}
 {% endset %}
 
+{% set prism %}
+    {% include "css/prism.css" %}
+{% endset %}
+
 {% set css %}
     {% include "css/style.css" %}
 {% endset %}
 
 <style>{{ normalize | cssmin | safe }}</style>
 <style>{{ css | cssmin | safe }}</style>
+<style>{{ prism | cssmin | safe }}</style>
 
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="manifest" href="/site.webmanifest">
