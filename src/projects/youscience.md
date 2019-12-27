@@ -18,6 +18,14 @@ YouScience's goal is to make this entire process more approachable, less expensi
 
 While at Sparkart Group, I updated the look and feel of the Ball Aptitude Battery&reg; (BAB) assessments, modernized the user's interactions with the various assessment types, and developed high fidelity prototypes and example animations for YouScience's in-house developers, all in time for official BAB test standardization.
 
+### Responsibilities
+
+- Auditing current user flow through testing suite
+- Developing improved user flow through testing suite
+- Modernizing aptitude assessments&rsquo; visual design and interactions
+- Prototyping assessments for YouScience developers
+- Interfacing with YouScience's developers
+
 ### Visuals
 
 <div class="visuals">
@@ -27,14 +35,6 @@ While at Sparkart Group, I updated the look and feel of the Ball Aptitude Batter
 ![A practice analytical reasoning assessment for YouScience.](/images/img-youscience-practice-3.jpg)
 
 </div>
-
-### Responsibilities
-
-- Auditing current user flow through testing suite
-- Developing improved user flow through testing suite
-- Modernizing aptitude assessments&rsquo; visual design and interactions
-- Prototyping assessments for YouScience developers
-- Interfacing with YouScience's developers
 
 ### Co-credits
 

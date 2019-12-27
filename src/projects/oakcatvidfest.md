@@ -18,6 +18,15 @@ The major conceptual breakthrough for this site was understanding that the audie
 
 Mayor Jean Quan declared it <a href="https://www.kqed.org/arts/10135685">“Internet Cat Video Day”</a>!
 
+### Responsibilities
+
+- Semantic HTML, Responsive CSS, Presentational JS
+- Information architecture
+- Branded 3<sup>rd</sup> party sites (Facebook, Eventbrite, Twitter)
+- Adapted site to users’ intent via shifting content modules as event timeline progressed
+- Supported event organizers with planning and data collection tools
+- Site maintenance and updates
+
 ### Visuals
 
 <div class="visuals">
@@ -27,15 +36,6 @@ Mayor Jean Quan declared it <a href="https://www.kqed.org/arts/10135685">“Inte
 ![The OICVF logo and event date.](/images/img-oicvf-home.jpg)
 
 </div>
-
-### Responsibilities
-
-- Semantic HTML, Responsive CSS, Presentational JS
-- Information architecture
-- Branded 3<sup>rd</sup> party sites (Facebook, Eventbrite, Twitter)
-- Adapted site to users’ intent via shifting content modules as event timeline progressed
-- Supported event organizers with planning and data collection tools
-- Site maintenance and updates
 
 ### Co-credits
 

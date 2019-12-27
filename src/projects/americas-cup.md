@@ -18,6 +18,14 @@ My task was to create a modular template and design system that could be easily 
 
 Using Sparkart Group's in-house headless CMS platform as a base, APIs from YouTube, Wordpress, and Twitter, and custom Handlebars templates, I provided eight racing teams with their own sites for the America’s Cup competition. Each team's homepage used a supplemented version of the general design system. I focused on bringing their branding and personality from this supplement by taking full advantage of CSS's powerful cascade to style the inner pages of each team site quickly and effectively.
 
+### Responsibilities
+
+- Building semantic HTML, responsive CSS, presentational JS
+- Collaborating with visual designers on module capabilities and functionality
+- Building design system that adapts to eight different branding guides
+- Responsive browser and device testing
+- Site maintenance and updates
+
 ### Visuals
 
 <div class="visuals">
@@ -27,14 +35,6 @@ Using Sparkart Group's in-house headless CMS platform as a base, APIs from YouTu
 ![Team Artemis' homepage for the America’s Cup.](/images/img-americas-cup-artemis.jpg)
 
 </div>
-
-### Responsibilities
-
-- Building semantic HTML, responsive CSS, presentational JS
-- Collaborating with visual designers on module capabilities and functionality
-- Building design system that adapts to eight different branding guides
-- Responsive browser and device testing
-- Site maintenance and updates
 
 ### Co-credits
 
