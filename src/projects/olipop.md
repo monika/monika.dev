@@ -48,7 +48,9 @@ Filled with luscious photography, joyful illustrations, and engaging typography,
 
 <div class="code">
 
-### Excerpt Module Example
+### Example: Excerpt Module
+
+#### Rendered Module
 
 ![A textured illustration of a water can next to a block of green text.](/images/img-olipop-code-example.gif)
 
