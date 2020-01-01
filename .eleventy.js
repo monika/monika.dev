@@ -13,9 +13,6 @@ module.exports = function(eleventyConfig) {
     });
   });
 
-  // Add CSS to template formats
-  eleventyConfig.setTemplateFormats(['css']);
-
   /* To do:
   - Purge CSS
   - Add Babel for ES6
@@ -30,6 +27,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
   eleventyConfig.addPassthroughCopy('src/favicon-32x32.png');
   eleventyConfig.addPassthroughCopy('src/site.webmanifest');
+
+  // Add CSS to template formats
+  eleventyConfig.setTemplateFormats(['css', 'md', 'njk', 'html']);
 
   // Basic config settings
   return {
