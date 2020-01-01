@@ -3,8 +3,12 @@ title: About
 layout: profile
 ---
 
-![A woman wearing clear glasses frames, black and white checkered shirt, and wavy red hair.](/images/img-monika.jpg) I've been using code to express and create for a long time. I started my first website to share my X-Files fan art while I was in high school, using a <a href="https://web.archive.org/web/19990125090024/http://gurl.com/">gURL</a> site.
+![A fat woman wearing clear-framed glasses, a black and white checkered shirt, and wavy red hair.](/images/img-monika.jpg) I created my first website in 1998 while a junior in high school. It was a fan site on [gURL.com](https://web.archive.org/web/19990125090024/http://gurl.com/)</a> site to share my X-Files fan art.
 
-While in college I studied graphic design and I continue to bring that understanding of type, color, motion, and layout into my front-end development.
+The blend of visual art, user interaction, and code had me hooked. My guestbook was hoppin', my webring was vast, and my appreciation of front-end development as a means of connecting with people and expressing ideas was born.
 
-Offline&mdash;I'm a sewist, a triathlete, a baker, a beginning mandolin student, and fascinated by the slow food movement, food politics, and homesteading.
+Studying graphic design in college gave me an understanding of typography, color, motion, layout, empathy, and intent&mdash;skills that I bring into my code.
+
+Offline&mdash;I'm a sewist, video game player, amateur triathlete, baker, beginning mandolin player, and fascinated by food cultures, food politics, and the slow food movement.
+
+[Email Me](mailto:monika@monika.dev)
