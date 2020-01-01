@@ -8,15 +8,15 @@
 <link rel="stylesheet" href="https://use.typekit.net/izf4qqb.css">
 
 {% set normalize %}
-    {% include "css/normalize.css" %}
+    {% include "/src/includes/css/prism.css" %}
 {% endset %}
 
 {% set prism %}
-    {% include "css/prism.css" %}
+    {% include "/src/includes/css/prism.css" %}
 {% endset %}
 
 {% set css %}
-    {% include "css/style.css" %}
+    {% include "/src/includes/css/prism.css" %}
 {% endset %}
 
 <style>{{ normalize | cssmin | safe }}</style>

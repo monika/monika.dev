@@ -13,6 +13,9 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // Add CSS to template formats
+  eleventyConfig.setTemplateFormats(['css']);
+
   /* To do:
   - Purge CSS
   - Add Babel for ES6
