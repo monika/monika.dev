@@ -314,11 +314,12 @@ body {
   margin-top: 0; }
 
 /* Project Listing */
-.projects h3 {
+.projects__heading {
+  font-size: 4.8rem;
   margin-top: 0;
   font-weight: 600;
   color: #fff;
-  text-shadow: -4px 4px 0 #020202, 1px 1px 0 #020202, 1px -1px 0 #020202, -1px 1px 0 #020202, -1px -1px 0 #020202; }
+  text-shadow: -12px 12px 0 #020202, -8px 8px 0 #020202, -4px 4px 0 #020202, 1px 1px 0 #020202, 1px -1px 0 #020202, -1px 1px 0 #020202, -1px -1px 0 #020202; }
 
 .projects .project {
   display: -ms-grid;

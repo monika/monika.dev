@@ -1,11 +1,12 @@
 /* Project Listing */
 .projects {
-  h3 {
+  &__heading {
+    font-size: 4.8rem;
     margin-top: 0;
     font-weight: 600;
     color: $white;
-    text-shadow: -4px 4px 0 $black, 1px 1px 0 $black, 1px -1px 0 $black,
-      -1px 1px 0 $black, -1px -1px 0 $black;
+    text-shadow: -12px 12px 0 $black, -8px 8px 0 $black, -4px 4px 0 $black,
+      1px 1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black, -1px -1px 0 $black;
   }
 
   .project {
