@@ -26,6 +26,7 @@ module.exports = function(eleventyConfig) {
 
   // Pass these assets through
   eleventyConfig.addPassthroughCopy('src/images');
+  eleventyConfig.addPassthroughCopy('src/js');
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
   eleventyConfig.addPassthroughCopy('src/favicon-32x32.png');
   eleventyConfig.addPassthroughCopy('src/site.webmanifest');
