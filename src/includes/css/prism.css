@@ -1,3 +1,11 @@
+/*! PrismJS 1.17.1
+https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+clike+javascript+css-extras+sass+scss */
+/**
+ * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/chriskempson/tomorrow-theme
+ * @author Rose Pritchard
+ */
+
 code[class*='language-'],
 pre[class*='language-'] {
   color: #dadada;

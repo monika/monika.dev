@@ -31,9 +31,20 @@ Mayor Jean Quan declared it <a href="https://www.kqed.org/arts/10135685">“Inte
 
 <div class="visuals">
 
-![Oakland Internet Cat Video Festival splash page.](/images/img-oicvf-splash.jpg)
-![The first schedule for OICVF in 2013.](/images/img-oicvf-schedule.jpg)
-![The OICVF logo and event date.](/images/img-oicvf-home.jpg)
+<figure>
+  <img src="/images/img-oicvf-splash.jpg" alt="Oakland Internet Cat Video Festival splash page.">
+  <figcaption>I pulled in a feed of hand-picked cat images via a private API to serve as the background for our lovely typography.</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/img-oicvf-schedule.jpg" alt="The first schedule for OICVF in 2013.">
+  <figcaption>OICVF's event schedule brought up onto the homepage on the day of the event for attendees strolling </figcaption>
+</figure>
+
+<figure>
+  <img src="/images/img-oicvf-home.jpg" alt="The OICVF logo and event date.">
+  <figcaption>The navigation and heading was one of my earliest responsive sites. This responsiveness made it key to festival-goers being able to use the site as an e-program.</figcaption>
+</figure>
 
 </div>
 

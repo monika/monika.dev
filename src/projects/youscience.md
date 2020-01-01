@@ -30,9 +30,20 @@ While at Sparkart Group, I updated the look and feel of the Ball Aptitude Batter
 
 <div class="visuals">
 
-![A practice vocabulary assessment for YouScience.](/images/img-youscience-practice.jpg)
-![A practice paper folding assessment for YouScience.](/images/img-youscience-practice-2.jpg)
-![A practice analytical reasoning assessment for YouScience.](/images/img-youscience-practice-3.jpg)
+<figure>
+  <img src="/images/img-youscience-practice.jpg" alt="A practice vocabulary assessment for YouScience.">
+  <figcaption>This vocabulary practice test allows the user to try out choosing a single option and how our new bookmarking functionality works before they enter into the timed portion of the test.</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/img-youscience-practice-2.jpg" alt="A practice paper folding assessment for YouScience.">
+  <figcaption>Paper folding measures a student's ability to visualize in 3D space as well as a chance to reinforce how bookmarking will work for them in this practice test.</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/img-youscience-practice-3.jpg" alt="A practice analytical reasoning assessment for YouScience.">
+  <figcaption>Drag and drop functionality is introduced with this analytical reasoning test. The student is given time to learn this new kind of interaction as well as the new type of informational relationships we're asking them to create.</figcaption>
+</figure>
 
 </div>
 
