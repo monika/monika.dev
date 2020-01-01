@@ -36,9 +36,20 @@ Despite being a relatively concise site, I built a basic design system to speed 
 
 <div class="visuals">
 
-![The homepage of Vestwell.com/](/images/img-vestwell-home.jpg)
-![Two members of the Vestwell advisory board.](/images/img-vestwell-team.jpg)
-![Helpful bulletpoints about Vestwell's offerings.](/images/img-vestwell-intro.jpg)
+<figure>
+  <img src="/images/img-vestwell-home.jpg" alt="The homepage of Vestwell.com">
+  <figcaption>The stunning header photography on Vestwell has been optimized for standard and retina displays.</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/img-vestwell-team.jpg" alt="Two members of the Vestwell advisory board.">
+  <figcaption>The listing of Vestwell's team members uses structured data to standardize employee data to aid with SEO.</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/img-vestwell-intro.jpg" alt="Helpful bulletpoints about Vestwell's offerings.">
+  <figcaption>Vestwell's use of illustrations as part of their branding allowed for the usage of SVG images. These images are small in file size and crisp no matter the resolution of the screen displaying it.</figcaption>
+</figure>
 
 </div>
 

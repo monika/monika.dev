@@ -36,11 +36,9 @@ Filled with luscious photography, joyful illustrations, and engaging typography,
 
 </aside>
 
-<div class="visuals">
-
 ### Visuals
 
-  <div class="screenshots">
+<div class="visuals">
 
   <figure>
     <img src="/images/img-olipop-ben-david.jpg" alt="Ben Goodwin and David Lester, Co-founders of OLIPOP.">
@@ -61,8 +59,6 @@ Filled with luscious photography, joyful illustrations, and engaging typography,
     <img src="/images/img-olipop-ingredients.jpg" alt="Several plant-based ingredients in OLIPOP.">
     <figcaption>A chart of plant-based ingredients in OLIPOP with interactive tooltips explaining their use and importance.</figcaption>
   </figure>
-
-  </div>
 
 </div>
 

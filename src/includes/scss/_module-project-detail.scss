@@ -29,20 +29,18 @@
       max-width: 100%;
     }
 
-    pre.language-css {
+    pre[class*='language-'] {
       max-height: 75vh;
       overflow-y: scroll;
     }
   }
 
   .visuals {
-    .screenshots {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      align-items: flex-start;
-      justify-content: space-around;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-around;
 
     figure {
       margin: 0 0 5% 0;
