@@ -31,9 +31,20 @@ I pushed the edges of technology and centered the animations on our eBook in a n
 
 <div class="visuals">
 
-![Tabs within a chapter of the Salesforce eBook.](/images/img-salesforce-tabs.jpg)
-![Accordion elements revealing more content.](/images/img-salesforce-accordion.jpg)
-![Astro the Adorable Salesforce Mascot.](/images/img-salesforce-astro.jpg)
+<figure>
+  <img src="/images/img-salesforce-tabs.jpg" alt="Chapter navigation of the Salesforce eBook.">
+  <figcaption>Sticky navigation for the chapters of this eBook feature at the top of the browser window. Clicking on one will scroll the user to the appropriate chapter and highlight it in the navigation.</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/img-salesforce-accordion.jpg" alt="Accordion elements revealing more content.">
+  <figcaption>Because of the hefty helping of content, we chose to implement accordions so that a user can toggle open and closed the information they want to read.</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/img-salesforce-astro.jpg" alt="Astro the Adorable Salesforce Mascot.">
+  <figcaption>Character animations are encoded in both <code>webm</code> for modern browsers that support <code>webm</code> and its alpha channel, and as <code>mp4</code> to gracefully downgrade for those that don't.</figcaption>
+</figure>
 
 </div>
 
