@@ -40,15 +40,35 @@ Filled with luscious photography, joyful illustrations, and engaging typography,
 
 ### Visuals
 
-![Ben Goodwin and David Lester, Co-founders of OLIPOP.](/images/img-olipop-ben-david.jpg)
-![Some of the stores OLIPOP is available in Northern California.](/images/img-olipop-map.jpg)
-![A colorful banner for the Digestive Health page.](/images/img-olipop-digestive-health.jpg)
+  <div class="screenshots">
+
+  <figure>
+    <img src="/images/img-olipop-ben-david.jpg" alt="Ben Goodwin and David Lester, Co-founders of OLIPOP.">
+    <figcaption>An approachable banner of OLIPOP's co-founders, set up as a module in Shopify for the clients to edit as they see fit.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="/images/img-olipop-digestive-health.jpg" alt="A colorful banner for the Digestive Health page.">
+    <figcaption>Being able to use SVG images thanks to OLIPOP's illustrative branding, helps keep file sizes small and screen resolution independent.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="/images/img-olipop-map.jpg" alt="Some of the stores OLIPOP is available in Northern California.">
+    <figcaption>Custom OLIPOP logo as map markers created for their store locator reinforces the brand.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="/images/img-olipop-ingredients.jpg" alt="Several plant-based ingredients in OLIPOP.">
+    <figcaption>A chart of plant-based ingredients in OLIPOP with interactive tooltips explaining their use and importance.</figcaption>
+  </figure>
+
+  </div>
 
 </div>
 
 <div class="code">
 
-### Example: Excerpt Module
+### Code Example: Excerpt Module
 
 #### Browser Rendering
 

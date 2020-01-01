@@ -39,7 +39,7 @@ I pushed the edges of technology and centered the animations on our eBook in a n
 
 <div class="code">
 
-### Example: Solution Module
+### Code Example: Solution Module
 
 #### Browser Rendering
 

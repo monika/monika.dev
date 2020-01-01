@@ -44,7 +44,7 @@ Despite being a relatively concise site, I built a basic design system to speed 
 
 <div class="code">
 
-### Example: Highlight Module
+### Code Example: Highlight Module
 
 #### Browser Rendering
 

@@ -5,6 +5,7 @@
 
   h3 {
     margin-top: 5.2rem;
+    margin-bottom: 3.2rem;
   }
 
   h3 + p em {
@@ -27,18 +28,54 @@
       display: block;
       max-width: 100%;
     }
+
+    pre.language-css {
+      max-height: 75vh;
+      overflow-y: scroll;
+    }
   }
 
   .visuals {
-    p {
+    .screenshots {
       display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+      align-items: flex-start;
+      justify-content: space-around;
+    }
+
+    figure {
+      margin: 0 0 5% 0;
+      max-width: 45%;
+    }
+
+    figcaption {
+      background: $light-blue;
+      padding: 5%;
+      box-shadow: -12px 12px $black;
+      border: 5px solid $black;
+      border-top: dashed;
+      font-style: italic;
+
+      position: relative;
+
+      &:after {
+        content: '✂';
+
+        font-size: 4.8rem;
+        font-style: normal;
+        transform: scaleX(-1);
+
+        position: absolute;
+        top: -38px;
+        right: -24px;
+      }
     }
 
     img {
+      display: block;
       max-width: 100%;
-      margin-bottom: 3.2rem;
+      border-bottom: 0;
     }
   }
 }
