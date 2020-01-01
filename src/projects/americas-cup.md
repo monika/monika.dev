@@ -30,9 +30,20 @@ Using Sparkart Group's in-house headless CMS platform as a base, APIs from YouTu
 
 <div class="visuals">
 
-![Oracle Team USA's homepage for the America’s Cup.](/images/img-americas-cup-oracle.jpg)
-![Team New Zealand's homepage for the America’s Cup.](/images/img-americas-cup-new-zealand.jpg)
-![Team Artemis' homepage for the America’s Cup.](/images/img-americas-cup-artemis.jpg)
+<figure>
+  <img src="/images/img-americas-cup-oracle.jpg" alt="Oracle Team USA's homepage for the America’s Cup.">
+  <figcaption>Oracle Team USA's homepage using a pattern library that sped up building and branding for the seven other America's Cup teams.</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/img-americas-cup-new-zealand.jpg" alt="Team New Zealand's homepage for the America’s Cup.">
+  <figcaption>Team New Zealand's brand applied to the pattern library, building out a fully developed team site.</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/img-americas-cup-artemis.jpg" alt="Team Artemis' homepage for the America’s Cup.">
+  <figcaption>Sweden's Team Artemis also had its branding added to this pattern library.</figcaption>
+</figure>
 
 </div>
 
