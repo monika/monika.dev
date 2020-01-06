@@ -1,38 +1,31 @@
 /* Base: Layout
 ------------------------------------- */
 * {
-
   box-sizing: border-box;
-
 }
 
 html,
 body {
-
   margin: 0;
   padding: 0;
   background-color: $white;
-
 }
 
 body {
-
   padding: 1em;
-  box-shadow:
-    inset 1em 1em $black,
-    inset 1em 1em $black,
-    inset -1em 1em $black,
-    inset 1em -1em $black;
+  box-shadow: inset 2rem 2rem $black, inset 2rem 2rem $black,
+    inset -2rem 2rem $black, inset 2rem -2rem $black;
 
+  @media screen and (max-width: $break-small) {
+    padding: 0;
+    box-shadow: inset 1rem 1rem $black, inset 1rem 1rem $black,
+      inset -1rem 1rem $black, inset 1rem -1rem $black;
+  }
 }
-
-
 
 .layout {
-
-  padding: 8% 5%;
-
+  padding: 5%;
+  @media screen and (max-width: $break-small) {
+    padding: 10%;
+  }
 }
-
-header,
-main {}

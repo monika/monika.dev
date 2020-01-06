@@ -1,10 +1,16 @@
-const CleanCSS = require("clean-css");
+const CleanCSS = require('clean-css');
 
-module.exports = function (eleventyConfig) {
-
+module.exports = function(eleventyConfig) {
   // Clean and minimize CSS
-  eleventyConfig.addFilter("cssmin", function (code) {
+  eleventyConfig.addFilter('cssmin', function(code) {
     return new CleanCSS({}).minify(code).styles;
+  });
+
+  // Custom Interview Listing Sort Order
+  eleventyConfig.addCollection('projectListing', function(collection) {
+    return collection.getFilteredByTag('project').sort((a, b) => {
+      return a.data.displayOrder - b.data.displayOrder;
+    });
   });
 
   /* To do:
@@ -16,26 +22,24 @@ module.exports = function (eleventyConfig) {
   */
 
   // Pass these assets through
-  eleventyConfig.addPassthroughCopy("src/images");
+  eleventyConfig.addPassthroughCopy('src/images');
+  eleventyConfig.addPassthroughCopy('src/js');
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
-  eleventyConfig.addPassthroughCopy("src/android-chrome-192x192.png");
-  eleventyConfig.addPassthroughCopy("src/android-chrome-512x512.png");
-  eleventyConfig.addPassthroughCopy("src/apple-touch-icon.png");
-  eleventyConfig.addPassthroughCopy("src/favicon-16x16.png");
-  eleventyConfig.addPassthroughCopy("src/favicon-32x32.png");
+  eleventyConfig.addPassthroughCopy('src/favicon-32x32.png');
   eleventyConfig.addPassthroughCopy('src/site.webmanifest');
 
+  // Add CSS to template formats
+  eleventyConfig.setTemplateFormats(['css', 'md', 'njk', 'html']);
 
   // Basic config settings
   return {
     dir: {
-      input: "src",
-      includes: "includes",
-      layouts: "includes/layouts",
-      markdownTemplateEngine: "njk",
-      output: "dist",
+      input: 'src',
+      includes: 'includes',
+      layouts: 'includes/layouts',
+      markdownTemplateEngine: 'njk',
+      output: 'dist',
       passthroughFileCopy: true
     }
   };
-
 };

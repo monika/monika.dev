@@ -6,6 +6,7 @@ title: OLIPOP
 thumbnail: images/img-olipop-full.jpg
 thumbnailAlt: The homepage of DrinkOlipop.com.
 intro: An e-commerce site for groundbreaking pre-biotic sparkling tonic company OLIPOP, built around their fresh new brand.
+role: Front-end Development, Technical Advising
 ---
 
 ### The Project
@@ -22,15 +23,7 @@ Filled with luscious photography, joyful illustrations, and engaging typography,
 
 [Visit DrinkOlipop.com &#10132;](https://drinkolipop.com/)
 
-### Visuals
-
-<div class="visuals">
-
-![Ben Goodwin and David Lester, Co-founders of OLIPOP.](/images/img-olipop-ben-david.jpg)
-![Some of the stores OLIPOP is available in Northern California.](/images/img-olipop-map.jpg)
-![A colorful banner for the Digestive Health page.](/images/img-olipop-digestive-health.jpg)
-
-</div>
+<aside>
 
 ### Responsibilities
 
@@ -41,7 +34,164 @@ Filled with luscious photography, joyful illustrations, and engaging typography,
 - Responsive browser and device testing
 - Site maintenance and updates
 
-### Co-credit
+</aside>
+
+### Visuals
+
+<div class="visuals">
+
+  <figure>
+    <img src="/images/img-olipop-ben-david.jpg" alt="Ben Goodwin and David Lester, Co-founders of OLIPOP.">
+    <figcaption>An approachable banner of OLIPOP's co-founders, set up as a module in Shopify for the clients to edit as they see fit.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="/images/img-olipop-digestive-health.jpg" alt="A colorful banner for the Digestive Health page.">
+    <figcaption>Being able to use SVG images thanks to OLIPOP's illustrative branding, helps keep file sizes small and screen resolution independent.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="/images/img-olipop-map.jpg" alt="Some of the stores OLIPOP is available in Northern California.">
+    <figcaption>Custom OLIPOP logo as map markers created for their store locator reinforces the brand.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="/images/img-olipop-ingredients.jpg" alt="Several plant-based ingredients in OLIPOP.">
+    <figcaption>A chart of plant-based ingredients in OLIPOP with interactive tooltips explaining their use and importance.</figcaption>
+  </figure>
+
+</div>
+
+<div class="code">
+
+### Code Example: Excerpt Module
+
+#### Browser Rendering
+
+![A textured illustration of a water can next to a block of green text.](/images/img-olipop-code-example.gif)
+
+<div class="code__html language-html">
+
+#### HTML
+
+    <section class="module-excerpt good-bacteria">
+      <div class="container module-excerpt__container">
+          <div class="module-excerpt__image-wrapper">
+              <img src="illustration-watering-can.svg" alt="A watering can full of green leaves and bugs." class="module-excerpt__image">
+          </div>
+          <div class="module-excerpt__text">
+              <h2 class="h2 module-excerpt__heading">Feed your good bacteria</h2>
+              <div class="module-excerpt__subtext">
+                  <p>That’s right! These allies in our gut need a meal too, and their favorite foods are fiber and prebiotics. Researchers have identified a correlation between digestive health and a hunter gatherer style diet. That is a diet high in nutrient diversity (different types of foods) and fruits and vegetables that are a natural source of fiber and prebiotics.</p>
+              </div>
+          </div>
+      </div>
+    </section>
+
+</div>
+
+<div class="code__sass language-css language-scss">
+
+#### SCSS
+
+    .module-excerpt {
+      padding: $grid-gutter 0;
+
+      @include media-query($medium-up) {
+        padding: $grid-gutter * 2 0;
+      }
+
+      &__container {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        max-width: $container-small;
+        margin: 0 auto;
+
+        flex-direction: column;
+        padding-bottom: $grid-gutter;
+
+        &--full {
+          .module-excerpt__text {
+            width: 100%;
+            padding-left: 0;
+          }
+        }
+
+        @include media-query($medium-up) {
+          flex-direction: row;
+          padding-bottom: 0;
+
+          &--flip {
+            flex-direction: row-reverse;
+          }
+        }
+      }
+
+      &__text {
+        font-size: 1rem;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+
+        @include media-query($medium-up) {
+          width: 60%;
+          padding-bottom: 0;
+          text-align: left;
+          padding-left: $grid-gutter * 3;
+
+          &--flip {
+            padding-left: 0;
+            padding-right: $grid-gutter * 3;
+          }
+
+          &--center {
+            text-align: center;
+          }
+        }
+      }
+
+      .module-excerpt__image-wrapper {
+        width: 100%;
+        padding-left: $grid-gutter * 2;
+        padding-right: $grid-gutter * 2;
+
+        @include media-query($medium-up) {
+          width: 40%;
+          padding: 0;
+        }
+      }
+
+      .module-excerpt__image {
+        display: block;
+        max-height: none;
+        max-width: 100%;
+        padding-bottom: $grid-gutter;
+
+        @include media-query($medium-up) {
+          max-height: 350px;
+          max-width: none;
+          margin: 0 auto;
+          padding-bottom: 0;
+        }
+
+        @include media-query($large-up) {
+          max-height: 420px;
+        }
+      }
+
+      .btn {
+        margin: 0 auto;
+      }
+
+    }
+
+</div>
+
+</div>
+
+### Co-credits
 
 - Design: [Break Maiden](https://www.breakmaiden.co/olipop)
 - E-Commerce Support: [Creatix Marketing](http://creatix.io/)

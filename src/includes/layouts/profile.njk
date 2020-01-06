@@ -3,7 +3,7 @@
 <head>
     {% include "partials/head.njk" %}
 </head>
-<body class="page-project page-archive">
+<body class="page-profile">
 
     {% include "partials/header.njk" %}
 
@@ -12,6 +12,7 @@
         <div class="layout">
 
             <h2>{{ title }}</h2>
+
             {{ content | safe }}
 
         </div>
@@ -21,6 +22,6 @@
     <!-- Next / Prev Project -->
 
     {% include "partials/footer.njk" %}
-    
+
 </body>
 </html>

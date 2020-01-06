@@ -1,11 +1,11 @@
 ---
-layout: archive.njk
-tags: archive
-displayOrder: 1
+layout: project.njk
+tags: project
+displayOrder: 6
 title: YouScience
+thumbnail: images/img-youscience-full.jpg
 intro: An aptitude testing suite built to help students lean into their strengths and save thousands of dollars a year in college.
-design: Sparkart
-tasks: Front-end Design
+role: Visual Design, Interaction design, Prototyping
 ---
 
 ### The Project
@@ -18,16 +18,6 @@ YouScience's goal is to make this entire process more approachable, less expensi
 
 While at Sparkart Group, I updated the look and feel of the Ball Aptitude Battery&reg; (BAB) assessments, modernized the user's interactions with the various assessment types, and developed high fidelity prototypes and example animations for YouScience's in-house developers, all in time for official BAB test standardization.
 
-### Visuals
-
-<div class="visuals">
-
-![A practice vocabulary assessment for YouScience.](/images/img-youscience-practice.jpg)
-![A practice paper folding assessment for YouScience.](/images/img-youscience-practice-2.jpg)
-![A practice analytical reasoning assessment for YouScience.](/images/img-youscience-practice-3.jpg)
-
-</div>
-
 ### Responsibilities
 
 - Auditing current user flow through testing suite
@@ -35,6 +25,27 @@ While at Sparkart Group, I updated the look and feel of the Ball Aptitude Batter
 - Modernizing aptitude assessments&rsquo; visual design and interactions
 - Prototyping assessments for YouScience developers
 - Interfacing with YouScience's developers
+
+### Visuals
+
+<div class="visuals">
+
+<figure>
+  <img src="/images/img-youscience-practice.jpg" alt="A practice vocabulary assessment for YouScience.">
+  <figcaption>This vocabulary practice test allows the user to try out choosing a single option and how our new bookmarking functionality works before they enter into the timed portion of the test.</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/img-youscience-practice-2.jpg" alt="A practice paper folding assessment for YouScience.">
+  <figcaption>Paper folding measures a student's ability to visualize in 3D space as well as a chance to reinforce how bookmarking will work for them in this practice test.</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/img-youscience-practice-3.jpg" alt="A practice analytical reasoning assessment for YouScience.">
+  <figcaption>Drag and drop functionality is introduced with this analytical reasoning test. The student is given time to learn this new kind of interaction as well as the new type of informational relationships we're asking them to create.</figcaption>
+</figure>
+
+</div>
 
 ### Co-credits
 

@@ -90,5 +90,3 @@ typings/
 # Custom Ignore Options
 .DS_Store
 dist/
-src/includes/css/
-src/includes/css/style.css

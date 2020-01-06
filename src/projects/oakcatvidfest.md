@@ -1,33 +1,22 @@
 ---
-layout: archive.njk
-tags: archive
-displayOrder: 1
+layout: project.njk
+tags: project
+displayOrder: 5
 title: Oakland Internet Cat Video Festival
-intro: A fundraiser event for the East Bay SPCA, bringing the Internet Cat Video Festival to Oakland, California.
-design: Niraj Patil, Savio Alphonso
-designURL: http://www.nirajpatil.com/, https://www.savio-alphonso.com/
-tasks: Front-end Design
+thumbnail: images/img-oicvf-full.jpg
+intro: A marketing site and digital event program for the Oakland Internet Cat Video Festival on behalf of the Great Wall of Oakland and the East Bay SPCA.
+role: Front-end Development, Interaction Design
 ---
 
 ### The Project
 
 _A fundraiser event so nice they held it twice! OICVF was created to bring the Internet Cat Video Festival to Oakland, California for the benefit of the East Bay SPCA._
 
-Approached by the Great Wall of Oakland’s designer at the time, I took on the task of creating the official event site for the Oakland Internet Cat Video Festival. The one-day event took place in Uptown Oakland and featured cat-themed food, events acts, and adoptions on behalf of the East Bay SPCA.
+Approached by the Great Wall of Oakland’s designer, I took on the task of creating the official event site for the Oakland Internet Cat Video Festival. The one-day event took place in Uptown Oakland and featured cat-themed food, events acts, and adoptions on behalf of the East Bay SPCA.
 
 The major conceptual breakthrough for this site was understanding that the audience of the site shifted as time passed, meaning the site would need to shift with them as the audience’s intent changed. I built the site using a design system and component library that allowed me to rearrange content and components at the drop of a hat.
 
 Mayor Jean Quan declared it <a href="https://www.kqed.org/arts/10135685">“Internet Cat Video Day”</a>!
-
-### Visuals
-
-<div class="visuals">
-
-![Oakland Internet Cat Video Festival splash page.](/images/img-oicvf-splash.jpg)
-![The first schedule for OICVF in 2013.](/images/img-oicvf-schedule.jpg)
-![The OICVF logo and event date.](/images/img-oicvf-home.jpg)
-
-</div>
 
 ### Responsibilities
 
@@ -37,6 +26,27 @@ Mayor Jean Quan declared it <a href="https://www.kqed.org/arts/10135685">“Inte
 - Adapted site to users’ intent via shifting content modules as event timeline progressed
 - Supported event organizers with planning and data collection tools
 - Site maintenance and updates
+
+### Visuals
+
+<div class="visuals">
+
+<figure>
+  <img src="/images/img-oicvf-splash.jpg" alt="Oakland Internet Cat Video Festival splash page.">
+  <figcaption>I pulled in a feed of hand-picked cat images via a private API to serve as the background for our lovely typography.</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/img-oicvf-schedule.jpg" alt="The first schedule for OICVF in 2013.">
+  <figcaption>OICVF's event schedule brought up onto the homepage on the day of the event for attendees strolling </figcaption>
+</figure>
+
+<figure>
+  <img src="/images/img-oicvf-home.jpg" alt="The OICVF logo and event date.">
+  <figcaption>The navigation and heading was one of my earliest responsive sites. This responsiveness made it key to festival-goers being able to use the site as an e-program.</figcaption>
+</figure>
+
+</div>
 
 ### Co-credits
 
