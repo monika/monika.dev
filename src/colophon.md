@@ -1,5 +1,6 @@
 ---
 layout: default.njk
+sitemapIgnore: true
 ---
 
 ## Colophon
