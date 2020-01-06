@@ -1,10 +1,6 @@
 /* Page: Home */
 
 .page-home {
-  h2 {
-    @extend .visually-hidden;
-  }
-
   .header {
     @media screen and (max-width: $break-small) {
       padding-bottom: 20%;

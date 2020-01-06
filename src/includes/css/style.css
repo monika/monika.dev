@@ -4,7 +4,7 @@
 /* Base Styles */
 /* Colors */
 /* Animation */
-.visually-hidden, .page-home h2 {
+.visually-hidden {
   /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
   position: absolute !important;
   height: 1px;
