@@ -7,6 +7,10 @@
     color: $white;
     text-shadow: -12px 12px 0 $black, -8px 8px 0 $black, -4px 4px 0 $black,
       1px 1px 0 $black, 1px -1px 0 $black, -1px 1px 0 $black, -1px -1px 0 $black;
+
+    @media screen and (max-width: $break-small) {
+      font-size: 3.2rem;
+    }
   }
 
   .project {
@@ -17,9 +21,9 @@
     grid-template-rows: 1fr 5% auto;
 
     @media screen and (max-width: $break-small) {
-      grid-template-columns: 5% 90% 5%;
+      grid-template-columns: 15% 80% 5%;
       grid-template-rows: 1fr auto auto;
-      padding: 2% 0 5%;
+      padding: 2% 0 15%;
     }
 
     /* Todo:
@@ -79,10 +83,15 @@
 
       grid-column: 2 / 4;
       grid-row: 2 / 4;
+
+      @media screen and (max-width: $break-small) {
+        padding: 8%;
+      }
     }
 
     &__info {
       margin-bottom: 3.2rem;
+      max-width: 70ch;
     }
 
     &__title {

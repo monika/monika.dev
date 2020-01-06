@@ -15,8 +15,17 @@ body {
   padding: 1em;
   box-shadow: inset 2rem 2rem $black, inset 2rem 2rem $black,
     inset -2rem 2rem $black, inset 2rem -2rem $black;
+
+  @media screen and (max-width: $break-small) {
+    padding: 0;
+    box-shadow: inset 1rem 1rem $black, inset 1rem 1rem $black,
+      inset -1rem 1rem $black, inset 1rem -1rem $black;
+  }
 }
 
 .layout {
   padding: 5%;
+  @media screen and (max-width: $break-small) {
+    padding: 10%;
+  }
 }
