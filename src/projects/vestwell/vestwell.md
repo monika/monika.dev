@@ -46,7 +46,7 @@ Despite being a relatively concise site, I built a basic design system to speed 
 
 #### Browser Rendering
 
-![Three highlighted facts under a headline](/images/img-vestwell-code-example.gif)
+![Three highlighted facts under a headline](/images/img-vestwell-code-example.png)
 
 <div class="code__html language-html">
 

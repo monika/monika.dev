@@ -1,17 +1,17 @@
 {
   "figures": [
     {
-      "imgSrc": "/images/img-vestwell-home.jpg",
+      "imgFileName": "img-vestwell-home",
       "imgAlt": "The homepage of Vestwell.com",
       "figcaption": "The stunning header photography on Vestwell has been optimized for standard and retina displays."
     },
     {
-      "imgSrc": "/images/img-vestwell-team.jpg",
+      "imgFileName": "img-vestwell-team",
       "imgAlt": "Two members of the Vestwell advisory board.",
       "figcaption": "The listing of Vestwell's team members uses structured data to standardize employee data to aid with SEO."
     },
     {
-      "imgSrc": "/images/img-vestwell-intro.jpg",
+      "imgFileName": "img-vestwell-intro",
       "imgAlt": "Helpful bulletpoints about Vestwell's offerings.",
       "figcaption": "Vestwell's use of illustrations as part of their branding allowed for the usage of SVG images. These images are small in file size and crisp no matter the resolution of the screen displaying it."
     }

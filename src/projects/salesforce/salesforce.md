@@ -41,7 +41,7 @@ I pushed the edges of technology and centered the animations on our eBook in a n
 
 #### Browser Rendering
 
-![A series of accordion items for different solutions.](/images/img-salesforce-code-example.gif)
+![A series of accordion items for different solutions.](/images/img-salesforce-code-example.png)
 
 <div class="code__html language-html">
 

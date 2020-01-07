@@ -1,4 +1,8 @@
 <figure>
-<img src="{{ figure.imgSrc }}" alt="{{ figure.imgAlt }}">
+<picture>
+  <source srcset="/images/{{ figure.imgFileName }}.webp"
+    type="image/webp">
+  <img src="/images/{{ figure.imgFileName }}.jpg" alt="{{ figure.imgAlt }}">
+</picture>
 <figcaption>{{ figure.figcaption }}</figcaption>
 </figure>
