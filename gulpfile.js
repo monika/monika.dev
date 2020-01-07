@@ -7,11 +7,13 @@ const webp = require('gulp-webp');
 // Compile CSS
 function compileCSS() {
   return gulp
-    .src('src/includes/scss/*')
+    .src('src/scss/*')
     .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer({
-      grid: 'no-autoplace'
-    }))
+    .pipe(
+      autoprefixer({
+        grid: 'no-autoplace'
+      })
+    )
     .pipe(gulp.dest('src/includes/css/'));
 }
 
@@ -29,7 +31,7 @@ function optimizeImages() {
 
 // Watch files
 function watchFiles() {
-  gulp.watch('src/includes/scss/*', css);
+  gulp.watch('src/scss/*', { ignoreInitial: false }, compileCSS);
   gulp.watch('src/images/*', { ignoreInitial: false }, optimizeImages);
 }
 
