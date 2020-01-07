@@ -70,122 +70,136 @@ Filled with luscious photography, joyful illustrations, and engaging typography,
 
 ![A textured illustration of a water can next to a block of green text.](/images/img-olipop-code-example.gif)
 
-<div class="code__html language-html">
+<div class="code__html">
 
 #### HTML
 
-    <section class="module-excerpt good-bacteria">
-      <div class="container module-excerpt__container">
-          <div class="module-excerpt__image-wrapper">
-              <img src="illustration-watering-can.svg" alt="A watering can full of green leaves and bugs." class="module-excerpt__image">
-          </div>
-          <div class="module-excerpt__text">
-              <h2 class="h2 module-excerpt__heading">Feed your good bacteria</h2>
-              <div class="module-excerpt__subtext">
-                  <p>That’s right! These allies in our gut need a meal too, and their favorite foods are fiber and prebiotics. Researchers have identified a correlation between digestive health and a hunter gatherer style diet. That is a diet high in nutrient diversity (different types of foods) and fruits and vegetables that are a natural source of fiber and prebiotics.</p>
-              </div>
-          </div>
+``` html
+<section class="module-excerpt good-bacteria">
+  <div class="container module-excerpt__container">
+    <div class="module-excerpt__image-wrapper">
+      <img
+        src="illustration-watering-can.svg"
+        alt="A watering can full of green leaves and bugs."
+        class="module-excerpt__image"
+      />
+    </div>
+    <div class="module-excerpt__text">
+      <h2 class="h2 module-excerpt__heading">Feed your good bacteria</h2>
+      <div class="module-excerpt__subtext">
+        <p>
+          That’s right! These allies in our gut need a meal too, and their
+          favorite foods are fiber and prebiotics. Researchers have identified a
+          correlation between digestive health and a hunter gatherer style diet.
+          That is a diet high in nutrient diversity (different types of foods)
+          and fruits and vegetables that are a natural source of fiber and
+          prebiotics.
+        </p>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+```
 
 </div>
 
-<div class="code__sass language-css language-scss">
+<div class="code__sass">
 
 #### SCSS
 
-    .module-excerpt {
-      padding: $grid-gutter 0;
+``` css
+.module-excerpt {
+  padding: $grid-gutter 0;
 
-      @include media-query($medium-up) {
-        padding: $grid-gutter * 2 0;
-      }
+  @include media-query($medium-up) {
+    padding: $grid-gutter * 2 0;
+  }
 
-      &__container {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        max-width: $container-small;
-        margin: 0 auto;
+  &__container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    max-width: $container-small;
+    margin: 0 auto;
 
-        flex-direction: column;
-        padding-bottom: $grid-gutter;
+    flex-direction: column;
+    padding-bottom: $grid-gutter;
 
-        &--full {
-          .module-excerpt__text {
-            width: 100%;
-            padding-left: 0;
-          }
-        }
-
-        @include media-query($medium-up) {
-          flex-direction: row;
-          padding-bottom: 0;
-
-          &--flip {
-            flex-direction: row-reverse;
-          }
-        }
-      }
-
-      &__text {
-        font-size: 1rem;
+    &--full {
+      .module-excerpt__text {
         width: 100%;
         padding-left: 0;
-        padding-right: 0;
-        text-align: center;
-
-        @include media-query($medium-up) {
-          width: 60%;
-          padding-bottom: 0;
-          text-align: left;
-          padding-left: $grid-gutter * 3;
-
-          &--flip {
-            padding-left: 0;
-            padding-right: $grid-gutter * 3;
-          }
-
-          &--center {
-            text-align: center;
-          }
-        }
       }
-
-      .module-excerpt__image-wrapper {
-        width: 100%;
-        padding-left: $grid-gutter * 2;
-        padding-right: $grid-gutter * 2;
-
-        @include media-query($medium-up) {
-          width: 40%;
-          padding: 0;
-        }
-      }
-
-      .module-excerpt__image {
-        display: block;
-        max-height: none;
-        max-width: 100%;
-        padding-bottom: $grid-gutter;
-
-        @include media-query($medium-up) {
-          max-height: 350px;
-          max-width: none;
-          margin: 0 auto;
-          padding-bottom: 0;
-        }
-
-        @include media-query($large-up) {
-          max-height: 420px;
-        }
-      }
-
-      .btn {
-        margin: 0 auto;
-      }
-
     }
+
+    @include media-query($medium-up) {
+      flex-direction: row;
+      padding-bottom: 0;
+
+      &--flip {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 1rem;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+
+    @include media-query($medium-up) {
+      width: 60%;
+      padding-bottom: 0;
+      text-align: left;
+      padding-left: $grid-gutter * 3;
+
+      &--flip {
+        padding-left: 0;
+        padding-right: $grid-gutter * 3;
+      }
+
+      &--center {
+        text-align: center;
+      }
+    }
+  }
+
+  .module-excerpt__image-wrapper {
+    width: 100%;
+    padding-left: $grid-gutter * 2;
+    padding-right: $grid-gutter * 2;
+
+    @include media-query($medium-up) {
+      width: 40%;
+      padding: 0;
+    }
+  }
+
+  .module-excerpt__image {
+    display: block;
+    max-height: none;
+    max-width: 100%;
+    padding-bottom: $grid-gutter;
+
+    @include media-query($medium-up) {
+      max-height: 350px;
+      max-width: none;
+      margin: 0 auto;
+      padding-bottom: 0;
+    }
+
+    @include media-query($large-up) {
+      max-height: 420px;
+    }
+  }
+
+  .btn {
+    margin: 0 auto;
+  }
+}
+```
 
 </div>
 

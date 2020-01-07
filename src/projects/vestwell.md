@@ -65,203 +65,191 @@ Despite being a relatively concise site, I built a basic design system to speed 
 
 #### HTML
 
-    <div class="highlights">
+```html
+<div class="highlights">
+  <h3 class="highlights__heading">
+    For the benefit <span class="nowrap">of all.</span>
+  </h3>
 
-      <h3 class="highlights__heading">For the benefit <span class="nowrap">of all.</span></h3>
+  <div class="highlights__layout">
+    <div class="highlights__highlight">
+      <img
+        class="highlights__img briefcase"
+        src="images/icon-briefcase.svg"
+        alt="Illustration of a brown briefcase."
+      />
 
-      <div class="highlights__layout">
+      <h4 class="highlights__type"><span class="nowrap">For Advisors</span></h4>
+      <p class="highlights__description">
+        Empowering you to more efficiently serve your clients and scale your
+        business on <span class="nowrap">your terms.</span>
+      </p>
+      <p class="highlights__link">
+        <span class="nowrap"><a href="/advisors">Learn More</a></span>
+      </p>
+    </div>
 
-        <div class="highlights__highlight">
+    <div class="highlights__highlight">
+      <img
+        class="highlights__img building"
+        src="images/icon-building.svg"
+        alt="Illustration of a tall, blue skyscraper."
+      />
 
-          <img class="highlights__img briefcase" src="images/icon-briefcase.svg" alt="Illustration of a brown briefcase.">
+      <h4 class="highlights__type">
+        <span class="nowrap">For Employers</span>
+      </h4>
+      <p class="highlights__description">
+        Helping you deliver premier plans and experience to you and your most
+        critical asset — <span class="nowrap">your people.</span>
+      </p>
+      <p class="highlights__link">
+        <span class="nowrap"><a href="/employers">Learn More</a></span>
+      </p>
+    </div>
 
-          <h4 class="highlights__type"> <span class="nowrap">For Advisors</span></h4>
-          <p class="highlights__description">Empowering you to more efficiently serve your clients and scale your business on <span class="nowrap">your terms.</span></p>
-          <p class="highlights__link"> <span class="nowrap"><a href="/advisors">Learn More</a></span></p>
+    <div class="highlights__highlight">
+      <img
+        class="highlights__img nest-egg"
+        src="images/icon-nestegg.svg"
+        alt="Illustration of a large egg in a straw nest."
+      />
 
-        </div>
-
-        <div class="highlights__highlight">
-
-          <img class="highlights__img building" src="images/icon-building.svg" alt="Illustration of a tall, blue skyscraper.">
-
-          <h4 class="highlights__type"> <span class="nowrap">For Employers</span></h4>
-          <p class="highlights__description">Helping you deliver premier plans and experience to you and your most critical asset — <span class="nowrap">your people.</span></p>
-          <p class="highlights__link"> <span class="nowrap"><a href="/employers">Learn More</a></span></p>
-
-        </div>
-
-        <div class="highlights__highlight">
-
-          <img class="highlights__img nest-egg" src="images/icon-nestegg.svg" alt="Illustration of a large egg in a straw nest.">
-
-          <h4 class="highlights__type"> <span class="nowrap">For Employees</span></h4>
-          <p class="highlights__description">Ensuring the money you save is working as hard as it can to meet <span class="nowrap">your goals.</span></p>
-          <p class="highlights__link"> <span class="nowrap"><a href="/employees">Learn More</a></span></p>
-
-        </div>
-
-      </div>
-
+      <h4 class="highlights__type">
+        <span class="nowrap">For Employees</span>
+      </h4>
+      <p class="highlights__description">
+        Ensuring the money you save is working as hard as it can to meet
+        <span class="nowrap">your goals.</span>
+      </p>
+      <p class="highlights__link">
+        <span class="nowrap"><a href="/employees">Learn More</a></span>
+      </p>
+    </div>
   </div>
+</div>
+```
+
+</div>
 
 <div class="code__sass language-css language-scss">
 
 #### SCSS
 
-    .highlights {
+```scss
+.highlights {
+  @include clearfix;
 
-      @include clearfix;
+  text-align: center;
+  margin: 8vw 0;
 
-      text-align: center;
-      margin: 8vw 0;
+  @include grid-column(10);
+  @include grid-push(1);
 
-      @include grid-column(10);
-      @include grid-push(1);
+  @media #{$media-sm-max} {
+    text-align: left;
+  }
+
+  &__heading {
+    margin-bottom: $base-spacing * 2.5;
+
+    @media #{$media-sm-max} {
+      margin-bottom: $base-spacing * 1.5;
+    }
+  }
+
+  &__layout {
+    display: flex;
+    justify-content: space-around;
+
+    @media #{$media-sm-max} {
+      flex-flow: column;
+    }
+  }
+
+  &__highlight {
+    flex: 0 1 28%;
+
+    @media #{$media-sm-max} {
+      position: relative;
+
+      margin-bottom: $base-spacing * 1.5;
+      padding-left: 120px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+
+    @media #{$media-sm-max} {
+      position: absolute;
+      left: 0;
+      top: 20px;
+    }
+
+    &.advisor {
+      padding-top: 16px;
+      padding-bottom: 9px;
+      width: 85px;
 
       @media #{$media-sm-max} {
-
-        text-align: left;
-
+        padding-top: 34px;
+        padding-bottom: 0;
+        margin-left: 11px;
       }
-
-      &__heading {
-
-        margin-bottom: $base-spacing*2.5;
-
-        @media #{$media-sm-max} {
-
-          margin-bottom: $base-spacing*1.5;
-
-        }
-
-      }
-
-      &__layout {
-
-        display: flex;
-        justify-content: space-around;
-
-        @media #{$media-sm-max} {
-
-          flex-flow: column;
-
-        }
-
-      }
-
-      &__highlight {
-
-        flex: 0 1 28%;
-
-        @media #{$media-sm-max} {
-
-          position: relative;
-
-          margin-bottom: $base-spacing*1.5;
-          padding-left: 120px;
-
-          &:last-child {
-
-            margin-bottom: 0;
-
-          }
-
-        }
-
-      }
-
-      &__img {
-
-        display: block;
-        margin: 0 auto;
-
-        @media #{$media-sm-max} {
-
-          position: absolute;
-          left: 0;
-          top: 20px;
-
-        }
-
-        &.advisor {
-
-          padding-top: 16px;
-          padding-bottom: 9px;
-          width: 85px;
-
-          @media #{$media-sm-max} {
-
-            padding-top: 34px;
-            padding-bottom: 0;
-            margin-left: 11px;
-
-          }
-
-        }
-
-        &.sponsor {
-
-            width: 72px;
-
-            @media #{$media-sm-max} {
-
-              padding-top: 16px;
-              padding-bottom: 0;
-              margin-left: 18px;
-
-
-            }
-
-        }
-
-        &.individual {
-
-          padding-top: 23px;
-          width: 63px;
-
-          @media #{$media-sm-max} {
-
-            padding-top: 34px;
-            padding-bottom: 0;
-            margin-left: 21px;
-
-          }
-
-        }
-
-      }
-
-      &__type {
-
-        margin-top: $base-spacing;
-        font-weight: 700;
-        margin-bottom: $small-spacing;
-
-      }
-
-      &__description {
-
-        color: color(denim);
-        margin-bottom: 0;
-
-      }
-
-      &__link a {
-
-        display: inline-block;
-        margin-top: $small-spacing;
-
-        letter-spacing: 0.05rem;
-        font-size: 0.66rem;
-        font-weight: 700;
-        text-transform: uppercase;
-
-        transition: all $base-duration $base-timing;
-
-      }
-
     }
+
+    &.sponsor {
+      width: 72px;
+
+      @media #{$media-sm-max} {
+        padding-top: 16px;
+        padding-bottom: 0;
+        margin-left: 18px;
+      }
+    }
+
+    &.individual {
+      padding-top: 23px;
+      width: 63px;
+
+      @media #{$media-sm-max} {
+        padding-top: 34px;
+        padding-bottom: 0;
+        margin-left: 21px;
+      }
+    }
+  }
+
+  &__type {
+    margin-top: $base-spacing;
+    font-weight: 700;
+    margin-bottom: $small-spacing;
+  }
+
+  &__description {
+    color: color(denim);
+    margin-bottom: 0;
+  }
+
+  &__link a {
+    display: inline-block;
+    margin-top: $small-spacing;
+
+    letter-spacing: 0.05rem;
+    font-size: 0.66rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    transition: all $base-duration $base-timing;
+  }
+}
+```
 
 </div>
 

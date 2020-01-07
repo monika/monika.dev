@@ -1,12 +1,19 @@
-const CleanCSS = require('clean-css');
+const cleanCSS = require('clean-css');
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 module.exports = function(eleventyConfig) {
   // Clean and minimize CSS
   eleventyConfig.addFilter('cssmin', function(code) {
-    return new CleanCSS({}).minify(code).styles;
+    return new cleanCSS({}).minify(code).styles;
   });
 
-  // Custom Interview Listing Sort Order
+  // Add syntax highlighting via prism.js
+  eleventyConfig.addPlugin(syntaxHighlight, {
+    templateFormats: ["md", "njk", "html", "css"],
+    alwaysWrapLineHighlights: true
+  });
+
+  // Custom Project Listing Sort Order
   eleventyConfig.addCollection('projectListing', function(collection) {
     return collection.getFilteredByTag('project').sort((a, b) => {
       return a.data.displayOrder - b.data.displayOrder;
@@ -27,9 +34,6 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
   eleventyConfig.addPassthroughCopy('src/favicon.png');
   eleventyConfig.addPassthroughCopy('src/site.webmanifest');
-
-  // Add CSS to template formats
-  eleventyConfig.setTemplateFormats(['css', 'md', 'njk', 'html']);
 
   // Basic config settings
   return {
