@@ -1,12 +1,10 @@
 ---
-layout: project.njk
-tags: project
-displayOrder: 1
 title: OLIPOP
-thumbnail: images/img-olipop-full.jpg
+thumbnail: images/img-olipop.jpg
 thumbnailAlt: The homepage of DrinkOlipop.com.
 intro: An e-commerce site for groundbreaking pre-biotic sparkling tonic company OLIPOP, built around their fresh new brand.
 role: Front-end Development, Technical Advising
+displayOrder: 1
 ---
 
 ### The Project
@@ -40,25 +38,11 @@ Filled with luscious photography, joyful illustrations, and engaging typography,
 
 <div class="visuals">
 
-  <figure>
-    <img src="/images/img-olipop-ben-david.jpg" alt="Ben Goodwin and David Lester, Co-founders of OLIPOP.">
-    <figcaption>An approachable banner of OLIPOP's co-founders, set up as a module in Shopify for the clients to edit as they see fit.</figcaption>
-  </figure>
+{%- for figure in figures -%}
 
-  <figure>
-    <img src="/images/img-olipop-digestive-health.jpg" alt="A colorful banner for the Digestive Health page.">
-    <figcaption>Being able to use SVG images thanks to OLIPOP's illustrative branding, helps keep file sizes small and screen resolution independent.</figcaption>
-  </figure>
+{% include "modules/figure.njk" %}
 
-  <figure>
-    <img src="/images/img-olipop-map.jpg" alt="Some of the stores OLIPOP is available in Northern California.">
-    <figcaption>Custom OLIPOP logo as map markers created for their store locator reinforces the brand.</figcaption>
-  </figure>
-
-  <figure>
-    <img src="/images/img-olipop-ingredients.jpg" alt="Several plant-based ingredients in OLIPOP.">
-    <figcaption>A chart of plant-based ingredients in OLIPOP with interactive tooltips explaining their use and importance.</figcaption>
-  </figure>
+{%- endfor -%}
 
 </div>
 
@@ -74,7 +58,7 @@ Filled with luscious photography, joyful illustrations, and engaging typography,
 
 #### HTML
 
-``` html
+```html
 <section class="module-excerpt good-bacteria">
   <div class="container module-excerpt__container">
     <div class="module-excerpt__image-wrapper">
@@ -107,7 +91,7 @@ Filled with luscious photography, joyful illustrations, and engaging typography,
 
 #### SCSS
 
-``` css
+```css
 .module-excerpt {
   padding: $grid-gutter 0;
 

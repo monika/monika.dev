@@ -1,6 +1,6 @@
 ---
 title: Vestwell
-thumbnail: images/img-vestwell-full.jpg
+thumbnail: images/img-vestwell.jpg
 thumbnailAlt: The homepage of Vestwell.com.
 role: Front-end Development, HTML Email Development
 intro: An educational and engaging site for Vestwell, a digital retirement platform, to feature their unique product and their fresh rebranding.
@@ -34,20 +34,11 @@ Despite being a relatively concise site, I built a basic design system to speed 
 
 <div class="visuals">
 
-<figure>
-  <img src="/images/img-vestwell-home.jpg" alt="The homepage of Vestwell.com">
-  <figcaption>The stunning header photography on Vestwell has been optimized for standard and retina displays.</figcaption>
-</figure>
+{%- for figure in figures -%}
 
-<figure>
-  <img src="/images/img-vestwell-team.jpg" alt="Two members of the Vestwell advisory board.">
-  <figcaption>The listing of Vestwell's team members uses structured data to standardize employee data to aid with SEO.</figcaption>
-</figure>
+{% include "modules/figure.njk" %}
 
-<figure>
-  <img src="/images/img-vestwell-intro.jpg" alt="Helpful bulletpoints about Vestwell's offerings.">
-  <figcaption>Vestwell's use of illustrations as part of their branding allowed for the usage of SVG images. These images are small in file size and crisp no matter the resolution of the screen displaying it.</figcaption>
-</figure>
+{%- endfor -%}
 
 </div>
 

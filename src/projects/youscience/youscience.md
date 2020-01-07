@@ -1,6 +1,6 @@
 ---
 title: YouScience
-thumbnail: images/img-youscience-full.jpg
+thumbnail: images/img-youscience.jpg
 intro: An aptitude testing suite built to help students lean into their strengths and save thousands of dollars a year in college.
 role: Visual Design, Interaction design, Prototyping
 displayOrder: 6
@@ -28,20 +28,11 @@ While at Sparkart Group, I updated the look and feel of the Ball Aptitude Batter
 
 <div class="visuals">
 
-<figure>
-  <img src="/images/img-youscience-practice.jpg" alt="A practice vocabulary assessment for YouScience.">
-  <figcaption>This vocabulary practice test allows the user to try out choosing a single option and how our new bookmarking functionality works before they enter into the timed portion of the test.</figcaption>
-</figure>
+{%- for figure in figures -%}
 
-<figure>
-  <img src="/images/img-youscience-practice-2.jpg" alt="A practice paper folding assessment for YouScience.">
-  <figcaption>Paper folding measures a student's ability to visualize in 3D space as well as a chance to reinforce how bookmarking will work for them in this practice test.</figcaption>
-</figure>
+{% include "modules/figure.njk" %}
 
-<figure>
-  <img src="/images/img-youscience-practice-3.jpg" alt="A practice analytical reasoning assessment for YouScience.">
-  <figcaption>Drag and drop functionality is introduced with this analytical reasoning test. The student is given time to learn this new kind of interaction as well as the new type of informational relationships we're asking them to create.</figcaption>
-</figure>
+{%- endfor -%}
 
 </div>
 

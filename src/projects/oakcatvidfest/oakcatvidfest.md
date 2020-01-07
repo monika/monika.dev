@@ -1,6 +1,6 @@
 ---
 title: Oakland Internet Cat Video Festival
-thumbnail: images/img-oicvf-full.jpg
+thumbnail: images/img-oicvf.jpg
 intro: A marketing site and digital event program for the Oakland Internet Cat Video Festival on behalf of the Great Wall of Oakland and the East Bay SPCA.
 role: Front-end Development, Interaction Design
 displayOrder: 5
@@ -14,7 +14,7 @@ Approached by the Great Wall of Oakland’s designer, I took on the task of crea
 
 The major conceptual breakthrough for this site was understanding that the audience of the site shifted as time passed, meaning the site would need to shift with them as the audience’s intent changed. I built the site using a design system and component library that allowed me to rearrange content and components at the drop of a hat.
 
-Mayor Jean Quan declared it <a href="https://www.kqed.org/arts/10135685">“Internet Cat Video Day”</a>!
+Mayor Jean Quan declared it &ldquo;[Internet Cat Video Day](https://www.kqed.org/arts/10135685)&rdquo;!
 
 ### Responsibilities
 
@@ -29,20 +29,11 @@ Mayor Jean Quan declared it <a href="https://www.kqed.org/arts/10135685">“Inte
 
 <div class="visuals">
 
-<figure>
-  <img src="/images/img-oicvf-splash.jpg" alt="Oakland Internet Cat Video Festival splash page.">
-  <figcaption>I pulled in a feed of hand-picked cat images via a private API to serve as the background for our lovely typography.</figcaption>
-</figure>
+{%- for figure in figures -%}
 
-<figure>
-  <img src="/images/img-oicvf-schedule.jpg" alt="The first schedule for OICVF in 2013.">
-  <figcaption>OICVF's event schedule brought up onto the homepage on the day of the event for attendees strolling </figcaption>
-</figure>
+{% include "modules/figure.njk" %}
 
-<figure>
-  <img src="/images/img-oicvf-home.jpg" alt="The OICVF logo and event date.">
-  <figcaption>The navigation and heading was one of my earliest responsive sites. This responsiveness made it key to festival-goers being able to use the site as an e-program.</figcaption>
-</figure>
+{%- endfor -%}
 
 </div>
 
@@ -53,9 +44,9 @@ Mayor Jean Quan declared it <a href="https://www.kqed.org/arts/10135685">“Inte
 
 ### Press
 
-- <a href="https://www.kqed.org/arts/10135685" rel="external">&ldquo;A Tale of Two Competing Cat Video Festivals&rdquo;</a> [KQED]
-- <a href="https://www.huffingtonpost.com/2013/03/28/oakland-internet-cat-video-film-festival_n_2972662.html" rel="external">&ldquo;Oakland Internet Cat Video Festival Showcases The Web’s Finest Felines&rdquo;</a> [HuffPo]
-- <a href="https://www.eastbayexpress.com/oakland/internet-cat-videos-go-public/Content?oid=3541423">&ldquo;Internet Cat Videos Go Public&rdquo;</a> [EBX]
+- [&ldquo;A Tale of Two Competing Cat Video Festivals&rdquo;](https://www.kqed.org/arts/10135685) [KQED]
+- [&ldquo;Oakland Internet Cat Video Festival Showcases The Web’s Finest Felines&rdquo;](https://www.huffingtonpost.com/2013/03/28/oakland-internet-cat-video-film-festival_n_2972662.html) [HuffPo]
+- [&ldquo;Internet Cat Videos Go Public&rdquo;](https://www.eastbayexpress.com/oakland/internet-cat-videos-go-public/Content?oid=3541423) [EBX]
 
 ---
 

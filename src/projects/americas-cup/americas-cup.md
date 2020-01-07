@@ -1,6 +1,6 @@
 ---
 title: America’s Cup
-thumbnail: images/img-americascup-full.jpg
+thumbnail: images/img-americascup.jpg
 intro: A pattern library developed to create an official fan hub for all eight teams racing in the 2013 America’s Cup.
 role: Front-end Development, Information Design
 displayOrder: 4
@@ -28,20 +28,11 @@ Using Sparkart Group's in-house headless CMS platform as a base, APIs from YouTu
 
 <div class="visuals">
 
-<figure>
-  <img src="/images/img-americas-cup-oracle.jpg" alt="Oracle Team USA's homepage for the America’s Cup.">
-  <figcaption>Oracle Team USA's homepage using a pattern library that sped up building and branding for the seven other America's Cup teams.</figcaption>
-</figure>
+{%- for figure in figures -%}
 
-<figure>
-  <img src="/images/img-americas-cup-new-zealand.jpg" alt="Team New Zealand's homepage for the America’s Cup.">
-  <figcaption>Team New Zealand's brand applied to the pattern library, building out a fully developed team site.</figcaption>
-</figure>
+{% include "modules/figure.njk" %}
 
-<figure>
-  <img src="/images/img-americas-cup-artemis.jpg" alt="Team Artemis' homepage for the America’s Cup.">
-  <figcaption>Sweden's Team Artemis also had its branding added to this pattern library.</figcaption>
-</figure>
+{%- endfor -%}
 
 </div>
 
