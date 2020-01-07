@@ -50,7 +50,10 @@ Filled with luscious photography, joyful illustrations, and engaging typography,
 
 #### Browser Rendering
 
-![A textured illustration of a water can next to a block of green text.](/images/img-olipop-code-example.png)
+<picture>
+  <source srcset="/images/img-olipop-code-example.webp 1200w" type="image/webp">
+  <img src="/images/img-olipop-code-example.png" alt="A textured illustration of a water can next to a block of green text.">
+</picture>
 
 <div class="code__html">
 

@@ -46,7 +46,10 @@ Despite being a relatively concise site, I built a basic design system to speed 
 
 #### Browser Rendering
 
-![Three highlighted facts under a headline](/images/img-vestwell-code-example.png)
+<picture>
+  <source srcset="/images/img-vestwell-code-example.webp" type="image/webp">
+  <img src="/images/img-vestwell-code-example.png" alt="Three highlighted facts under a headline.">
+</picture>
 
 <div class="code__html language-html">
 
