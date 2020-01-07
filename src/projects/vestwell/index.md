@@ -1,12 +1,10 @@
 ---
-layout: project.njk
-tags: project
-displayOrder: 2
 title: Vestwell
 thumbnail: images/img-vestwell-full.jpg
 thumbnailAlt: The homepage of Vestwell.com.
 role: Front-end Development, HTML Email Development
 intro: An educational and engaging site for Vestwell, a digital retirement platform, to feature their unique product and their fresh rebranding.
+displayOrder: 2
 ---
 
 ### The Story

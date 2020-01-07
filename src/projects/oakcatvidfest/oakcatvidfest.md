@@ -1,11 +1,9 @@
 ---
-layout: project.njk
-tags: project
-displayOrder: 5
 title: Oakland Internet Cat Video Festival
 thumbnail: images/img-oicvf-full.jpg
 intro: A marketing site and digital event program for the Oakland Internet Cat Video Festival on behalf of the Great Wall of Oakland and the East Bay SPCA.
 role: Front-end Development, Interaction Design
+displayOrder: 5
 ---
 
 ### The Project

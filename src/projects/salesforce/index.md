@@ -1,12 +1,10 @@
 ---
-layout: project.njk
-tags: project
-displayOrder: 3
 title: Salesforce
 thumbnail: images/img-salesforce-full.jpg
 thumbnailAlt: A screenshot of a Salesforce ebook, featuring Cody the bear and Astro holding laboratory equipment.
 intro: A browser-based eBook for Salesforce, full of industry insights, and complete with joyful character animations, charts, and graphs.
 role: Front-end Development
+displayOrder: 3
 ---
 
 ### The Project
