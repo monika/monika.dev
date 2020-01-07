@@ -29,9 +29,7 @@ Using Sparkart Group's in-house headless CMS platform as a base, APIs from YouTu
 <div class="visuals">
 
 {%- for figure in figures -%}
-
-{% include "modules/figure.njk" %}
-
+{% include modules/figure.njk %}
 {%- endfor -%}
 
 </div>

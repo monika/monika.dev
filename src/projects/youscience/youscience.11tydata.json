@@ -1,17 +1,17 @@
 {
   "figures": [
     {
-      "imgSrc": "img-youscience-practice.jpg",
+      "imgSrc": "/images/img-youscience-practice.jpg",
       "imgAlt": "A practice vocabulary assessment for YouScience.",
       "figcaption": "This vocabulary practice test allows the user to try out choosing a single option and how our new bookmarking functionality works before they enter into the timed portion of the test."
     },
     {
-      "imgSrc": "img-youscience-practice-2.jpg",
+      "imgSrc": "/images/img-youscience-practice-2.jpg",
       "imgAlt": "A practice paper folding assessment for YouScience.",
       "figcaption": "Paper folding measures a student's ability to visualize in 3D space as well as a chance to reinforce how bookmarking will work for them in this practice test."
     },
     {
-      "imgSrc": "img-youscience-practice-3.jpg",
+      "imgSrc": "/images/img-youscience-practice-3.jpg",
       "imgAlt": "A practice analytical reasoning assessment for YouScience.",
       "figcaption": "Drag and drop functionality is introduced with this analytical reasoning test. The student is given time to learn this new kind of interaction as well as the new type of informational relationships we're asking them to create."
     }

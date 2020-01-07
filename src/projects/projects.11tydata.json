@@ -1,4 +1,5 @@
 {
   "layout": "project.njk",
-  "tags": "project"
+  "tags": "project",
+  "templateEngineOverride": "njk,md"
 }

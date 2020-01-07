@@ -30,9 +30,7 @@ Mayor Jean Quan declared it &ldquo;[Internet Cat Video Day](https://www.kqed.org
 <div class="visuals">
 
 {%- for figure in figures -%}
-
-{% include "modules/figure.njk" %}
-
+{% include modules/figure.njk %}
 {%- endfor -%}
 
 </div>

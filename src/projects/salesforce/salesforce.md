@@ -30,9 +30,7 @@ I pushed the edges of technology and centered the animations on our eBook in a n
 <div class="visuals">
 
 {%- for figure in figures -%}
-
-{% include "modules/figure.njk" %}
-
+{% include modules/figure.njk %}
 {%- endfor -%}
 
 </div>

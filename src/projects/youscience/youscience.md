@@ -29,9 +29,7 @@ While at Sparkart Group, I updated the look and feel of the Ball Aptitude Batter
 <div class="visuals">
 
 {%- for figure in figures -%}
-
-{% include "modules/figure.njk" %}
-
+{% include modules/figure.njk %}
 {%- endfor -%}
 
 </div>

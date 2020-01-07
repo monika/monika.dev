@@ -1,17 +1,17 @@
 {
   "figures": [
     {
-      "imgSrc": "img-americas-cup-oracle.jpg",
+      "imgSrc": "/images/img-americas-cup-oracle.jpg",
       "imgAlt": "Oracle Team USA's homepage for the America’s Cup.",
       "figcaption": "Oracle Team USA's homepage using a pattern library that sped up building and branding for the seven other America's Cup teams."
     },
     {
-      "imgSrc": "img-americas-cup-new-zealand.jpg",
+      "imgSrc": "/images/img-americas-cup-new-zealand.jpg",
       "imgAlt": "Team New Zealand's homepage for the America’s Cup.",
       "figcaption": "Team New Zealand's brand applied to the pattern library, building out a fully developed team site."
     },
     {
-      "imgSrc": "img-americas-cup-artemis.jpg",
+      "imgSrc": "/images/img-americas-cup-artemis.jpg",
       "imgAlt": "Team Artemis' homepage for the America’s Cup.",
       "figcaption": "Sweden's Team Artemis also had its branding added to this pattern library."
     }
