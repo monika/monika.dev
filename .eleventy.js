@@ -26,8 +26,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
   eleventyConfig.addPassthroughCopy('src/favicon.png');
   eleventyConfig.addPassthroughCopy('src/site.webmanifest');
+  eleventyConfig.addPassthroughCopy({'src/images-resized': 'images'});
   eleventyConfig.addPassthroughCopy('src/images');
-  eleventyConfig.addPassthroughCopy({'src/webp': 'images'});
 
   // Basic config settings
   return {
