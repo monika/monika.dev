@@ -1,6 +1,6 @@
 ---
 title: America’s Cup
-thumbnail: images/img-americascup.jpg
+thumbnail: img-americascup
 intro: A pattern library developed to create an official fan hub for all eight teams racing in the 2013 America’s Cup.
 role: Front-end Development, Information Design
 displayOrder: 4

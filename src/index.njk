@@ -23,9 +23,11 @@ title: Home
             <article class="project">
 
                 <figure class="project__thumbnail">
-                    <span class="project__mask">
-                        <img class="project__image" src="{{ project.data.thumbnail }}" alt="{{ project.data.thumbnailAlt }}">
-                    </span>
+                    <picture class="project__mask">
+                        <source class="project__image" srcset="/images/{{ project.data.thumbnail }}.webp"
+                            type="image/webp">
+                        <img class="project__image" src="/images/{{ project.data.thumbnail }}.jpg" alt="{{ project.data.thumbnailAlt }}">
+                    </picture>
                 </figure>
 
                 <div class="project__content">

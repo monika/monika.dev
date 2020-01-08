@@ -1,6 +1,6 @@
 ---
 title: Salesforce
-thumbnail: images/img-salesforce.jpg
+thumbnail: img-salesforce
 thumbnailAlt: A screenshot of a Salesforce ebook, featuring Cody the bear and Astro holding laboratory equipment.
 intro: A browser-based eBook for Salesforce, full of industry insights, and complete with joyful character animations, charts, and graphs.
 role: Front-end Development
