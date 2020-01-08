@@ -1,0 +1,24 @@
+{
+  "figures": [
+    {
+      "imgFileName": "img-olipop-ben-david",
+      "imgAlt": "Ben Goodwin and David Lester, Co-founders of OLIPOP.",
+      "figcaption": "An approachable banner of OLIPOP's co-founders, set up as a module in Shopify for the clients to edit as they see fit."
+    },
+    {
+      "imgFileName": "img-olipop-digestive-health",
+      "imgAlt": "A colorful banner for the Digestive Health page.",
+      "figcaption": "Being able to use SVG images thanks to OLIPOP's illustrative branding, helps keep file sizes small and screen resolution independent."
+    },
+    {
+      "imgFileName": "img-olipop-map",
+      "imgAlt": "Some of the stores OLIPOP is available in Northern California.",
+      "figcaption": "Custom OLIPOP logo as map markers created for their store locator reinforces the brand."
+    },
+    {
+      "imgFileName": "img-olipop-ingredients",
+      "imgAlt": "Several plant-based ingredients in OLIPOP.",
+      "figcaption": "A chart of plant-based ingredients in OLIPOP with interactive tooltips explaining their use and importance."
+    }
+  ]
+}

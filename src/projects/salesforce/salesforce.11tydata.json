@@ -1,0 +1,19 @@
+{
+  "figures": [
+    {
+      "imgFileName": "img-salesforce-tabs",
+      "imgAlt": "Chapter navigation of the Salesforce eBook.",
+      "figcaption": "Sticky navigation for the chapters of this eBook feature at the top of the browser window. Clicking on one will scroll the user to the appropriate chapter and highlight it in the navigation."
+    },
+    {
+      "imgFileName": "img-salesforce-accordion",
+      "imgAlt": "Accordion elements revealing more content.",
+      "figcaption": "Because of the hefty helping of content, we chose to implement accordions so that a user can toggle open and closed the information they want to read."
+    },
+    {
+      "imgFileName": "img-salesforce-astro",
+      "imgAlt": "Astro the Adorable Salesforce Mascot.",
+      "figcaption": "Character animations are encoded in both <code>webm</code> for modern browsers that support <code>webm</code> and its alpha channel, and as <code>mp4</code> to gracefully downgrade for those that don't."
+    }
+  ]
+}
