@@ -47,7 +47,7 @@ I pushed the edges of technology and centered the animations on our eBook in a n
 
 #### HTML
 
-````html
+```html
 <div class="solution">
 
     <div class="wrapper">
@@ -100,190 +100,18 @@ I pushed the edges of technology and centered the animations on our eBook in a n
     </div>
 </div>
 ```
+
 </div>
 
 <div class="code__sass language-css language-scss">
 
 #### SCSS
 
-``` scss
-
-.solution {
-  padding: 60px 0 100px;
-
-  &:last-of-type {
-    padding-bottom: 50px;
-
-    @media #{$media-small} {
-      padding-bottom: 100px;
-    }
-  }
-
-  &:nth-child(odd) {
-    background-color: $light-grey;
-  }
-
-  .wrapper {
-    display: grid;
-
-    grid-template-columns: 26% 10% 64%;
-    grid-template-rows: auto auto;
-
-    @media #{$media-small} {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-
-  &__title {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-
-    margin: 0 0 30px;
-
-    font-size: 1.3rem;
-    line-height: 1;
-    font-family: $heading-font-stack;
-    color: $teal;
-  }
-
-  &__info {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-
-    @media #{$media-small} {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-bottom: 20px;
-    }
-  }
-
-  &__intro {
-    margin: 0;
-  }
-
-  &__icon {
-    display: block;
-    padding-top: 40%;
-
-    @media #{$media-small} {
-      padding: 0 0 0 5%;
-      max-width: 140px;
-    }
-  }
-
-  &__solutions {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-
-  @keyframes spin {
-    from {
-      transform: rotate(0);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  @keyframes reverse-spin {
-    from {
-      transform: rotate(360deg);
-    }
-    to {
-      transform: rotate(0);
-    }
-  }
-
-  &__subtitle {
-    margin: 0;
-    padding: 15px 35px 15px 0;
-    position: relative;
-
-    border-top: 1px solid $grey;
-
-    text-transform: uppercase;
-    color: $teal;
-    font-family: $body-font-stack;
-    font-weight: $body-font-weight;
-    line-height: 1.5;
-
-    cursor: pointer;
-
-    transition: color 0.125s ease-in;
-
-    &:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      width: 30px;
-      background: url('../images/icon-plus.svg') no-repeat center center;
-
-      animation-name: reverse-spin;
-      animation-duration: 0.35s;
-      animation-iteration-count: 1;
-      animation-timing-function: ease;
-    }
-
-    &.ui-accordion-header-active {
-      color: $blue;
-      font-family: $sub-heading-font-stack;
-      font-weight: $sub-heading-font-weight;
-    }
-
-    &:hover {
-      color: $blue;
-    }
-
-    &:last-of-type {
-      border-bottom: 1px solid $grey;
-    }
-
-    &.ui-state-active {
-      &:after {
-        background: url('../images/icon-minus.svg') no-repeat center center;
-
-        animation-name: spin;
-        animation-duration: 0.35s;
-        animation-iteration-count: 1;
-        animation-timing-function: ease;
-      }
-
-      &:last-of-type {
-        border-bottom: 0;
-      }
-    }
-  }
-
-  ul {
-    margin: 0;
-    padding: 0 50px 20px 30px;
-
-    font-family: $highlight-font-stack;
-
-    &:last-of-type {
-      border-bottom: 1px solid $grey;
-    }
-
-    li {
-      padding: 0 0 10px 10px;
-
-      &:last-of-type {
-        padding-bottom: 0;
-      }
-    }
-  }
+```scss
+.class {
+  property: 1px solid #f00;
 }
-````
+```
 
 </div>
 

@@ -89,7 +89,7 @@ Filled with luscious photography, joyful illustrations, and engaging typography,
 
 #### SCSS
 
-```css
+```scss
 .module-excerpt {
   padding: $grid-gutter 0;
 
