@@ -8,8 +8,19 @@
     padding: 2rem;
     margin: 0 2.4rem 0 0;
 
-    &:before {
-      display: none;
+    a {
+      display: block;
+
+      path {
+        transition: fill 0.5s $circular-ease-in-out;
+      }
+      &:before {
+        display: none;
+      }
+
+      &:hover path {
+        fill: $pink;
+      }
     }
 
     svg {
