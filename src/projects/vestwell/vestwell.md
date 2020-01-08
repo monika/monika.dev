@@ -46,10 +46,7 @@ Despite being a relatively concise site, I built a basic design system to speed 
 
 #### Browser Rendering
 
-<picture>
-  <source srcset="/images/img-vestwell-code-example.webp" type="image/webp">
-  <img src="/images/img-vestwell-code-example.png" alt="Three highlighted facts under a headline.">
-</picture>
+{% codeExample "vestwell-code-example", "Three highlighted facts under a headline." %}
 
 <div class="code__html language-html">
 

@@ -41,10 +41,7 @@ I pushed the edges of technology and centered the animations on our eBook in a n
 
 #### Browser Rendering
 
-<picture>
-  <source srcset="/images/img-salesforce-code-example.webp" type="image/webp">
-  <img src="/images/img-salesforce-code-example.png" alt="A series of accordion items for different solutions.">
-</picture>
+{% codeExample "salesforce-code-example", "A series of accordion items for different solutions." %}
 
 <div class="code__html language-html">
 
