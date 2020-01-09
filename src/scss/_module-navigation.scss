@@ -11,25 +11,29 @@
     a {
       display: block;
 
-      path {
-        transition: fill 0.5s $circular-ease-in-out;
-      }
+      background: linear-gradient(65deg, $blue, $pink);
+      background-size: 400% 400%;
+      animation: logo 3s linear infinite;
+
+
       &:before {
         display: none;
       }
 
-      &:hover path {
-        fill: $pink;
-      }
     }
 
     svg {
       display: block;
       width: 80px;
 
-      path {
+    mask rect {
         fill: $white;
-      }
+    }
+    & > rect {
+        fill: $black;
+        -webkit-mask: url(#logo);
+        mask: url(#logo);
+    }
     }
   }
 

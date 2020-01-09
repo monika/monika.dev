@@ -166,6 +166,22 @@ ul {
     ul li:last-of-type {
       padding-bottom: 0; }
 
+@-webkit-keyframes logo {
+  0% {
+    background-position: 50% 0%; }
+  50% {
+    background-position: 50% 100%; }
+  100% {
+    background-position: 50% 0%; } }
+
+@keyframes logo {
+  0% {
+    background-position: 50% 0%; }
+  50% {
+    background-position: 50% 100%; }
+  100% {
+    background-position: 50% 0%; } }
+
 /* Base: Layout
 ------------------------------------- */
 * {
@@ -329,19 +345,22 @@ body {
     padding: 2rem;
     margin: 0 2.4rem 0 0; }
     .navigation__logo a {
-      display: block; }
-      .navigation__logo a path {
-        -webkit-transition: fill 0.5s cubic-bezier(0.45, 0.24, 0, 1);
-        transition: fill 0.5s cubic-bezier(0.45, 0.24, 0, 1); }
+      display: block;
+      background: linear-gradient(65deg, #0000ff, #ff0095);
+      background-size: 400% 400%;
+      -webkit-animation: logo 3s linear infinite;
+              animation: logo 3s linear infinite; }
       .navigation__logo a:before {
         display: none; }
-      .navigation__logo a:hover path {
-        fill: #ff0095; }
     .navigation__logo svg {
       display: block;
       width: 80px; }
-      .navigation__logo svg path {
+      .navigation__logo svg mask rect {
         fill: #fff; }
+      .navigation__logo svg > rect {
+        fill: #020202;
+        -webkit-mask: url(#logo);
+        mask: url(#logo); }
   .navigation__link {
     display: inline-block;
     margin-right: 1.6rem;
