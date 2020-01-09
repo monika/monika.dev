@@ -34,7 +34,7 @@ body {
 a {
   position: relative;
   z-index: 1;
-  color: #ff0095;
+  color: #0000ff;
   text-decoration: none;
   -webkit-transition: color 0.2s cubic-bezier(0.45, 0.24, 0, 1);
   transition: color 0.2s cubic-bezier(0.45, 0.24, 0, 1); }
@@ -42,7 +42,7 @@ a {
     content: '';
     width: 90%;
     height: 3px;
-    background: #97f5f2;
+    background: #ff0095;
     -webkit-transition: all 0.2s cubic-bezier(0.45, 0.24, 0, 1);
     transition: all 0.2s cubic-bezier(0.45, 0.24, 0, 1);
     position: absolute;
@@ -50,16 +50,17 @@ a {
     left: -3px;
     z-index: -1; }
   a:hover {
-    color: #020202; }
+    color: #fff; }
     a:hover:before {
-      bottom: -6px;
-      height: calc(100% + 8px);
-      width: calc(100% + 8px); }
+      bottom: -9px;
+      left: -9px;
+      height: calc(100% + 16px);
+      width: calc(100% + 18px); }
   a:active {
-    color: #3f59da; }
+    color: #0000ff; }
   a:focus {
-    color: #3f59da;
-    outline: 2px dotted #3f59da;
+    color: #0000ff;
+    outline: 2px dotted yellowgreen;
     outline-offset: 3px; }
 
 .button {
@@ -204,7 +205,7 @@ body {
       margin-bottom: 3.2rem; } }
 
 .page-home .projects {
-  background-color: #3f59da;
+  background-color: #020202;
   background-position: top;
   position: relative; }
   .page-home .projects .layout {
@@ -215,7 +216,7 @@ body {
     display: block;
     width: 97%;
     height: 101%;
-    background-image: url("images/bg-x.svg");
+    background-image: url("images/bg-x-blue.svg");
     background-position: -13px -13px;
     position: absolute;
     top: -22px;
@@ -358,7 +359,7 @@ body {
   margin-top: 0;
   font-weight: 600;
   color: #fff;
-  text-shadow: -12px 12px 0 #020202, -8px 8px 0 #020202, -4px 4px 0 #020202, 1px 1px 0 #020202, 1px -1px 0 #020202, -1px 1px 0 #020202, -1px -1px 0 #020202; }
+  text-shadow: 1px 1px 0 #020202, 1px -1px 0 #020202, -1px 1px 0 #020202, -1px -1px 0 #020202, 2px 2px 0 #020202, 2px -2px 0 #020202, -2px 2px 0 #020202, -2px -2px 0 #020202; }
   @media screen and (max-width: 648px) {
     .projects__heading {
       font-size: 3.2rem; } }
@@ -388,7 +389,7 @@ body {
     background-color: #dadada;
     border-radius: 10px;
     border-style: solid;
-    border-color: #020202;
+    border-color: #0000ff;
     border-width: 50px 0 0 0;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -408,7 +409,7 @@ body {
     height: 350px;
     border-radius: 0 0 10px 10px;
     border-style: solid;
-    border-color: #020202;
+    border-color: #0000ff;
     border-width: 0 3px 3px 3px; }
   .projects .project__image {
     display: block;
@@ -418,8 +419,8 @@ body {
     padding: 3%;
     background: #fff;
     color: #020202;
-    border: 3px solid #020202;
-    box-shadow: -12px 12px #020202;
+    border: 3px solid #ff0095;
+    box-shadow: -12px 12px #ff0095;
     position: relative;
     z-index: 5;
     -ms-grid-column: 2;
