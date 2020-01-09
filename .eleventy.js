@@ -15,7 +15,7 @@ module.exports = function(eleventyConfig) {
   });
 
   // Code Example Image Nunjucks shortcode
-  eleventyConfig.addShortcode("codeExample", function(imgFileName, imgAlt){
+  eleventyConfig.addShortcode('codeExample', function(imgFileName, imgAlt) {
     return `<picture>
     <source
         type="image/webp"
@@ -50,7 +50,7 @@ module.exports = function(eleventyConfig) {
         alt="${imgAlt}"
     />
   </picture>`;
-  })
+  });
 
   // Add syntax highlighting via prism.js
   eleventyConfig.addPlugin(syntaxHighlight, {
@@ -64,7 +64,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/favicon.ico');
   eleventyConfig.addPassthroughCopy('src/favicon.png');
   eleventyConfig.addPassthroughCopy('src/site.webmanifest');
-  eleventyConfig.addPassthroughCopy({'src/images-resized': 'images'});
+  eleventyConfig.addPassthroughCopy({ 'src/images-resized': 'images' });
   eleventyConfig.addPassthroughCopy('src/images');
 
   // Basic config settings

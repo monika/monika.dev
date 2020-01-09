@@ -511,5 +511,6 @@ body {
       right: -24px; }
   .page-project .visuals img {
     display: block;
+    width: 100%;
     max-width: 100%;
     border-bottom: 0; }
