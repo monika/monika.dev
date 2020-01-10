@@ -232,7 +232,7 @@ body {
     display: block;
     width: 97%;
     height: 101%;
-    background-image: url("images/bg-x-blue.svg");
+    background-image: url("images/bg-x-lt-blue.svg");
     background-position: -13px -13px;
     position: absolute;
     top: -22px;
@@ -262,12 +262,29 @@ body {
 .footer {
   background: #020202;
   color: #fff; }
+  .footer .layout {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+            align-items: flex-start; }
+    @media screen and (max-width: 648px) {
+      .footer .layout {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+                flex-direction: column;
+        -webkit-box-align: center;
+                align-items: center; } }
   .footer a {
     color: #fff; }
     .footer a:hover {
       color: #020202; }
   .footer .contact {
     /* Icons */ }
+    @media screen and (max-width: 648px) {
+      .footer .contact {
+        text-align: center; } }
     .footer .contact__socials {
       display: -webkit-box;
       display: flex;
@@ -275,6 +292,10 @@ body {
       padding: 0;
       -webkit-box-align: center;
               align-items: center; }
+      @media screen and (max-width: 648px) {
+        .footer .contact__socials {
+          -webkit-box-pack: center;
+                  justify-content: center; } }
     .footer .contact__social a {
       display: block;
       margin-right: 1.2rem; }
@@ -301,9 +322,13 @@ body {
       fill: none; }
     .footer .contact a:focus svg .st0 {
       fill: none; }
-  .footer .archive__list {
-    list-style: none;
-    padding: 0; }
+  .footer .colophon {
+    text-align: right; }
+    @media screen and (max-width: 648px) {
+      .footer .colophon {
+        text-align: center; } }
+    .footer .colophon p {
+      color: #dadada; }
 
 /* Header */
 .header .layout {
@@ -348,8 +373,8 @@ body {
       display: block;
       background: linear-gradient(65deg, #0000ff, #ff0095);
       background-size: 400% 400%;
-      -webkit-animation: logo 3s linear infinite;
-              animation: logo 3s linear infinite; }
+      -webkit-animation: logo 9s linear infinite;
+              animation: logo 9s linear infinite; }
       .navigation__logo a:before {
         display: none; }
     .navigation__logo svg {

@@ -3,6 +3,17 @@
   background: $black;
   color: $white;
 
+  .layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media screen and (max-width: $break-small) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
   a {
     color: $white;
     &:hover {
@@ -11,11 +22,17 @@
   }
 
   .contact {
+    @media screen and (max-width: $break-small) {
+      text-align: center;
+    }
     &__socials {
       display: flex;
       list-style: none;
       padding: 0;
       align-items: center;
+      @media screen and (max-width: $break-small) {
+        justify-content: center;
+      }
     }
 
     &__social a {
@@ -68,10 +85,15 @@
     }
   }
 
-  .archive {
-    &__list {
-      list-style: none;
-      padding: 0;
+  .colophon {
+    text-align: right;
+
+    @media screen and (max-width: $break-small) {
+      text-align: center;
+    }
+
+    p {
+      color: $grey;
     }
   }
 }
