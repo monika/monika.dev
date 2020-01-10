@@ -281,6 +281,7 @@ body {
     .footer a:hover {
       color: #020202; }
   .footer .contact {
+    padding-right: 2.4rem;
     /* Icons */ }
     @media screen and (max-width: 648px) {
       .footer .contact {
@@ -290,8 +291,8 @@ body {
       display: flex;
       list-style: none;
       padding: 0;
-      -webkit-box-align: center;
-              align-items: center; }
+      -webkit-box-align: start;
+              align-items: flex-start; }
       @media screen and (max-width: 648px) {
         .footer .contact__socials {
           -webkit-box-pack: center;
@@ -322,6 +323,16 @@ body {
       fill: none; }
     .footer .contact a:focus svg .st0 {
       fill: none; }
+    .footer .contact .dev svg {
+      background: #ff0095;
+      border-radius: 3px;
+      padding: 6px 6px 6px 10px; }
+      .footer .contact .dev svg path {
+        fill: #020202; }
+    .footer .contact .dev a:hover svg {
+      background: #97f5f2; }
+    .footer .contact .dev a:hover path {
+      fill: #020202; }
   .footer .colophon {
     text-align: right; }
     @media screen and (max-width: 648px) {
