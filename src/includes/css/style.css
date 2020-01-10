@@ -232,7 +232,7 @@ body {
     display: block;
     width: 97%;
     height: 101%;
-    background-image: url("images/bg-x-lt-blue.svg");
+    background-image: url("images/bg-x-blue.svg");
     background-position: -13px -13px;
     position: absolute;
     top: -22px;
@@ -403,7 +403,7 @@ body {
   margin-top: 0;
   font-weight: 600;
   color: #fff;
-  text-shadow: 1px 1px 0 #020202, 1px -1px 0 #020202, -1px 1px 0 #020202, -1px -1px 0 #020202, 2px 2px 0 #020202, 2px -2px 0 #020202, -2px 2px 0 #020202, -2px -2px 0 #020202; }
+  text-shadow: 1px 1px 0 #0000ff, 1px -1px 0 #0000ff, -1px 1px 0 #0000ff, -1px -1px 0 #0000ff, 2px 2px 0 #0000ff, 2px -2px 0 #0000ff, -2px 2px 0 #0000ff, -2px -2px 0 #0000ff, 3px 3px 0 #0000ff, 3px -3px 0 #0000ff, -3px 3px 0 #0000ff, -3px -3px 0 #0000ff; }
   @media screen and (max-width: 648px) {
     .projects__heading {
       font-size: 3.2rem; } }
@@ -462,9 +462,9 @@ body {
   .projects .project__content {
     padding: 3%;
     background: #fff;
-    color: #020202;
-    border: 3px solid #ff0095;
-    box-shadow: -12px 12px #ff0095;
+    color: #0000ff;
+    border: 3px solid #0000ff;
+    box-shadow: -12px 12px #0000ff;
     position: relative;
     z-index: 5;
     -ms-grid-column: 2;

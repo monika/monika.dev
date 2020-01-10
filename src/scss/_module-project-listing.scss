@@ -5,15 +5,10 @@
     margin-top: 0;
     font-weight: 600;
     color: $white;
-    text-shadow:
-      1px 1px 0 $black,
-      1px -1px 0 $black,
-      -1px 1px 0 $black,
-      -1px -1px 0 $black,
-      2px 2px 0 $black,
-      2px -2px 0 $black,
-      -2px 2px 0 $black,
-      -2px -2px 0 $black;
+    text-shadow: 1px 1px 0 $blue, 1px -1px 0 $blue, -1px 1px 0 $blue,
+      -1px -1px 0 $blue, 2px 2px 0 $blue, 2px -2px 0 $blue, -2px 2px 0 $blue,
+      -2px -2px 0 $blue, 3px 3px 0 $blue, 3px -3px 0 $blue, -3px 3px 0 $blue,
+      -3px -3px 0 $blue;
 
     @media screen and (max-width: $break-small) {
       font-size: 3.2rem;
@@ -80,10 +75,10 @@
     &__content {
       padding: 3%;
       background: $white;
+      color: $blue;
 
-      color: $black;
-      border: 3px solid $pink;
-      box-shadow: -12px 12px $pink;
+      border: 3px solid $blue;
+      box-shadow: -12px 12px $blue;
 
       position: relative;
       z-index: 5;
