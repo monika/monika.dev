@@ -24,6 +24,10 @@
       position: relative;
       margin: 2% 4%;
 
+      @media screen and (max-width: $break-small) {
+        margin: 4%;
+      }
+
       &:after {
         @extend a:after;
 

@@ -258,6 +258,9 @@ body {
     counter-increment: projects;
     position: relative;
     margin: 2% 4%; }
+    @media screen and (max-width: 648px) {
+      .page-project .projects li {
+        margin: 4%; } }
     .page-project .projects li:after {
       z-index: 5;
       color: #020202;
