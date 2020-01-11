@@ -1,5 +1,6 @@
 const cleanCSS = require('clean-css');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const eleventyNavigation = require('@11ty/eleventy-navigation');
 
 module.exports = function(eleventyConfig) {
   // Clean and minimize CSS
@@ -56,6 +57,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight, {
     templateFormats: ['md', 'njk', 'html', 'css']
   });
+
+  // Add navigation plugin
+  eleventyConfig.addPlugin(eleventyNavigation);
 
   eleventyConfig.setTemplateFormats(['njk', 'md', 'html']);
 

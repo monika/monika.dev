@@ -4,6 +4,9 @@ thumbnail: img-oicvf
 intro: A marketing site and digital event program for the Oakland Internet Cat Video Festival on behalf of the Great Wall of Oakland and the East Bay SPCA.
 role: Front-end Development, Interaction Design
 displayOrder: 5
+eleventyNavigation:
+  key: OakCatVidFest
+  order: 5
 ---
 
 ### The Project

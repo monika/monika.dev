@@ -5,6 +5,9 @@ thumbnailAlt: The homepage of DrinkOlipop.com.
 intro: An e-commerce site for groundbreaking pre-biotic sparkling tonic company OLIPOP, built around their fresh new brand.
 role: Front-end Development, Technical Advising
 displayOrder: 1
+eleventyNavigation:
+  key: OLIPOP
+  order: 1
 ---
 
 ### The Project

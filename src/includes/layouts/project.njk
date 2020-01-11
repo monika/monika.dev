@@ -19,7 +19,24 @@
 
     </main>
 
-    <!-- Next / Prev Project -->
+    <nav class="projects" aria-labelledby="project-pagination">
+
+    <div class="layout">
+
+        <h2 class="projects__heading" id="project-pagination">Projects</h2>
+
+        {% set navPages = collections.project | eleventyNavigation %}
+        <ol>
+            {%- for entry in navPages %}
+            <li{% if entry.url == page.url %} aria-current="page" class="current"{% endif %}>
+                <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+            </li>
+            {%- endfor %}
+        </ol>
+
+        </div>
+
+    </nav>
 
     {% include "partials/footer.njk" %}
 

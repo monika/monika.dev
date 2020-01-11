@@ -4,6 +4,9 @@ thumbnail: img-youscience
 intro: An aptitude testing suite built to help students lean into their strengths and save thousands of dollars a year in college.
 role: Visual Design, Interaction design, Prototyping
 displayOrder: 6
+eleventyNavigation:
+  key: YouScience
+  order: 6
 ---
 
 ### The Project

@@ -1,5 +1,32 @@
 /* Project Listing */
 .projects {
+  background-color: $black;
+  background-position: top;
+
+  position: relative;
+
+  .layout {
+    position: relative;
+    z-index: 5;
+  }
+
+  &:after {
+    content: '';
+
+    display: block;
+    width: 97%;
+    height: 101%;
+    background-image: url('images/bg-x-blue.svg');
+    background-position: -13px -13px;
+
+    position: absolute;
+    top: -22px;
+    left: 0;
+
+    @media screen and (max-width: $break-small) {
+      width: 100%;
+    }
+  }
   &__heading {
     font-size: 4.8rem;
     margin-top: 0;
