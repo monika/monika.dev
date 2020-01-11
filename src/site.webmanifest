@@ -7,12 +7,12 @@
   "start_url": "https://monika.dev",
   "icons": [
     {
-      "src": "/android-chrome-512x512.png",
+      "src": "/favicon.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#0000ff",
+  "theme_color": "#0000ff",
+  "background_color": "#ffffff",
   "display": "standalone"
 }
