@@ -1,9 +1,16 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>{% if title != "Home" %}{{ title }} | {% endif %}Monika Hoex &mdash; Front-end Developer</title>
-<meta name="description" content="Monika Hoex is a Front-end Developer in Oakland, California.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>{% if title != "Home" %}{{ title }} | {% endif %}{{ meta.title }}</title>
+
+<meta name="description" content="{{ meta.description }}">
+
+<meta name="robots" content="index,follow">
+<meta name="generator" content="Eleventy">
+
+{% include "partials/meta.njk" %}
 
 <link rel="dns-prefetch" href="https://www.google-analytics.com">
 <link rel="dns-prefetch" href="https://use.typekit.net">
