@@ -33,10 +33,7 @@
 
         z-index: 5;
         color: $black;
-        text-shadow: 1px 1px 0 $blue, 1px -1px 0 $blue, -1px 1px 0 $blue,
-          -1px -1px 0 $blue, 2px 2px 0 $blue, 2px -2px 0 $blue, -2px 2px 0 $blue,
-          -2px -2px 0 $blue, 3px 3px 0 $blue, 3px -3px 0 $blue, -3px 3px 0 $blue,
-          -3px -3px 0 $blue;
+        @include text-shadow($blue);
       }
 
       &.current {
@@ -75,8 +72,8 @@
         left: -1.4rem;
         z-index: 10;
 
-        transition: bottom 0.2s $circular-ease-in-out,
-          color 0.1s $circular-ease-in-out, left 0.2s $circular-ease-in-out;
+        transition: bottom 0.2s $timing-function, color 0.1s $timing-function,
+          left 0.2s $timing-function;
       }
 
       &:hover {

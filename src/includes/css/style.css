@@ -3,7 +3,9 @@
 ------------------------------------- */
 /* Base Styles */
 /* Colors */
+/* Breakpoints */
 /* Animation */
+/* Visually Hidden for Screen Readers */
 .visually-hidden {
   /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
   position: absolute !important;
@@ -14,7 +16,7 @@
   /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px); }
 
-/* Breakpoints */
+/* Mixins */
 /* Typography */
 html {
   font-size: 62.5%; }
@@ -78,7 +80,7 @@ a {
   color: $pink;
   transition-property: all;
   transition-duration: 0.2s;
-  transition-timing-function: $circular-ease-in-out;
+  transition-timing-function: $timing-function;
 
   position: relative;*/
   /*&:hover {
@@ -111,7 +113,7 @@ a {
 
     transition-property: all;
     transition-duration: 0.2s;
-    transition-timing-function: $circular-ease-in-out;
+    transition-timing-function: $timing-function;
   }*/ }
 
 h1, .header__title,

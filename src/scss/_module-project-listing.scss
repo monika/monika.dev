@@ -32,10 +32,7 @@
     margin-top: 0;
     font-weight: 600;
     color: $white;
-    text-shadow: 1px 1px 0 $blue, 1px -1px 0 $blue, -1px 1px 0 $blue,
-      -1px -1px 0 $blue, 2px 2px 0 $blue, 2px -2px 0 $blue, -2px 2px 0 $blue,
-      -2px -2px 0 $blue, 3px 3px 0 $blue, 3px -3px 0 $blue, -3px 3px 0 $blue,
-      -3px -3px 0 $blue;
+    @include text-shadow($blue);
 
     @media screen and (max-width: $break-small) {
       font-size: 3.2rem;
