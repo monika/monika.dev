@@ -1,6 +1,6 @@
 # monika.dev
 
-A static portfolio site.
+A static portfolio site: [monika.dev](https://monika.dev)
 
 ## Powered By
 
