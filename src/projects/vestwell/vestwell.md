@@ -10,7 +10,7 @@ eleventyNavigation:
   order: 2
 ---
 
-### The Story
+## The Story
 
 _A digital retirement platform for financial advisors, employers, and employees, that makes it easier to understand and save for retirement._
 
@@ -22,7 +22,7 @@ Despite being a relatively concise site, I built a basic design system to speed 
 
 [Visit Vestwell.com &#10132;](http://vestwell.com/)
 
-### Responsibilities
+## Responsibilities
 
 - Semantic HTML, responsive CSS, presentational JS
 - Bring rebrand into site styling
@@ -33,7 +33,7 @@ Despite being a relatively concise site, I built a basic design system to speed 
 - Responsive email template campaign
 - Marketing campaign technical support
 
-### Visuals
+## Visuals
 
 <div class="visuals">
 
@@ -45,15 +45,15 @@ Despite being a relatively concise site, I built a basic design system to speed 
 
 <div class="code">
 
-### Code Example: Highlight Module
+## Code Example: Highlight Module
 
-#### Browser Rendering
+### Browser Rendering
 
 {% codeExample "vestwell-code-example", "Three highlighted facts under a headline." %}
 
 <div class="code__html language-html">
 
-#### HTML
+### HTML
 
 ```html
 <div class="highlights">
@@ -124,7 +124,7 @@ Despite being a relatively concise site, I built a basic design system to speed 
 
 <div class="code__sass language-css language-scss">
 
-#### SCSS
+### SCSS
 
 ```scss
 .highlights {
@@ -245,6 +245,6 @@ Despite being a relatively concise site, I built a basic design system to speed 
 
 </div>
 
-### Co-credits
+## Co-credits
 
 - Design: [Williamson Adams](http://www.williamsonadams.com/)

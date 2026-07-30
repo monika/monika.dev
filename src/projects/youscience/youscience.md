@@ -9,7 +9,7 @@ eleventyNavigation:
   order: 6
 ---
 
-### The Project
+## The Project
 
 _With college tuition increasing every year, YouScience's online aptitude testing can both help students and parents save thousands of dollars a year, and codify students' strongest skills and abilities._
 
@@ -19,7 +19,7 @@ YouScience's goal is to make this entire process more approachable, less expensi
 
 While at Sparkart Group, I updated the look and feel of the Ball Aptitude Battery&reg; (BAB) assessments, modernized the user's interactions with the various assessment types, and developed high fidelity prototypes and example animations for YouScience's in-house developers, all in time for official BAB test standardization.
 
-### Responsibilities
+## Responsibilities
 
 - Auditing current user flow through testing suite
 - Developing improved user flow through testing suite
@@ -27,7 +27,7 @@ While at Sparkart Group, I updated the look and feel of the Ball Aptitude Batter
 - Prototyping assessments for YouScience developers
 - Interfacing with YouScience's developers
 
-### Visuals
+## Visuals
 
 <div class="visuals">
 
@@ -37,6 +37,6 @@ While at Sparkart Group, I updated the look and feel of the Ball Aptitude Batter
 
 </div>
 
-### Co-credits
+## Co-credits
 
 - Branding: Sparkart Group
