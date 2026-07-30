@@ -5,17 +5,27 @@
 
 <title>{% if title != "Home" %}{{ title }} | {% endif %}{{ meta.title }}</title>
 
-<meta name="description" content="{{ meta.description }}">
+<meta name="description" content="{{ intro if intro else meta.description }}">
 
-<meta name="robots" content="index,follow">
+<meta name="robots" content="{% if noindex %}noindex,nofollow{% else %}index,follow{% endif %}">
 <meta name="generator" content="Eleventy">
 
-{% include "partials/meta.njk" %}
+<link rel="canonical" href="{{ meta.baseURL }}{{ page.url }}">
 
-<link rel="dns-prefetch" href="https://www.google-analytics.com">
+{% include "partials/meta.njk" %}
+{% include "partials/structured-data.njk" %}
+
+<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+<link rel="preconnect" href="https://use.typekit.net">
 <link rel="dns-prefetch" href="https://use.typekit.net">
 
-<link rel="stylesheet" href="https://use.typekit.net/izf4qqb.css">
+{# Body copy is self-hosted, so preload it — it's needed for first paint. #}
+<link rel="preload" href="/fonts/fira-sans-300.woff2" as="font" type="font/woff2" crossorigin>
+
+{# Display faces (Obviously) stay on Adobe Fonts — their license doesn't permit
+   self-hosting. Loaded async so they don't block first paint. #}
+<link rel="stylesheet" href="https://use.typekit.net/izf4qqb.css" media="print" onload="this.media='all';this.onload=null">
+<noscript><link rel="stylesheet" href="https://use.typekit.net/izf4qqb.css"></noscript>
 
 {% set normalize %}
     {% include "css/normalize.css" %}
@@ -34,6 +44,8 @@
 <style>{{ prism | cssmin | safe }}</style>
 
 <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+<link rel="apple-touch-icon" href="/favicon.png">
 <link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0000ff">
 
 <meta name="google-site-verification" content="PS4Kd7aa-5zazVKHNptpocJ7eT-B3O1UypqytvvyJEc" />

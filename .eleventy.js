@@ -15,40 +15,38 @@ module.exports = function(eleventyConfig) {
     });
   });
 
+  // Custom Case Study Listing Sort Order (manual order, not publish date,
+  // so a batch of new entries doesn't all appear "posted" the same week)
+  eleventyConfig.addCollection('caseStudyListing', function(collection) {
+    return collection.getFilteredByTag('caseStudy').sort((a, b) => {
+      return a.data.order - b.data.order;
+    });
+  });
+
+  // Shapes a list of topic strings into schema.org Thing nodes for JSON-LD `about`
+  eleventyConfig.addFilter('schemaThings', function(items) {
+    return (items || []).map((name) => ({ '@type': 'Thing', name }));
+  });
+
   // Code Example Image Nunjucks shortcode
   eleventyConfig.addShortcode('codeExample', function(imgFileName, imgAlt) {
     return `<picture>
     <source
         type="image/webp"
-        srcset="/images/img-${imgFileName}-large.webp"
-        media="(min-width: 401px)"
-    />
-    <source
-        type="image/webp"
-        srcset="/images/img-${imgFileName}-medium.webp, /images/img-${imgFileName}-medium@2x.webp 2x"
-        media="(max-width: 400px)"
-    />
-    <source
-        type="image/webp"
-        srcset="/images/img-${imgFileName}-small.webp, /images/img-${imgFileName}-small@2x.webp 2x"
-        media="(max-width: 200px)"
-    />
-    <!-- jpg images -->
-    <source
-        srcset="/images/img-${imgFileName}-large.jpg"
-        media="(max-width: 401px)"
-    />
-    <source
-        srcset="/images/img-${imgFileName}-medium.jpg, /images/img-${imgFileName}-medium@2x.jpg 2x"
-        media="(max-width: 400px)"
-    />
-    <source
-        srcset="/images/img-${imgFileName}-small.jpg, /images/img-${imgFileName}-small@2x.jpg 2x"
-        media="(max-width: 200px)"
+        srcset="/images/img-${imgFileName}-small.webp 200w,
+                /images/img-${imgFileName}-medium.webp 400w,
+                /images/img-${imgFileName}-large.webp 800w"
+        sizes="(max-width: 648px) 80vw, 70vw"
     />
     <img
-        src="/images/img-${imgFileName}.png"
+        srcset="/images/img-${imgFileName}-small.jpg 200w,
+                /images/img-${imgFileName}-medium.jpg 400w,
+                /images/img-${imgFileName}-large.jpg 800w"
+        sizes="(max-width: 648px) 80vw, 70vw"
+        src="/images/img-${imgFileName}-large.jpg"
         alt="${imgAlt}"
+        loading="lazy"
+        decoding="async"
     />
   </picture>`;
   });
@@ -70,6 +68,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/site.webmanifest');
   eleventyConfig.addPassthroughCopy({ 'src/images-resized': 'images' });
   eleventyConfig.addPassthroughCopy('src/images');
+  eleventyConfig.addPassthroughCopy('src/fonts');
 
   // Basic config settings
   return {

@@ -1,8 +1,9 @@
 
-<h1 class="navigation__logo"><a title="Return to homepage." href="/">{% include "partials/logo.njk" %}</a></h1>
+{# Not a heading: the logo is identical on every page, so making it the h1 left
+   every page without a heading describing its own content. #}
+<div class="navigation__logo"><a title="Return to homepage." href="/">{% include "partials/logo.njk" %}</a></div>
 
 <nav class="navigation__links">
-  <a class="navigation__link" href="/#projects">Projects</a>
-  {#<a class="navigation__link" href="#">Blog</a>#}
+  <a class="navigation__link" href="/#projects">Archive</a>
   <a class="navigation__link" href="/about">About</a>
 </nav>

@@ -29,3 +29,36 @@ body {
     padding: 10%;
   }
 }
+
+/* Offscreen until focused, so keyboard and screen reader users can jump past
+   the header without tabbing through the nav on every page. */
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  padding: 1rem 1.6rem;
+  background: $white;
+  color: $blue;
+  border: 3px solid $blue;
+  font-weight: 700;
+
+  transform: translateY(-150%);
+
+  &:focus {
+    transform: translateY(0);
+  }
+}
+
+/* Respect a stated preference for reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

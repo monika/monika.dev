@@ -7,11 +7,11 @@
 
     {% include "partials/header.njk" %}
 
-    <main>
+    <main id="main">
 
         <div class="layout">
 
-            <h2>{{ title }}</h2>
+            <h1 class="page-title">{{ title }}</h1>
 
             {{ content | safe }}
 
@@ -23,7 +23,7 @@
 
     <div class="layout">
 
-        <h2 class="projects__heading" id="project-pagination">Projects</h2>
+        <h2 class="projects__heading" id="project-pagination">Project Archive</h2>
 
         {% set navPages = collections.project | eleventyNavigation %}
         <ol>
