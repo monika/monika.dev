@@ -38,7 +38,7 @@ Despite being a relatively concise site, I built a basic design system to speed 
 <div class="visuals">
 
 {%- for figure in figures -%}
-{% include modules/figure.njk %}
+{% include "modules/figure.njk" %}
 {%- endfor -%}
 
 </div>

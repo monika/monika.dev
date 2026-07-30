@@ -1,8 +1,10 @@
 // Set up plugins
+const fs = require('fs');
+const path = require('path');
 const gulp = require('gulp');
-const sass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
-const responsive = require('gulp-responsive');
+const sass = require('gulp-sass')(require('sass'));
+const autoprefixer = require('gulp-autoprefixer').default;
+const sharp = require('sharp');
 
 // Compile CSS
 function compileCSS() {
@@ -20,95 +22,53 @@ function compileCSS() {
 // Resize + Optimize images
 /* Sending straight to /dist because Eleventy is going to barf itself
 // remaking templates if the /image directory updates this often */
-function resizeImages() {
-  return gulp
-    .src('src/images/img-*.{jpg,png}')
-    .pipe(
-      responsive(
-        {
-          'img-*.{jpg,png}': [
-            // Define jpg at two resolutions
-            {
-              width: 200,
-              rename: {
-                suffix: '-small',
-                extname: '.jpg'
-              }
-            },
-            {
-              width: 200 * 2,
-              rename: {
-                suffix: '-small@2x',
-                extname: '.jpg'
-              }
-            },
-            {
-              width: 400,
-              rename: {
-                suffix: '-medium',
-                extname: '.jpg'
-              }
-            },
-            {
-              width: 400 * 2,
-              rename: {
-                suffix: '-medium@2x',
-                extname: '.jpg'
-              }
-            },
-            {
-              width: 800,
-              rename: {
-                suffix: '-large',
-                extname: '.jpg'
-              }
-            },
-            // Define webp at two resolutions
-            {
-              width: 200,
-              rename: {
-                suffix: '-small',
-                extname: '.webp'
-              }
-            },
-            {
-              width: 200 * 2,
-              rename: {
-                suffix: '-small@2x',
-                extname: '.webp'
-              }
-            },
-            {
-              width: 400,
-              rename: {
-                suffix: '-medium',
-                extname: '.webp'
-              }
-            },
-            {
-              width: 400 * 2,
-              rename: {
-                suffix: '-medium@2x',
-                extname: '.webp'
-              }
-            },
-            {
-              width: 800,
-              rename: {
-                suffix: '-large',
-                extname: '.webp'
-              }
-            }
-          ]
-        },
-        {
-          // Global configuration for all images
-          quality: 90,
-          withMetadata: false
-        }
-      )
-    )
-    .pipe(gulp.dest('src/images-resized'));
+const IMAGE_SOURCE_DIR = 'src/images';
+const IMAGE_OUTPUT_DIR = 'src/images-resized';
+const IMAGE_SIZES = [
+  { width: 200, suffix: 'small' },
+  { width: 400, suffix: 'small@2x' },
+  { width: 400, suffix: 'medium' },
+  { width: 800, suffix: 'medium@2x' },
+  { width: 800, suffix: 'large' }
+];
+// Screenshots of code stay at high quality — compression artifacts around small
+// text are far more visible than on photographic content.
+const IMAGE_QUALITY = { photo: 78, text: 92 };
+
+async function resizeImages() {
+  const files = fs
+    .readdirSync(IMAGE_SOURCE_DIR)
+    .filter((file) => /^img-.*\.(jpe?g|png)$/i.test(file));
+
+  fs.mkdirSync(IMAGE_OUTPUT_DIR, { recursive: true });
+
+  await Promise.all(
+    files.map(async (file) => {
+      const basename = path.basename(file, path.extname(file));
+      const input = path.join(IMAGE_SOURCE_DIR, file);
+      const quality = basename.includes('code-example')
+        ? IMAGE_QUALITY.text
+        : IMAGE_QUALITY.photo;
+
+      await Promise.all(
+        IMAGE_SIZES.map(async ({ width, suffix }) => {
+          const image = sharp(input).resize(width, null, {
+            withoutEnlargement: true
+          });
+
+          await image
+            .clone()
+            .jpeg({ quality, mozjpeg: true })
+            .toFile(path.join(IMAGE_OUTPUT_DIR, `${basename}-${suffix}.jpg`));
+
+          await image
+            .clone()
+            .webp({ quality })
+            .toFile(path.join(IMAGE_OUTPUT_DIR, `${basename}-${suffix}.webp`));
+        })
+      );
+    })
+  );
 }
 
 // Watch files

@@ -42,7 +42,7 @@ Filled with luscious photography, joyful illustrations, and engaging typography,
 <div class="visuals">
 
 {%- for figure in figures -%}
-{% include modules/figure.njk %}
+{% include "modules/figure.njk" %}
 {%- endfor -%}
 
 </div>
