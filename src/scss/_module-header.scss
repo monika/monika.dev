@@ -27,7 +27,12 @@
     font-weight: 400;
     font-size: 2.4rem;
   }
-  &__action {
-    margin-top: 2rem;
+  /* Only the address is a link, so the sentence stays body-coloured — blue
+     text here read as a link that wasn't one. */
+  &__availability {
+    max-width: 65ch;
+    margin: 2rem 0 0;
+
+    font-weight: 700;
   }
 }

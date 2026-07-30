@@ -1,8 +1,17 @@
 const cleanCSS = require('clean-css');
+const markdownIt = require('markdown-it');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const eleventyNavigation = require('@11ty/eleventy-navigation');
 
 module.exports = function(eleventyConfig) {
+  /* Typographer turns straight quotes into curly ones, and -- into a dash, so
+     prose doesn't depend on remembering to type entities. It only touches text
+     tokens: code blocks, inline code and raw HTML attributes are left alone. */
+  eleventyConfig.setLibrary(
+    'md',
+    markdownIt({ html: true, breaks: false, linkify: false, typographer: true })
+  );
+
   // Clean and minimize CSS
   eleventyConfig.addFilter('cssmin', function(code) {
     return new cleanCSS({}).minify(code).styles;
