@@ -128,6 +128,19 @@ h6 {
   font-style: normal;
   line-height: 1.25;
   text-transform: capitalize;
+
+  /* Even out the line lengths rather than filling each line before wrapping,
+     so a heading doesn't end on a single stranded word. */
+  text-wrap: balance;
+}
+
+/* Same idea for running text, but tuned for longer copy: the browser avoids
+   leaving an orphan on the last line without rebalancing the whole block.
+   Both degrade to normal wrapping where unsupported. */
+p,
+li,
+figcaption {
+  text-wrap: pretty;
 }
 
 h1 {

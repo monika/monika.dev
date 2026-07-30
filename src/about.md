@@ -9,7 +9,7 @@ The blend of visual design, user interaction, and code had me hooked. My guestbo
 
 Studying graphic design in college gave me an understanding of typography, color, motion, layout, empathy, and intent&mdash;skills that I bring into my code.
 
-Offline - I live in Tacoma, WA with my spouse, where we enjoy exploring the city and trying new restaurants and food trucks. I also spend time with watercolors, sewing machines, freshwater aquariums, and parks with lots of shade.
+Offline — I live in Tacoma, WA with my spouse, where we enjoy exploring the city and trying new restaurants and food trucks. I also spend time with watercolors, sewing machines, freshwater aquariums, and parks with lots of shade.
 
 ## Writing
 
