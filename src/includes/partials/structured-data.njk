@@ -1,0 +1,44 @@
+{% set structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": meta.baseURL + "/#person",
+      "name": meta.name,
+      "url": meta.baseURL,
+      "image": {
+        "@type": "ImageObject",
+        "url": meta.baseURL + "/images/img-monika.jpg",
+        "width": 800,
+        "height": 800
+      },
+      "jobTitle": meta.jobTitle,
+      "description": meta.description,
+      "disambiguatingDescription": "Not to be confused with other people named Monika Hoex — this is the web designer and developer based in the Greater Seattle Area, formerly of AdRoll (a division of NextRoll) and Sparkart Group.",
+      "knowsAbout": [
+        "Front-end development",
+        "Technical SEO",
+        "Entity disambiguation",
+        "Structured data",
+        "Web accessibility",
+        "Design systems",
+        "CSS"
+      ],
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Greater Seattle Area"
+      },
+      "sameAs": meta.sameAs,
+      "alumniOf": meta.alumniOf
+    },
+    {
+      "@type": "WebSite",
+      "@id": meta.baseURL + "/#website",
+      "url": meta.baseURL,
+      "name": meta.name,
+      "inLanguage": "en-US",
+      "publisher": { "@id": meta.baseURL + "/#person" }
+    }
+  ]
+} %}
+<script type="application/ld+json">{{ structuredData | dump | safe }}</script>

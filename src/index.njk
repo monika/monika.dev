@@ -11,12 +11,13 @@ title: Home
 
     {% include "partials/header.njk" %}
 
-    <main>
+    <main id="main">
 
         <div id="projects" class="projects">
         <div class="layout">
 
-            <h3 class="projects__heading">Projects</h3>
+            <h2 class="projects__heading">Project Archive</h2>
+            <p class="projects__intro">Selected freelance and agency work, 2004–2020.</p>
 
             <!-- Three new projects -->
             {%- for project in collections.projectListing -%}
@@ -24,53 +25,31 @@ title: Home
 
                 <figure class="project__thumbnail">
                     <picture class="project__mask">
-                        <!-- webp images -->
                         <source
-                            class="project__image"
                             type="image/webp"
-                            srcset="/images/{{ project.data.thumbnail }}-large.webp"
-                            media="(min-width: 401px)"
-                        />
-                        <source
-                            class="project__image"
-                            type="image/webp"
-                            srcset="/images/{{ project.data.thumbnail }}-medium.webp, /images/{{ project.data.thumbnail }}-medium@2x.webp 2x"
-                            media="(max-width: 400px)"
-                        />
-                        <source
-                            class="project__image"
-                            type="image/webp"
-                            srcset="/images/{{ project.data.thumbnail }}-small.webp, /images/{{ project.data.thumbnail }}-small@2x.webp 2x"
-                            media="(max-width: 200px)"
-                        />
-                        <!-- jpg images -->
-                        <source
-                            class="project__image"
-                            srcset="/images/{{ project.data.thumbnail }}-large.jpg"
-                            media="(min-width: 800px)"
-                        />
-                        <source
-                            class="project__image"
-                            srcset="/images/{{ project.data.thumbnail }}-medium.jpg, /images/{{ project.data.thumbnail }}-medium@2x.jpg 2x"
-                            media="(min-width: 800px)"
-                        />
-                        <source
-                            class="project__image"
-                            srcset="/images/{{ project.data.thumbnail }}-small.jpg, /images/{{ project.data.thumbnail }}-small@2x.jpg 2x"
-                            media="(min-width: 800px)"
+                            srcset="/images/{{ project.data.thumbnail }}-small.webp 200w,
+                                    /images/{{ project.data.thumbnail }}-medium.webp 400w,
+                                    /images/{{ project.data.thumbnail }}-large.webp 800w"
+                            sizes="(max-width: 648px) 76vw, 45vw"
                         />
                         <img
                             class="project__image"
-                            src="/images/{{ project.data.thumbnail }}.jpg"
+                            srcset="/images/{{ project.data.thumbnail }}-small.jpg 200w,
+                                    /images/{{ project.data.thumbnail }}-medium.jpg 400w,
+                                    /images/{{ project.data.thumbnail }}-large.jpg 800w"
+                            sizes="(max-width: 648px) 76vw, 45vw"
+                            src="/images/{{ project.data.thumbnail }}-large.jpg"
                             alt="{{ project.data.thumbnailAlt }}"
+                            loading="lazy"
+                            decoding="async"
                         />
                     </picture>
                 </figure>
 
                 <div class="project__content">
 
-                    <h4 class="project__title">{{ project.data.title }}</h4>
-                    <h5 class="project__role">{{project.data.role }}</h5>
+                    <h3 class="project__title">{{ project.data.title }}</h3>
+                    <p class="project__role">{{ project.data.role }}</p>
                     <p class="project__info">{{ project.data.intro }}</p>
                     <a class="project__link button" href="{{ project.url }}">Review Project</a>
 
@@ -78,23 +57,6 @@ title: Home
 
             </article>
             {%- endfor -%}
-
-        </div>
-        </div>
-
-        <!-- Three codepen/glitch projects -->
-        <div class="experiments">
-        <div class="layout">
-
-            <h3>Code Experiments</h3>
-
-            <ul class="experiments__list">
-                <li class="experiments__item"><a href="https://glitch.com/~twitter-moon-phase-bot">Twitter Moon Phase Bot</a> @Glitch
-                <li class="experiments__item"><a href="https://glitch.com/~emojifize">Emojifize</a> @Glitch</li>
-                <li class="experiments__item"><a href="https://codepen.io/monikadotdev/full/pXaOrg">Animated Bar Graphs</a> @CodePen</li>
-                <li class="experiments__item"><a href="https://codepen.io/monikadotdev/full/MRLBJa">Animated Donut Graph</a> @CodePen</li>
-                <li class="experiments__item"><a href="https://twitter.com/tomwaits_tales">Tom Waits Lyrics bot</a> @Twitter</li>
-            </ul>
 
         </div>
         </div>

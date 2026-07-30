@@ -1,0 +1,56 @@
+/* Case Studies Listing */
+.case-studies {
+  background-color: $blue;
+  position: relative;
+
+  .layout {
+    position: relative;
+    z-index: 5;
+  }
+
+  &__heading {
+    font-size: 4.8rem;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    color: $white;
+    @include text-shadow($black);
+
+    @media screen and (max-width: $break-small) {
+      font-size: 3.2rem;
+    }
+  }
+
+  &__intro {
+    max-width: 60ch;
+    color: $white;
+    margin-bottom: 3.2rem;
+  }
+}
+
+.case-study-card {
+  background: $white;
+  color: $blue;
+  border: 3px solid $black;
+  box-shadow: -12px 12px $black;
+  padding: 3%;
+  margin: 0 0 4rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+
+    a {
+      color: $black;
+    }
+  }
+
+  &__intro {
+    max-width: 70ch;
+    margin-bottom: 1.6rem;
+  }
+}

@@ -1,8 +1,20 @@
 {
   "baseURL": "https://monika.dev",
   "name": "Monika Hoex",
-  "title": "Monika Hoex — Front-end Developer",
-  "description": "Monika Hoex is a Front-end Developer in Oakland, California with fifteen years of experience building effective solutions for a diverse set of clients.",
+  "title": "Monika Hoex — Principal Web Designer & Developer",
+  "description": "Monika Hoex is a Web Designer & Developer in the Greater Seattle Area with over twenty years of experience spanning commercial CMS platforms, static site generators, UI/UX, web accessibility, and technical SEO.",
   "image": "/images/social.png",
-  "twitter": "evi1pilotfish"
+  "gaId": "G-9JZKHMW1K4",
+  "jobTitle": "Principal Web Designer & Developer",
+  "sameAs": [
+    "https://www.linkedin.com/in/monikahoex",
+    "https://github.com/monika",
+    "https://codepen.io/monikadotdev/",
+    "https://dev.to/monika",
+    "https://www.adroll.com/blog/author/monika-hoex"
+  ],
+  "alumniOf": [
+    { "@type": "Organization", "name": "AdRoll, a division of NextRoll", "url": "https://www.adroll.com" },
+    { "@type": "Organization", "name": "Sparkart Group Inc.", "url": "https://www.sparkart.com/" }
+  ]
 }
