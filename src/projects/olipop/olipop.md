@@ -10,7 +10,7 @@ eleventyNavigation:
   order: 1
 ---
 
-### The Project
+## The Project
 
 _A healthful and delicious pre-biotic sparkling tonic drink that needed a site as fresh and invigorating as its new branding._
 
@@ -26,7 +26,7 @@ Filled with luscious photography, joyful illustrations, and engaging typography,
 
 <aside>
 
-### Responsibilities
+## Responsibilities
 
 - Platform research
 - Brand integration
@@ -37,27 +37,27 @@ Filled with luscious photography, joyful illustrations, and engaging typography,
 
 </aside>
 
-### Visuals
+## Visuals
 
 <div class="visuals">
 
 {%- for figure in figures -%}
-{% include modules/figure.njk %}
+{% include "modules/figure.njk" %}
 {%- endfor -%}
 
 </div>
 
 <div class="code">
 
-### Code Example: Excerpt Module
+## Code Example: Excerpt Module
 
-#### Browser Rendering
+### Browser Rendering
 
 {% codeExample "olipop-code-example", "A textured illustration of a water can next to a block of green text." %}
 
 <div class="code__html">
 
-#### HTML
+### HTML
 
 ```html
 <section class="module-excerpt good-bacteria">
@@ -90,7 +90,7 @@ Filled with luscious photography, joyful illustrations, and engaging typography,
 
 <div class="code__sass">
 
-#### SCSS
+### SCSS
 
 ```scss
 .module-excerpt {
@@ -190,7 +190,7 @@ Filled with luscious photography, joyful illustrations, and engaging typography,
 
 </div>
 
-### Co-credits
+## Co-credits
 
 - Design: [Break Maiden](https://www.breakmaiden.co/olipop)
 - E-Commerce Support: [Creatix Marketing](http://creatix.io/)

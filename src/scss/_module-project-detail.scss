@@ -3,7 +3,10 @@
     max-width: 75ch;
   }
 
-  h3 {
+  /* Body headings sit a level below the page title, so they're scoped to main
+     to keep them off the Project Archive nav that follows it. */
+  main h2 {
+    font-size: 2.4rem;
     margin-top: 5.2rem;
     margin-bottom: 3.2rem;
 
@@ -12,13 +15,15 @@
     }
   }
 
-  h3 + p em {
-    font-family: obviously, sans-serif;
+  main h2 + p em {
+    font-family: obviously, 'Obviously Fallback', sans-serif;
     font-weight: 400;
     font-style: italic;
   }
 
-  h4 {
+  main h3 {
+    font-size: 2rem;
+    font-weight: 600;
     margin-top: 5.2rem;
   }
 

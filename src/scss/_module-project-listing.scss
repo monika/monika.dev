@@ -39,6 +39,12 @@
     }
   }
 
+  &__intro {
+    max-width: 60ch;
+    color: $white;
+    margin-bottom: 3.2rem;
+  }
+
   .project {
     display: grid;
     padding: 2% 0;
@@ -123,9 +129,19 @@
     &__title {
       margin-top: 0;
       margin-bottom: 1.2rem;
+      font-size: 2rem;
+      font-weight: 600;
     }
+    /* Metadata, not a heading — styled to match the display type it replaced. */
     &__role {
       margin-top: 0;
+      margin-bottom: 1.6rem;
+      font-family: obviously, 'Obviously Fallback', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 1.25;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
     }
   }
 }

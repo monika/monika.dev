@@ -9,7 +9,7 @@ eleventyNavigation:
   order: 5
 ---
 
-### The Project
+## The Project
 
 _A fundraiser event so nice they held it twice! OICVF was created to bring the Internet Cat Video Festival to Oakland, California for the benefit of the East Bay SPCA._
 
@@ -19,7 +19,7 @@ The major conceptual breakthrough for this site was understanding that the audie
 
 Mayor Jean Quan declared it &ldquo;[Internet Cat Video Day](https://www.kqed.org/arts/10135685)&rdquo;!
 
-### Responsibilities
+## Responsibilities
 
 - Semantic HTML, Responsive CSS, Presentational JS
 - Information architecture
@@ -28,22 +28,22 @@ Mayor Jean Quan declared it &ldquo;[Internet Cat Video Day](https://www.kqed.org
 - Supported event organizers with planning and data collection tools
 - Site maintenance and updates
 
-### Visuals
+## Visuals
 
 <div class="visuals">
 
 {%- for figure in figures -%}
-{% include modules/figure.njk %}
+{% include "modules/figure.njk" %}
 {%- endfor -%}
 
 </div>
 
-### Co-credits
+## Co-credits
 
 - Site design: Niraj Patil
 - Logo design: Savio Alphonso
 
-### Press
+## Press
 
 - [&ldquo;A Tale of Two Competing Cat Video Festivals&rdquo;](https://www.kqed.org/arts/10135685) [KQED]
 - [&ldquo;Oakland Internet Cat Video Festival Showcases The Web’s Finest Felines&rdquo;](https://www.huffingtonpost.com/2013/03/28/oakland-internet-cat-video-film-festival_n_2972662.html) [HuffPo]
@@ -51,21 +51,21 @@ Mayor Jean Quan declared it &ldquo;[Internet Cat Video Day](https://www.kqed.org
 
 ---
 
-### On Shifting Audiences
+## On Shifting Audiences
 
-#### Focus the First: Secure Vendors
+### Focus the First: Secure Vendors
 
 With no vendors, there would be no event. My first focus was to facilitate vendors submitting information to the event coordinators via form submissions. This also meant we needed to explain the concept of the event, what we were looking for, and what vendors needed to have in order to participate.
 
 I pushed forward the informational content of the site and surfaced the call for vendor submissions on the homepage.
 
-#### Focus the Second: Sell Tickets
+### Focus the Second: Sell Tickets
 
 Vendors were secured and while their content and calls for submissions were moved further into the site for secondary focus. The overall focus was now getting people to buy tickets to the event. This meant that I was now working in tandem with the marketing team to inform the public about what exactly this event was, why we were having it, and how they could join us.
 
 I moved forward the ability to purchase tickets and kept the site updated with changes to the entertainment schedule, vendor placements, and event map.
 
-#### Focus the Third: Navigate the Day
+### Focus the Third: Navigate the Day
 
 On the day of the event, I shifted the content of the site around to feature the day’s event schedule and map to the homepage. Tickets were still being sold online and at the gate, but I was now focused on supporting the people who were at the event. They needed to know what was happening and where it was happening.
 

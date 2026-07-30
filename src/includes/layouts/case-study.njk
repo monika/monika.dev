@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "partials/head.njk" %}
+    {% set articleSchema = {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": title,
+      "description": intro,
+      "author": { "@id": meta.baseURL + "/#person" },
+      "publisher": { "@id": meta.baseURL + "/#person" },
+      "mainEntityOfPage": meta.baseURL + page.url,
+      "about": about | schemaThings
+    } %}
+    <script type="application/ld+json">{{ articleSchema | dump | safe }}</script>
+</head>
+<body class="page-case-study">
+
+    {% include "partials/header.njk" %}
+
+    <main id="main">
+
+        <div class="layout">
+
+            <p class="case-study__eyebrow">{{ context }}</p>
+            <h1 class="page-title">{{ title }}</h1>
+            {% if role %}<p class="case-study__role">{{ role }}</p>{% endif %}
+
+            {{ content | safe }}
+
+        </div>
+
+    </main>
+
+    <nav class="case-studies" aria-labelledby="case-study-pagination">
+
+    <div class="layout">
+
+        <h2 class="case-studies__heading" id="case-study-pagination">More Case Studies</h2>
+
+        {% set navPages = collections.caseStudy | eleventyNavigation %}
+        <ol>
+            {%- for entry in navPages %}
+            <li{% if entry.url == page.url %} aria-current="page" class="current"{% endif %}>
+                <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+            </li>
+            {%- endfor %}
+        </ol>
+
+        </div>
+
+    </nav>
+
+    {% include "partials/footer.njk" %}
+
+</body>
+</html>

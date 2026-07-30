@@ -1,0 +1,45 @@
+/* Page: Case Study */
+.page-case-study {
+  main p {
+    max-width: 75ch;
+  }
+
+  main h2 {
+    font-size: 2.4rem;
+    margin-top: 5.2rem;
+    margin-bottom: 3.2rem;
+
+    @media screen and (max-width: $break-small) {
+      font-size: 2rem;
+    }
+  }
+
+  main h2 + p em {
+    font-family: obviously, 'Obviously Fallback', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .case-study__eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    color: $blue;
+    margin-bottom: 0;
+  }
+
+  /* Metadata, not a heading — styled to match the display type it replaced. */
+  .case-study__role {
+    margin-top: 0.4rem;
+    margin-bottom: 0;
+    font-family: obviously-wide, 'Obviously Wide Fallback', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 1.25;
+    text-transform: capitalize;
+
+    @media screen and (max-width: $break-small) {
+      font-size: 1.8rem;
+    }
+  }
+}

@@ -1,5 +1,8 @@
 User-agent: *
-Disallow: /images/
-Disallow: /js/
+Allow: /
 
-Sitemap: http://monika.dev/sitemap.xml
+# Case studies are still drafts. They're kept out of the index with a page-level
+# noindex rather than a Disallow here — a disallowed URL can't be crawled, so the
+# crawler would never see the noindex and the URL could still surface from a link.
+
+Sitemap: https://monika.dev/sitemap.xml

@@ -1,18 +1,28 @@
-# Global settings applied to the whole site.  
-# 
-# “base” is the directory to change to before starting build. If you set base:
-#        that is where we will look for package.json/.nvmrc/etc, not repo root!
-# “command” is your build command.
-# “publish” is the directory to publish (relative to the root of your repo).
-
-# [build]
-#  base    = "src"
-#  command = "eleventy"
-#  publish = "dist"
-
-# Specific branch context: Deploys from this branch
-# will take these settings and override their
-# current ones.
-[context.eleventy]
-  command = "gulp build && eleventy"
+[build]
+  command = "npm run build"
   publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "24"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+# Fingerprint-free filenames, so keep these short enough that a redeploy is
+# picked up, but long enough to avoid refetching on every visit.
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800, stale-while-revalidate=86400"
+
+# Font filenames are stable and their contents never change in place.
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

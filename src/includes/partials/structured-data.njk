@@ -1,0 +1,48 @@
+{% set structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": meta.baseURL + "/#person",
+      "name": meta.name,
+      "url": meta.baseURL,
+      "image": {
+        "@type": "ImageObject",
+        "url": meta.baseURL + "/images/img-monika.jpg",
+        "width": 800,
+        "height": 800
+      },
+      "jobTitle": meta.jobTitle,
+      "description": meta.description,
+      "knowsAbout": [
+        "Front-end development",
+        "Technical SEO",
+        "Entity disambiguation",
+        "Structured data",
+        "Web accessibility",
+        "Design systems",
+        "CSS"
+      ],
+      "homeLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Tacoma",
+          "addressRegion": "WA",
+          "addressCountry": "US"
+        }
+      },
+      "sameAs": meta.sameAs,
+      "alumniOf": meta.alumniOf
+    },
+    {
+      "@type": "WebSite",
+      "@id": meta.baseURL + "/#website",
+      "url": meta.baseURL,
+      "name": meta.name,
+      "inLanguage": "en-US",
+      "publisher": { "@id": meta.baseURL + "/#person" }
+    }
+  ]
+} %}
+<script type="application/ld+json">{{ structuredData | dump | safe }}</script>

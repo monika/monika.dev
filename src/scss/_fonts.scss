@@ -1,0 +1,64 @@
+/* Self-hosted Fira Sans
+------------------------------------- */
+/* Mozilla's Fira Sans, licensed under the SIL Open Font License (see
+   src/fonts/OFL.txt). Self-hosted rather than served from Adobe Fonts so body
+   text isn't gated behind a third-party, render-blocking request.
+   Obviously / Obviously Wide stay on Adobe Fonts — their license doesn't
+   permit self-hosting. */
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('/fonts/fira-sans-300.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('/fonts/fira-sans-300-italic.woff2') format('woff2');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('/fonts/fira-sans-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('/fonts/fira-sans-700-italic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Metrics-matched fallbacks for the Adobe-hosted display faces.
+   Obviously loads asynchronously, so headings paint in a local font first.
+   These overrides scale that local font to occupy the same space, which keeps
+   the swap from shifting layout. Ratios measured against the live webfonts:
+   Obviously Wide runs 154% the advance width of Arial, Obviously 119%; the
+   ascent/descent overrides are those metrics divided by the size-adjust. */
+
+@font-face {
+  font-family: 'Obviously Wide Fallback';
+  src: local('Arial'), local('Helvetica'), local('Liberation Sans');
+  size-adjust: 154%;
+  ascent-override: 78%;
+  descent-override: 16%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: 'Obviously Fallback';
+  src: local('Arial'), local('Helvetica'), local('Liberation Sans');
+  size-adjust: 119%;
+  ascent-override: 97%;
+  descent-override: 18%;
+  line-gap-override: 0%;
+}

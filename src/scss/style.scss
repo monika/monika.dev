@@ -3,6 +3,7 @@
 
 /* Base Styles */
 @import 'variables';
+@import 'fonts';
 @import 'typography';
 @import 'animation';
 @import 'layout';
@@ -11,11 +12,12 @@
 @import 'page-about';
 @import 'page-home';
 @import 'page-project';
+@import 'page-case-study';
 
 /* Modules */
 @import 'module-footer';
 @import 'module-header';
 @import 'module-navigation';
-@import 'module-experiments';
 @import 'module-project-listing';
 @import 'module-project-detail';
+@import 'module-case-studies';

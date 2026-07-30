@@ -1,6 +1,14 @@
 /* Page: About */
 
 .page-profile {
+  main h2 {
+    font-size: 2.4rem;
+
+    @media screen and (max-width: $break-small) {
+      font-size: 1.8rem;
+    }
+  }
+
   main .layout:after {
     content: '';
     display: table;

@@ -9,7 +9,7 @@ eleventyNavigation:
   order: 4
 ---
 
-### The Project
+## The Project
 
 _America’s Cup comes home to San Francisco! Every team racing in the 2013 America’s Cup needed a branded team site._
 
@@ -19,7 +19,7 @@ My task was to create a modular template and design system that could be easily 
 
 Using Sparkart Group's in-house headless CMS platform as a base, APIs from YouTube, Wordpress, and Twitter, and custom Handlebars templates, I provided eight racing teams with their own sites for the America’s Cup competition. Each team's homepage used a supplemented version of the general design system. I focused on bringing their branding and personality from this supplement by taking full advantage of CSS's powerful cascade to style the inner pages of each team site quickly and effectively.
 
-### Responsibilities
+## Responsibilities
 
 - Building semantic HTML, responsive CSS, presentational JS
 - Collaborating with visual designers on module capabilities and functionality
@@ -27,16 +27,16 @@ Using Sparkart Group's in-house headless CMS platform as a base, APIs from YouTu
 - Responsive browser and device testing
 - Site maintenance and updates
 
-### Visuals
+## Visuals
 
 <div class="visuals">
 
 {%- for figure in figures -%}
-{% include modules/figure.njk %}
+{% include "modules/figure.njk" %}
 {%- endfor -%}
 
 </div>
 
-### Co-credits
+## Co-credits
 
 - Design: Sparkart Group

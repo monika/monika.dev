@@ -2,16 +2,26 @@
 <html lang="en">
 <head>
     {% include "partials/head.njk" %}
+    {% set webPageSchema = {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "@id": meta.baseURL + page.url,
+      "url": meta.baseURL + page.url,
+      "name": title,
+      "isPartOf": { "@id": meta.baseURL + "/#website" },
+      "mainEntity": { "@id": meta.baseURL + "/#person" }
+    } %}
+    <script type="application/ld+json">{{ webPageSchema | dump | safe }}</script>
 </head>
 <body class="page-profile">
 
     {% include "partials/header.njk" %}
 
-    <main>
+    <main id="main">
 
         <div class="layout">
 
-            <h2>{{ title }}</h2>
+            <h1 class="page-title">{{ title }}</h1>
 
             {{ content | safe }}
 

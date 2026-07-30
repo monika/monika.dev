@@ -10,7 +10,7 @@ eleventyNavigation:
   order: 1
 ---
 
-### The Project
+## The Project
 
 _A fresh, exciting, and friendly new eBook from Salesforce that provides industry data for the health and sciences fields._
 
@@ -20,7 +20,7 @@ I pushed the edges of technology and centered the animations on our eBook in a n
 
 [Visit Salesforce eBook &#10132; (Dev URL)](https://gallant-liskov-7a6a1b.netlify.com/)
 
-### Responsibilities
+## Responsibilities
 
 - Building semantic HTML, responsive CSS, presentational JS
 - Speed optimization
@@ -28,27 +28,27 @@ I pushed the edges of technology and centered the animations on our eBook in a n
 - Responsive browser and device testing
 - Accessibility testing
 
-### Visuals
+## Visuals
 
 <div class="visuals">
 
 {%- for figure in figures -%}
-{% include modules/figure.njk %}
+{% include "modules/figure.njk" %}
 {%- endfor -%}
 
 </div>
 
 <div class="code">
 
-### Code Example: Solution Module
+## Code Example: Solution Module
 
-#### Browser Rendering
+### Browser Rendering
 
 {% codeExample "salesforce-code-example", "A series of accordion items for different solutions." %}
 
 <div class="code__html language-html">
 
-#### HTML
+### HTML
 
 ```html
 <div class="solution">
@@ -119,7 +119,7 @@ I pushed the edges of technology and centered the animations on our eBook in a n
 
 <div class="code__sass language-css language-scss">
 
-#### SCSS
+### SCSS
 
 ```scss
 .solution {
@@ -303,7 +303,7 @@ I pushed the edges of technology and centered the animations on our eBook in a n
 
 </div>
 
-### Co-credits
+## Co-credits
 
 - Design: [IRON Creative](https://ironcreative.com/)
 - Character Animation: Trey Simmons
