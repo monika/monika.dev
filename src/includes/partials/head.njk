@@ -48,4 +48,6 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#0000ff">
 
-<meta name="google-site-verification" content="PS4Kd7aa-5zazVKHNptpocJ7eT-B3O1UypqytvvyJEc" />
+{# Search Console only reads these from the homepage. #}
+{% if title === "Home" %}<meta name="google-site-verification" content="PS4Kd7aa-5zazVKHNptpocJ7eT-B3O1UypqytvvyJEc" />
+<meta name="google-site-verification" content="5xNJk3VTtNa-uEF8lYP5fbnoHMbiJmL6sfOE6dJeptY" />{% endif %}
