@@ -21,6 +21,7 @@
 </div>
 </footer>
 
+{% if isProduction %}
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ meta.gaId }}"></script>
 <script>
@@ -30,3 +31,4 @@ gtag('js', new Date());
 
 gtag('config', '{{ meta.gaId }}');
 </script>
+{% endif %}

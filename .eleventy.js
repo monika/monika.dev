@@ -12,6 +12,14 @@ module.exports = function(eleventyConfig) {
     markdownIt({ html: true, breaks: false, linkify: false, typographer: true })
   );
 
+  /* Netlify sets CONTEXT on its builds, so this is true only for a production
+     deploy — local previews, branch deploys and deploy previews all skip the
+     analytics tag rather than reporting themselves as real traffic. */
+  eleventyConfig.addGlobalData(
+    'isProduction',
+    process.env.CONTEXT === 'production'
+  );
+
   // Clean and minimize CSS
   eleventyConfig.addFilter('cssmin', function(code) {
     return new cleanCSS({}).minify(code).styles;

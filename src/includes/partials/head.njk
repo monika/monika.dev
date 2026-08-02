@@ -15,7 +15,7 @@
 {% include "partials/meta.njk" %}
 {% include "partials/structured-data.njk" %}
 
-<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+{% if isProduction %}<link rel="dns-prefetch" href="https://www.googletagmanager.com">{% endif %}
 <link rel="preconnect" href="https://use.typekit.net">
 <link rel="dns-prefetch" href="https://use.typekit.net">
 
