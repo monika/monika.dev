@@ -32,17 +32,20 @@
 
     </main>
 
+    {# Only case studies marked `full` are built, so this list is drawn from
+       those alone — a gated entry has no page to link to. #}
+    {%- set publishedStudies = collections.caseStudyListing | selectPublished -%}
+    {%- if publishedStudies.length > 1 %}
     <nav class="case-studies" aria-labelledby="case-study-pagination">
 
     <div class="layout">
 
         <h2 class="case-studies__heading" id="case-study-pagination">More Case Studies</h2>
 
-        {% set navPages = collections.caseStudy | eleventyNavigation %}
         <ol>
-            {%- for entry in navPages %}
+            {%- for entry in publishedStudies %}
             <li{% if entry.url == page.url %} aria-current="page" class="current"{% endif %}>
-                <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+                <a href="{{ entry.url | url }}">{{ entry.data.title }}</a>
             </li>
             {%- endfor %}
         </ol>
@@ -50,6 +53,7 @@
         </div>
 
     </nav>
+    {%- endif %}
 
     {% include "partials/footer.njk" %}
 

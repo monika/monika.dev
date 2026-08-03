@@ -1,4 +1,7 @@
 /* Page: Case Study */
+
+@use 'variables' as *;
+
 .page-case-study {
   main p {
     max-width: 75ch;

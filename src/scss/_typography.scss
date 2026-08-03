@@ -1,5 +1,7 @@
 /* Typography */
 
+@use 'variables' as *;
+
 html {
   font-size: 62.5%;
 }
@@ -39,7 +41,13 @@ a {
     z-index: -1;
   }
 
-  &:hover {
+  /* The current entry in the project nav is styled as permanently hovered. It
+     used to get that via `@extend :hover` in _page-project.scss, which reached
+     every `a:hover` compound in the bundle — including footer permutations that
+     can never match. Named here instead, which is the whole of what it did.
+     Must stay ahead of :active/:focus below; those share its specificity. */
+  &:hover,
+  .page-project .projects li.current & {
     color: $white;
 
     &:before {

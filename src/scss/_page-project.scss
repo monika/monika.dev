@@ -1,4 +1,7 @@
 /* Page: Project */
+
+@use 'variables' as *;
+
 .page-project {
   .projects {
     background-color: $blue;
@@ -41,7 +44,16 @@
           @extend %project-link-hover-after;
         }
         a {
-          @extend :hover;
+          /* The hovered treatment itself is applied from _typography.scss, on
+             the `.projects li.current a` selector listed alongside `a:hover`. */
+
+          /* The link's counter layer stacks above the li's (z-index 10 vs 5),
+             so it has to travel with it — otherwise the current project shows
+             two counters offset from each other. */
+          &:after {
+            @extend %project-link-hover-after;
+          }
+
           &:hover:before {
             background-color: $pink;
           }
