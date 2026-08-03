@@ -7,16 +7,43 @@ const autoprefixer = require('gulp-autoprefixer').default;
 const sharp = require('sharp');
 
 // Compile CSS
-function compileCSS() {
-  return gulp
+/* `sass.logError` swallows the failure — it logs, then ends the stream cleanly,
+   so gulp exits 0 on a broken stylesheet. src/includes/css/style.css is
+   gitignored, so on a fresh CI checkout that leaves no style.css at all, and
+   Eleventy's `{% include "css/style.css" %}` then either fails the build or
+   ships it unstyled, with a clean exit code either way. So the build lets the
+   error reach gulp and exit non-zero; only `watch` keeps logging and carrying
+   on, where a half-typed selector shouldn't take the dev server down. */
+function compileCSS({ tolerateErrors = false } = {}) {
+  let failure = null;
+
+  const compile = sass();
+  compile.on('error', function (err) {
+    // Prints the formatted Sass error (file, line, source excerpt) and ends the
+    // stream, so the pipeline unwinds tidily and gulp reports the real cause
+    // rather than "Did you forget to signal async completion?".
+    sass.logError.call(this, err);
+    if (!tolerateErrors) failure = err;
+  });
+
+  const written = gulp
     .src('src/scss/*')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(compile)
     .pipe(
       autoprefixer({
         grid: 'no-autoplace'
       })
     )
     .pipe(gulp.dest('src/includes/css/'));
+
+  return new Promise((resolve, reject) => {
+    written.on('error', reject);
+    written.on('finish', () => (failure ? reject(failure) : resolve()));
+  });
+}
+
+function compileCSSWatch() {
+  return compileCSS({ tolerateErrors: true });
 }
 
 // Resize + Optimize images
@@ -110,7 +137,7 @@ async function resizeImages() {
 
 // Watch files
 function watchFiles() {
-  gulp.watch('src/scss/*', { ignoreInitial: false }, compileCSS);
+  gulp.watch('src/scss/*', { ignoreInitial: false }, compileCSSWatch);
   gulp.watch('src/images/*', { ignoreInitial: false }, resizeImages);
 }
 

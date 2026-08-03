@@ -1,23 +1,23 @@
-/* Import All Stylesheets
+/* Load All Stylesheets
 ------------------------------------- */
 
 /* Base Styles */
-@import 'variables';
-@import 'fonts';
-@import 'typography';
-@import 'animation';
-@import 'layout';
+@use 'variables';
+@use 'fonts';
+@use 'typography';
+@use 'animation';
+@use 'layout';
 
 /* Pages */
-@import 'page-about';
-@import 'page-home';
-@import 'page-project';
-@import 'page-case-study';
+@use 'page-about';
+@use 'page-home';
+@use 'page-project';
+@use 'page-case-study';
 
 /* Modules */
-@import 'module-footer';
-@import 'module-header';
-@import 'module-navigation';
-@import 'module-project-listing';
-@import 'module-project-detail';
-@import 'module-case-studies';
+@use 'module-footer';
+@use 'module-header';
+@use 'module-navigation';
+@use 'module-project-listing';
+@use 'module-project-detail';
+@use 'module-case-studies';

@@ -1,4 +1,7 @@
 /* Case Studies Listing */
+
+@use 'variables' as *;
+
 .case-studies {
   background-color: $blue;
   position: relative;
@@ -26,6 +29,22 @@
     color: $white;
     margin-bottom: 3.2rem;
   }
+
+  /* Closes the set rather than introducing the next one, so it reads at intro
+     size and keeps the same measure. */
+  &__closer {
+    max-width: 60ch;
+    color: $white;
+    margin: 4rem 0 0;
+
+    font-family: obviously, 'Obviously Fallback', sans-serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+
+    @media screen and (max-width: $break-small) {
+      font-size: 2rem;
+    }
+  }
 }
 
 .case-study-card {
@@ -40,6 +59,15 @@
     margin-bottom: 0;
   }
 
+  &__eyebrow {
+    margin: 0 0 0.4rem;
+
+    font-family: obviously, 'Obviously Fallback', sans-serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+  }
+
   &__title {
     margin-top: 0;
     margin-bottom: 0.8rem;
@@ -49,8 +77,47 @@
     }
   }
 
+  &__role {
+    margin: 0 0 1.6rem;
+    font-weight: 700;
+  }
+
   &__intro {
     max-width: 70ch;
     margin-bottom: 1.6rem;
+  }
+
+  /* The same topic list that feeds the JSON-LD `about` property, surfaced as
+     visible text — so what the page tells a machine and what it tells a reader
+     are the same claim, kept in one place. */
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.4rem;
+  }
+
+  &__tag {
+    padding: 0.4rem 1.2rem;
+    border: 2px solid $blue;
+
+    font-family: obviously, 'Obviously Fallback', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+
+    /* Overrides the global `ul li` bottom padding — these sit on one line. */
+    padding-bottom: 0.4rem;
+  }
+
+  /* Stands in for the "Read Case Study" button on gated entries, so the card
+     still ends on an action — just one that goes to the inbox. */
+  &__gated {
+    max-width: 70ch;
+    margin: 0;
+    font-style: italic;
   }
 }

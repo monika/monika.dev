@@ -1,4 +1,9 @@
-/* Colors */
+// Config only — variables and mixins, no CSS output. Nearly every partial
+// @uses this module; keeping it side-effect free is what stops its output
+// being interleaved through the bundle. Loud /* */ comments count as output,
+// hence // throughout.
+
+// Colors
 $black: #020202;
 $blue: #0000ff;
 $grey: #dadada;
@@ -6,25 +11,13 @@ $light-blue: #97f5f2;
 $pink: #ff0095;
 $white: #fff;
 
-/* Breakpoints */
+// Breakpoints
 $break-small: 648px;
 
-/* Animation */
+// Animation
 $timing-function: cubic-bezier(0.45, 0.24, 0, 1);
 
-/* Visually Hidden for Screen Readers */
-.visually-hidden {
-  /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
-  position: absolute !important;
-  height: 1px;
-  width: 1px;
-  overflow: hidden;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-}
-
-/* Mixins */
+// Mixins
 @mixin text-shadow($color) {
   text-shadow: 1px 1px 0 $color, 1px -1px 0 $color, -1px 1px 0 $color,
     -1px -1px 0 $color, 2px 2px 0 $color, 2px -2px 0 $color, -2px 2px 0 $color,

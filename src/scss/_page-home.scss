@@ -1,5 +1,7 @@
 /* Page: Home */
 
+@use 'variables' as *;
+
 .page-home {
   .header {
     @media screen and (max-width: $break-small) {

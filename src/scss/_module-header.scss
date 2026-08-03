@@ -1,4 +1,10 @@
 /* Header */
+
+@use 'variables' as *;
+// Loaded for the `h1` target of the @extend below — under the module system an
+// @extend can only reach selectors in stylesheets this one loads.
+@use 'typography';
+
 .header {
   .layout {
     padding-top: 8%;
@@ -19,6 +25,12 @@
     max-width: 65ch;
     padding-bottom: 2rem;
     margin: 0;
+  }
+  /* Sits between the h1 lockup and the display-sized intro, so it stays at body
+     size — the weight is in the last sentence, not the type scale. */
+  &__statement {
+    max-width: 65ch;
+    margin: 0 0 3.2rem;
   }
   &__intro {
     max-width: 45ch;
