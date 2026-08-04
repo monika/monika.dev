@@ -3,11 +3,11 @@ title: About Monika
 layout: profile
 ---
 
-![A fat woman wearing clear-framed glasses, a black and white checkered shirt, and wavy red hair.](/images/img-monika.jpg) I created my first website in 1998 while I was a junior in high school. It was a fan site on [gURL.com](https://web.archive.org/web/19990125090024/http://gurl.com/)</a> of all my X-Files fan art.
+![A fat woman wearing clear-framed glasses, a black and white checkered shirt, and wavy red hair.](/images/img-monika.jpg) I created my first website in 1998 while I was a junior in high school. It was a personal site built on [gURL.com](https://web.archive.org/web/19990125090024/http://gurl.com/)</a> for all my X-Files fan art 👽
 
-Studying graphic design in college gave me an understanding of typography, color, motion, layout, empathy, and intent - skills that I bring into my work.
+Studying graphic design in college taught me the roles typography, color, motion, layout, empathy, compassion, and accessibility play in communication. Eric Meyer's writing on inadvertent algorithmic cruelty changed how I endeavor to connect with the other side of the browser.
 
-Offline — I live in Tacoma, Washington with my spouse. We enjoy exploring the city and trying new restaurants, record stores, and parks.
+I live in Tacoma, Washington with my spouse and we enjoy exploring new restaurants, record stores, and parks. I've had too many hobbies, from building mechanical keyboards, training for triathlons, to breeding freshwater aquarium fish and shrimp. I'm currently restraining myself from learning anything more about cyberdecks.
 
 ## Writing
 
