@@ -27,21 +27,9 @@
 <link rel="stylesheet" href="https://use.typekit.net/izf4qqb.css" media="print" onload="this.media='all';this.onload=null">
 <noscript><link rel="stylesheet" href="https://use.typekit.net/izf4qqb.css"></noscript>
 
-{% set normalize %}
-    {% include "css/normalize.css" %}
-{% endset %}
-
-{% set css %}
-    {% include "css/style.css" %}
-{% endset %}
-
-{% set prism %}
-    {% include "css/prism.css" %}
-{% endset %}
-
-<style>{{ normalize | cssmin | safe }}</style>
-<style>{{ css | cssmin | safe }}</style>
-<style>{{ prism | cssmin | safe }}</style>
+{# Compiled and compressed in .eleventy.js — normalize, the site styles and the
+   Prism theme all arrive as one bundle. #}
+<style>{{ css | safe }}</style>
 
 <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
 <link rel="apple-touch-icon" href="/favicon.png">
