@@ -1,4 +1,4 @@
-const cleanCSS = require('clean-css');
+const sass = require('sass');
 const markdownIt = require('markdown-it');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const eleventyNavigation = require('@11ty/eleventy-navigation');
@@ -20,10 +20,21 @@ module.exports = function(eleventyConfig) {
     process.env.CONTEXT === 'production'
   );
 
-  // Clean and minimize CSS
-  eleventyConfig.addFilter('cssmin', function(code) {
-    return new cleanCSS({}).minify(code).styles;
-  });
+  /* The whole stylesheet is inlined into <head>, so it's compiled here rather
+     than written to a file for a template to include: one compile per build,
+     shared by every page, instead of re-minifying the same CSS 45 times.
+     `charset: false` suppresses the BOM Sass would otherwise emit for the
+     non-ASCII content — the document is already declared UTF-8, and a BOM
+     inside a <style> element is just a stray character. */
+  eleventyConfig.addGlobalData('css', () =>
+    sass.compile('src/scss/style.scss', {
+      style: 'compressed',
+      charset: false
+    }).css
+  );
+
+  // Sass isn't a template format Eleventy tracks, so point the watcher at it.
+  eleventyConfig.addWatchTarget('src/scss/');
 
   // Custom Project Listing Sort Order
   eleventyConfig.addCollection('projectListing', function(collection) {

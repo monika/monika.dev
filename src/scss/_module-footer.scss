@@ -59,20 +59,9 @@
       }
     }
 
-    /* Hides the visible labels on the social icons — the accessible name comes
-       from the link text itself. */
-    span {
-      display: none;
-    }
-
     &__location {
       color: $grey;
       margin: 1.2rem 0 0;
-
-      /* Opt back out of the icon-label rule above. */
-      .contact__pin {
-        display: inline;
-      }
     }
 
     /* Icons */

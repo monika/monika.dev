@@ -1,6 +1,11 @@
 /* Load All Stylesheets
 ------------------------------------- */
 
+/* Vendor CSS is loaded as plain CSS — Sass passes it through untouched, so it
+   lands in the same compressed bundle instead of needing its own minify pass.
+   Order matters: normalize sets the baseline everything else overrides. */
+@use 'vendor/normalize.css';
+
 /* Base Styles */
 @use 'variables';
 @use 'fonts';
@@ -21,3 +26,6 @@
 @use 'module-project-listing';
 @use 'module-project-detail';
 @use 'module-case-studies';
+
+/* Syntax highlighting theme, last so its token colours win. */
+@use 'vendor/prism.css';
