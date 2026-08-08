@@ -5,9 +5,8 @@ A static portfolio site: [monika.dev](https://monika.dev)
 ## Powered By
 
 - [Eleventy](https://11ty.dev)
-- [Gulp](https://gulpjs.com/)
 - [Sass](https://sass-lang.com/)
-- [Sharp](https://github.com/lovell/sharp)
+- [eleventy-img](https://www.11ty.dev/docs/plugins/image/)
 
 ---
 

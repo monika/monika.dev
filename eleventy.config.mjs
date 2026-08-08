@@ -116,6 +116,22 @@ export default function (eleventyConfig) {
     }).css
   );
 
+  /* Kept out of the main bundle: only the pages with a code example need it,
+     and it was riding along on the other six as dead weight. */
+  eleventyConfig.addGlobalData('prismCss', () =>
+    sass.compile('src/scss/vendor/prism.css', {
+      style: 'compressed',
+      charset: false
+    }).css
+  );
+
+  /* Whether Prism actually highlighted anything on this page. Checked against
+     the rendered body rather than a frontmatter flag, so adding or removing a
+     code block can't leave the stylesheet out of step with the content. */
+  eleventyConfig.addFilter('hasHighlightedCode', (content) =>
+    String(content || '').includes('class="token ')
+  );
+
   // Sass isn't a template format Eleventy tracks, so point the watcher at it.
   eleventyConfig.addWatchTarget('src/scss/');
 
