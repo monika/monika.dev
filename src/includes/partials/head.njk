@@ -33,6 +33,14 @@
 <link rel="stylesheet" href="https://use.typekit.net/izf4qqb.css" media="print" onload="this.media='all';this.onload=null">
 <noscript><link rel="stylesheet" href="https://use.typekit.net/izf4qqb.css"></noscript>
 
+{# The font files themselves, so they don't wait on the stylesheet parsing
+   first. URLs are read out of the kit at build time — see typekitPreloads in
+   eleventy.config.mjs. Fonts are always fetched anonymously, so the crossorigin
+   attribute is required or the preload is discarded and fetched twice. #}
+{%- for href in fontPreloads %}
+<link rel="preload" href="{{ href }}" as="font" type="font/woff2" crossorigin>
+{%- endfor %}
+
 {# Compiled and compressed in eleventy.config.mjs — normalize and the site
    styles arrive as one bundle. #}
 <style>{{ css | safe }}</style>

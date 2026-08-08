@@ -36,6 +36,60 @@ const IMAGE_OUTPUT = {
    so it shows the hero rather than the middle of the page. */
 const SOCIAL_CARD = { width: 1200, height: 630 };
 
+const TYPEKIT_CSS = 'https://use.typekit.net/izf4qqb.css';
+
+/* Both obviously-wide weights sit above the fold — the h1 is 600, h2-h6 are
+   400 — and under `font-display: optional` each face wins or loses its own
+   race. Preloading only one would leave the headline in Obviously and the
+   subheads in the fallback, which reads worse than either alone.
+
+   `obviously` (h5) and the italic aren't included: small, rare, and every
+   extra preload competes with the two that carry the page. */
+const PRELOAD_FACES = [
+  { family: 'obviously-wide', weight: '400' },
+  { family: 'obviously-wide', weight: '600' }
+];
+
+/* Adobe's font URLs carry a kit-version hash that rotates whenever the kit is
+   republished, so hardcoding them would rot silently. Reading them out of the
+   kit at build time keeps them correct as of each deploy.
+
+   A failure here costs the preload, not the site: the stylesheet still loads
+   the same fonts at runtime, so this warns and carries on rather than taking
+   a deploy down over an optimisation. */
+async function typekitPreloads() {
+  try {
+    const response = await fetch(TYPEKIT_CSS);
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const css = await response.text();
+
+    const urls = [];
+    for (const block of css.match(/@font-face\s*\{[^}]*\}/g) ?? []) {
+      const family = block.match(/font-family:"([^"]+)"/)?.[1];
+      const weight = block.match(/font-weight:(\w+)/)?.[1];
+      const style = block.match(/font-style:(\w+)/)?.[1];
+      // The `/l` variant is the woff2 in Adobe's src stack.
+      const url = block.match(/url\("([^"]*\/l\?[^"]*)"\)/)?.[1];
+
+      if (!url || style !== 'normal') continue;
+      if (PRELOAD_FACES.some((f) => f.family === family && f.weight === weight)) {
+        urls.push(url);
+      }
+    }
+
+    if (urls.length !== PRELOAD_FACES.length) {
+      console.warn(
+        `[fonts] Matched ${urls.length} of ${PRELOAD_FACES.length} faces in the Adobe kit — has it been republished with different weights?`
+      );
+    }
+
+    return urls;
+  } catch (error) {
+    console.warn(`[fonts] Could not read the Adobe kit (${error.message}); skipping font preloads.`);
+    return [];
+  }
+}
+
 /* Content refers to images by basename. The extension varies — screenshots of
    code are PNG, photographs are JPEG — so resolve it here instead of making
    every call site know. */
@@ -131,6 +185,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter('hasHighlightedCode', (content) =>
     String(content || '').includes('class="token ')
   );
+
+  eleventyConfig.addGlobalData('fontPreloads', typekitPreloads);
 
   // Sass isn't a template format Eleventy tracks, so point the watcher at it.
   eleventyConfig.addWatchTarget('src/scss/');
