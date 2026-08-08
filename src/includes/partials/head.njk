@@ -23,7 +23,13 @@
 <link rel="preload" href="/fonts/fira-sans-300.woff2" as="font" type="font/woff2" crossorigin>
 
 {# Display faces (Obviously) stay on Adobe Fonts — their license doesn't permit
-   self-hosting. Loaded async so they don't block first paint. #}
+   self-hosting. Loaded async so they don't block first paint.
+
+   `media="print"` is what makes it non-blocking, but it also drops the request
+   to low priority, and the font files themselves aren't discovered until this
+   stylesheet has arrived and parsed. The preload restores high priority so that
+   two-step chain starts immediately instead of after the rest of the page. #}
+<link rel="preload" href="https://use.typekit.net/izf4qqb.css" as="style">
 <link rel="stylesheet" href="https://use.typekit.net/izf4qqb.css" media="print" onload="this.media='all';this.onload=null">
 <noscript><link rel="stylesheet" href="https://use.typekit.net/izf4qqb.css"></noscript>
 
