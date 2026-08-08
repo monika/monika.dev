@@ -71,26 +71,7 @@ title: Home
             <article class="project">
 
                 <figure class="project__thumbnail">
-                    <picture class="project__mask">
-                        <source
-                            type="image/webp"
-                            srcset="/images/{{ project.data.thumbnail }}-small.webp 200w,
-                                    /images/{{ project.data.thumbnail }}-medium.webp 400w,
-                                    /images/{{ project.data.thumbnail }}-large.webp 800w"
-                            sizes="(max-width: 648px) 76vw, 45vw"
-                        />
-                        <img
-                            class="project__image"
-                            srcset="/images/{{ project.data.thumbnail }}-small.jpg 200w,
-                                    /images/{{ project.data.thumbnail }}-medium.jpg 400w,
-                                    /images/{{ project.data.thumbnail }}-large.jpg 800w"
-                            sizes="(max-width: 648px) 76vw, 45vw"
-                            src="/images/{{ project.data.thumbnail }}-large.jpg"
-                            alt="{{ project.data.thumbnailAlt }}"
-                            loading="lazy"
-                            decoding="async"
-                        />
-                    </picture>
+                    {% image project.data.thumbnail, project.data.thumbnailAlt, "(max-width: 648px) 76vw, 45vw", "project__mask", "project__image" %}
                 </figure>
 
                 <div class="project__content">

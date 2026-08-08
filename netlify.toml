@@ -14,8 +14,16 @@
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
 
-# Fingerprint-free filenames, so keep these short enough that a redeploy is
-# picked up, but long enough to avoid refetching on every visit.
+# Generated derivatives: the filename carries a content hash, so a changed
+# source image is a changed URL and these never need revalidating.
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Hand-managed files kept at stable filenames, so a redeploy has to be able to
+# replace them. Short enough to pick that up, long enough to avoid refetching
+# on every visit.
 [[headers]]
   for = "/images/*"
   [headers.values]
