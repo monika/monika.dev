@@ -4,11 +4,11 @@
 {%- set pageDescription = intro if intro else meta.description -%}
 {%- set isArticle = tags and ("project" in tags or "caseStudy" in tags) -%}
 
-{# Projects use a -social crop, generated at 1200x630 in the gulp image task:
-   the raw thumbnails are full-page screenshots, so they're cropped to card
-   ratio from the top, which lands on each site's hero. Everything else falls
-   back to the generic card. #}
-{%- set socialImage = meta.baseURL + "/images/" + thumbnail + "-social.jpg" if thumbnail else meta.baseURL + meta.image -%}
+{# Projects use a 1200x630 crop, generated in eleventy.config.mjs: the raw
+   thumbnails are full-page screenshots, so they're cropped to card ratio from
+   the top, which lands on each site's hero. Everything else falls back to the
+   generic card. #}
+{%- set socialImage = meta.baseURL + socialCards[thumbnail] if thumbnail else meta.baseURL + meta.image -%}
 {%- set socialImageAlt = thumbnailAlt if thumbnailAlt else meta.name + " — " + meta.jobTitle -%}
 
 <!-- Facebook OpenGraph -->

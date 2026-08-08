@@ -1,10 +1,10 @@
 {
     "name": "monika-dev",
     "version": "1.0.0",
-    "description": "A portfolio site for Monika.dev built with Eleventy and Gulp.",
+    "description": "A portfolio site for Monika.dev built with Eleventy.",
     "scripts": {
-        "build": "gulp build && eleventy",
-        "watch": "gulp & eleventy --watch --serve",
+        "build": "eleventy",
+        "watch": "eleventy --watch --serve",
         "debug": "DEBUG=* npx eleventy"
     },
     "repository": {
@@ -26,13 +26,10 @@
     },
     "devDependencies": {
         "@11ty/eleventy": "^3.1.6",
+        "@11ty/eleventy-img": "^7.0.0",
         "@11ty/eleventy-navigation": "^1.0.5",
         "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
-        "gulp": "^5.0.1",
         "sass": "^1.101.0"
-    },
-    "dependencies": {
-        "sharp": "^0.35.3"
     },
     "overrides": {
         "brace-expansion": "^5.0.9"

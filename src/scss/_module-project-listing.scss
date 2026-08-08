@@ -19,7 +19,9 @@
     display: block;
     width: 97%;
     height: 101%;
-    background-image: url('images/bg-x-blue.svg');
+    /* Root-relative: the stylesheet is inlined into <head>, so a relative path
+       would resolve against the page URL rather than a stylesheet location. */
+    background-image: url('/images/bg-x-blue.svg');
     background-position: -13px -13px;
 
     position: absolute;

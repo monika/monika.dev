@@ -27,5 +27,6 @@
 @use 'module-project-detail';
 @use 'module-case-studies';
 
-/* Syntax highlighting theme, last so its token colours win. */
-@use 'vendor/prism.css';
+/* The Prism theme is deliberately NOT loaded here. Only three pages carry a
+   highlighted code block, so it's compiled separately and inlined by head.njk
+   on the pages that need it — after this bundle, so its token colours win. */

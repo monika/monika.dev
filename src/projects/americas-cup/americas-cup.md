@@ -1,6 +1,7 @@
 ---
 title: America’s Cup
 thumbnail: img-americascup
+thumbnailAlt: The Oracle Team USA fan hub, led by a full-width photograph of a helmsman aboard a racing catamaran.
 intro: A pattern library developed to create an official fan hub for all eight teams racing in the 2013 America’s Cup.
 role: Front-end Development, Information Design
 displayOrder: 4

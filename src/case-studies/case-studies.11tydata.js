@@ -12,8 +12,8 @@
      full             — the page builds, the card links to it, and it's indexed
                         like any other page on the site.
 
-   A case study also needs a `summary` before it will list — see the
-   caseStudySummaries collection in .eleventy.js. */
+   The caseStudyListing collection in eleventy.config.mjs orders these by
+   `order`, and `selectPublished` narrows it to the `full` ones. */
 module.exports = {
   layout: 'case-study.njk',
   tags: 'caseStudy',

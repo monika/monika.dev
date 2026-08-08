@@ -23,13 +23,31 @@
 <link rel="preload" href="/fonts/fira-sans-300.woff2" as="font" type="font/woff2" crossorigin>
 
 {# Display faces (Obviously) stay on Adobe Fonts — their license doesn't permit
-   self-hosting. Loaded async so they don't block first paint. #}
+   self-hosting. Loaded async so they don't block first paint.
+
+   `media="print"` is what makes it non-blocking, but it also drops the request
+   to low priority, and the font files themselves aren't discovered until this
+   stylesheet has arrived and parsed. The preload restores high priority so that
+   two-step chain starts immediately instead of after the rest of the page. #}
+<link rel="preload" href="https://use.typekit.net/izf4qqb.css" as="style">
 <link rel="stylesheet" href="https://use.typekit.net/izf4qqb.css" media="print" onload="this.media='all';this.onload=null">
 <noscript><link rel="stylesheet" href="https://use.typekit.net/izf4qqb.css"></noscript>
 
-{# Compiled and compressed in .eleventy.js — normalize, the site styles and the
-   Prism theme all arrive as one bundle. #}
+{# The font files themselves, so they don't wait on the stylesheet parsing
+   first. URLs are read out of the kit at build time — see typekitPreloads in
+   eleventy.config.mjs. Fonts are always fetched anonymously, so the crossorigin
+   attribute is required or the preload is discarded and fetched twice. #}
+{%- for href in fontPreloads %}
+<link rel="preload" href="{{ href }}" as="font" type="font/woff2" crossorigin>
+{%- endfor %}
+
+{# Compiled and compressed in eleventy.config.mjs — normalize and the site
+   styles arrive as one bundle. #}
 <style>{{ css | safe }}</style>
+
+{# The syntax highlighting theme follows the main bundle so its token colours
+   win, and only on the pages that actually rendered a code block. #}
+{% if content | hasHighlightedCode %}<style>{{ prismCss | safe }}</style>{% endif %}
 
 <link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
 <link rel="apple-touch-icon" href="/favicon.png">

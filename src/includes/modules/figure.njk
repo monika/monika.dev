@@ -1,22 +1,4 @@
 <figure>
-<picture>
-  <source
-      type="image/webp"
-      srcset="/images/{{ figure.imgFileName }}-small.webp 200w,
-              /images/{{ figure.imgFileName }}-medium.webp 400w,
-              /images/{{ figure.imgFileName }}-large.webp 800w"
-      sizes="(max-width: 648px) 80vw, 45vw"
-  />
-  <img
-      srcset="/images/{{ figure.imgFileName }}-small.jpg 200w,
-              /images/{{ figure.imgFileName }}-medium.jpg 400w,
-              /images/{{ figure.imgFileName }}-large.jpg 800w"
-      sizes="(max-width: 648px) 80vw, 45vw"
-      src="/images/{{ figure.imgFileName }}-large.jpg"
-      alt="{{ figure.imgAlt }}"
-      loading="lazy"
-      decoding="async"
-  />
-</picture>
+{% image figure.imgFileName, figure.imgAlt, "(max-width: 648px) 80vw, 45vw" %}
 <figcaption>{{ figure.figcaption }}</figcaption>
 </figure>

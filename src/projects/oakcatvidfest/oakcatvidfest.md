@@ -1,6 +1,7 @@
 ---
 title: Oakland Internet Cat Video Festival
 thumbnail: img-oicvf
+thumbnailAlt: The homepage of the Oakland Internet Cat Video Festival, headed by a winking cat mascot in a film-reel collar.
 intro: A marketing site and digital event program for the Oakland Internet Cat Video Festival on behalf of the Great Wall of Oakland and the East Bay SPCA.
 role: Front-end Development, Interaction Design
 displayOrder: 5
