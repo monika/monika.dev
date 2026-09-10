@@ -11,7 +11,7 @@ about:
   - Entity disambiguation
   - Structured data
 cardDescription: Applied structured entity data (Schema.org) alongside hub-and-spoke-style topic cluster, validated against a control group with a Difference-in-Differences framework.
-cardResult: "Result: +11.75% organic search lift from internal linking, +24.1% with verified SME authorship added; average search position improved from 24.27 to 18.43."
+cardResult: "Pilot program result: +11.75% organic search lift from internal linking, +24.1% with verified SME authorship added; average search position improved from 24.27 to 18.43 for pilot URLs."
 cardTags:
   - Answer engine optimization
   - Structured data
@@ -21,6 +21,17 @@ eleventyNavigation:
   key: geo-aeo-authority-pilot
   order: 2
 ---
+
+## TL;DR:
+
+**The Challenge:** As LLM traffic overtook human search traffic, AdRoll's marketing site faced decreasing visibility. We needed to understand if AI systems could "trust" our content if we provided better structured metadata.
+
+**The Strategy:** I implemented a two-phased GEO pilot:
+ - Hub-and-Spoke Linking: A structured content map to consolidate authority.
+ - Author Disambiguation: Using JSON-LD schema to verify SME authority and trust.
+
+**The Outcome:** We achieved a 24.1% lift in organic performance over 30 days and significantly improved average search rankings (from 24.27 to 18.43) in our pilot group of URLs by making our content more legible to machines.
+
 
 ## The Context
 
@@ -80,17 +91,17 @@ I wasn't the only one pulling on this thread, either. At the same time, my co-wo
 
 ## The next steps
 
-*Done:*
+### Done:
 
 * Launch two more authenticated SME author profiles related to remaining GTM campaigns for 2026
 
-*Drafted:*
+### Drafted:
 
 * Launch new hub-and-spoke systems related to remaining GTM campaigns  
 * Launch two additional SME profiles related for evergreen topics  
 * Retrofit high-intent evergreen topics into new hub-and-spoke systems
 
-*Planned:*
+### Planned:
 
 * Draft process updates for GTM campaign planning to include AEO/GEO planning  
 * Feed Google Search Console / Google Analytics 4 report data into marketing AI dashboards for teammembers  
@@ -101,14 +112,14 @@ I wasn't the only one pulling on this thread, either. At the same time, my co-wo
   * Defining company history in wikidata because of recent brand consolidation  
   * Identifying high-intent topics to disambiguate  
   * Drafting updates to corporate Wikidata entries (brand safety)  
-  * Identifying more disambiguation opportunities based on priorities and resources thru the end of the year
+  * Identifying disambiguation opportunities based on priorities and resources thru the end of the year
 
 ## Credits
 
-Wilson Lau \- *Lead Marketing Manager, SEO & Customer Intelligence*  
-Shae Henrie \- *Brand Marketing Manager, Lead Content & Social Strategist*  
-Rochelle Burnside \- *Content Marketing Manager*  
-Tejasvini Karunakarbabu \- *Marketing Strategist* 
+**Wilson Lau** \- Lead Marketing Manager, SEO & Customer Intelligence  
+**Shae Henrie** \- Brand Marketing Manager, Lead Content & Social Strategist  
+**Rochelle Burnside** \- Content Marketing Manager  
+**Tejasvini Karunakarbabu** \- Marketing Strategist 
 
 ## References
 
