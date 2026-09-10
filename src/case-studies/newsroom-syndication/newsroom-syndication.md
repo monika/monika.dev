@@ -4,7 +4,6 @@ intro: Newsroom content had been excluded from sitewide search since launch — 
 role: Web Development
 context: AdRoll
 order: 4
-availability: hidden
 about:
   - Site search
   - Content syndication

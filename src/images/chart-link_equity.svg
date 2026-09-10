@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 430" role="img" aria-labelledby="linkEquityTitle" font-family="'Fira Sans', sans-serif">
+  <title id="linkEquityTitle">Diagram of link equity flowing from a highly cited analysis article to three chosen spoke articles and the topical hub, with the hub separately linked to the rest of the site's topical content</title>
+
+  <rect x="0" y="0" width="720" height="430" fill="#fff"></rect>
+
+  <defs>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#0000ff"></path>
+    </marker>
+    <marker id="arrowGrey" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#b9b9b9"></path>
+    </marker>
+  </defs>
+
+  <!-- Source: the highly-cited analysis article -->
+  <g>
+    <rect x="250" y="18" width="220" height="64" rx="8" fill="#ff0095"></rect>
+    <text x="360" y="44" text-anchor="middle" font-size="15" font-weight="700" fill="#fff">Data-rich analysis</text>
+    <text x="360" y="64" text-anchor="middle" font-size="11" fill="#fff" opacity="0.85">highly cited externally</text>
+  </g>
+
+  <!-- Equity arrows: analysis -> chosen spoke articles + hub -->
+  <path d="M300,82 L120,196" stroke="#0000ff" stroke-width="2" fill="none" marker-end="url(#arrowBlue)"></path>
+  <path d="M340,82 L295,196" stroke="#0000ff" stroke-width="2" fill="none" marker-end="url(#arrowBlue)"></path>
+  <path d="M380,82 L470,196" stroke="#0000ff" stroke-width="2" fill="none" marker-end="url(#arrowBlue)"></path>
+  <path d="M420,82 L620,196" stroke="#0000ff" stroke-width="2" fill="none" marker-end="url(#arrowBlue)"></path>
+
+  <text x="360" y="152" text-anchor="middle" font-size="11" fill="#0000ff" letter-spacing="0.04em">LINK EQUITY, CONCENTRATED DELIBERATELY</text>
+
+  <!-- Chosen spoke articles -->
+  <g>
+    <rect x="20" y="200" width="150" height="56" rx="6" fill="#fff" stroke="#0000ff" stroke-width="2"></rect>
+    <text x="95" y="233" text-anchor="middle" font-size="13" fill="#020202">Chosen article</text>
+  </g>
+  <g>
+    <rect x="195" y="200" width="150" height="56" rx="6" fill="#fff" stroke="#0000ff" stroke-width="2"></rect>
+    <text x="270" y="233" text-anchor="middle" font-size="13" fill="#020202">Chosen article</text>
+  </g>
+  <g>
+    <rect x="370" y="200" width="150" height="56" rx="6" fill="#fff" stroke="#0000ff" stroke-width="2"></rect>
+    <text x="445" y="233" text-anchor="middle" font-size="13" fill="#020202">Chosen article</text>
+  </g>
+
+  <!-- Topical hub -->
+  <g>
+    <rect x="545" y="200" width="155" height="56" rx="6" fill="#020202"></rect>
+    <text x="622" y="233" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Topical hub</text>
+  </g>
+
+  <!-- Hub's pre-existing links to the rest of the site's topical content -->
+  <path d="M580,256 L500,330" stroke="#b9b9b9" stroke-width="1.5" stroke-dasharray="4 4" fill="none" marker-end="url(#arrowGrey)"></path>
+  <path d="M622,256 L622,330" stroke="#b9b9b9" stroke-width="1.5" stroke-dasharray="4 4" fill="none" marker-end="url(#arrowGrey)"></path>
+  <path d="M660,256 L700,330" stroke="#b9b9b9" stroke-width="1.5" stroke-dasharray="4 4" fill="none" marker-end="url(#arrowGrey)"></path>
+
+  <circle cx="490" cy="345" r="6" fill="#dadada"></circle>
+  <circle cx="560" cy="358" r="6" fill="#dadada"></circle>
+  <circle cx="622" cy="345" r="6" fill="#dadada"></circle>
+  <circle cx="684" cy="358" r="6" fill="#dadada"></circle>
+  <circle cx="710" cy="340" r="6" fill="#dadada"></circle>
+
+  <text x="600" y="390" text-anchor="middle" font-size="11" fill="#6b6b6b">all other topical content, auto-linked</text>
+
+  <!-- Legend -->
+  <g transform="translate(20, 410)">
+    <line x1="0" y1="0" x2="28" y2="0" stroke="#0000ff" stroke-width="2"></line>
+    <text x="36" y="4" font-size="11" fill="#020202">Equity added by the pilot</text>
+    <line x1="230" y1="0" x2="258" y2="0" stroke="#b9b9b9" stroke-width="1.5" stroke-dasharray="4 4"></line>
+    <text x="266" y="4" font-size="11" fill="#020202">Existing hub-and-spoke links</text>
+  </g>
+</svg>

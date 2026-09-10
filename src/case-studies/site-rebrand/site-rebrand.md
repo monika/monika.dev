@@ -4,7 +4,6 @@ intro: Site-wide rebrand and brand consolidation — folding two brands back int
 role: Web Design & Development
 context: AdRoll
 order: 1
-availability: hidden
 about:
   - Rebrand
   - Design systems

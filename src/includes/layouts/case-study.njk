@@ -7,6 +7,7 @@
       "@type": "Article",
       "headline": title,
       "description": intro,
+      "image": meta.baseURL + meta.image,
       "author": { "@id": meta.baseURL + "/#person" },
       "publisher": { "@id": meta.baseURL + "/#person" },
       "mainEntityOfPage": meta.baseURL + page.url,
@@ -32,9 +33,7 @@
 
     </main>
 
-    {# Only case studies marked `full` are built, so this list is drawn from
-       those alone — a gated entry has no page to link to. #}
-    {%- set publishedStudies = collections.caseStudyListing | selectPublished -%}
+    {%- set publishedStudies = collections.caseStudyListing -%}
     {%- if publishedStudies.length > 1 %}
     <nav class="case-studies" aria-labelledby="case-study-pagination">
 

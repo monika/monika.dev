@@ -112,12 +112,4 @@
     /* Overrides the global `ul li` bottom padding — these sit on one line. */
     padding-bottom: 0.4rem;
   }
-
-  /* Stands in for the "Read Case Study" button on gated entries, so the card
-     still ends on an action — just one that goes to the inbox. */
-  &__gated {
-    max-width: 70ch;
-    margin: 0;
-    font-style: italic;
-  }
 }
