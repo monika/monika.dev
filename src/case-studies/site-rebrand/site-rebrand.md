@@ -4,12 +4,13 @@ intro: Site-wide rebrand and brand consolidation — folding two brands back int
 role: Web Design & Development
 context: AdRoll
 order: 1
-draft: false
+draft: true
 about:
   - Rebrand
   - Design systems
   - Front-end development
   - Statamic
+cardResult: "Sixty days post-launch: zero support tickets related to brand confusion, +87% first-time visitors to core pages, +42% homepage traffic."
 eleventyNavigation:
   key: site-rebrand
   order: 1

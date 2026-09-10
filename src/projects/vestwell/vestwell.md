@@ -1,9 +1,15 @@
 ---
 title: Vestwell
+year: 2017-04
 thumbnail: img-vestwell
 thumbnailAlt: The homepage of Vestwell.com.
 role: Front-end Development, HTML Email Development
 intro: An educational and engaging site for Vestwell, a digital retirement platform, to feature their unique product and their fresh rebranding.
+about:
+  - Design systems
+  - Static site generation
+  - Accessibility
+  - Email development
 displayOrder: 2
 eleventyNavigation:
   key: Vestwell

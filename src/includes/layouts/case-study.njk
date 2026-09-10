@@ -8,7 +8,11 @@
       "headline": title,
       "description": intro,
       "image": meta.baseURL + meta.image,
-      "author": { "@id": meta.baseURL + "/#person" },
+      "author": {
+        "@type": "Role",
+        "roleName": role,
+        "author": { "@id": meta.baseURL + "/#person" }
+      },
       "publisher": { "@id": meta.baseURL + "/#person" },
       "mainEntityOfPage": meta.baseURL + page.url,
       "about": about | schemaThings

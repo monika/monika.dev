@@ -10,6 +10,13 @@ about:
   - Generative engine optimization
   - Entity disambiguation
   - Structured data
+cardDescription: Applied structured entity data (Schema.org) alongside hub-and-spoke-style topic cluster, validated against a control group with a Difference-in-Differences framework.
+cardResult: "Result: +11.75% organic search lift from internal linking, +24.1% with verified SME authorship added; average search position improved from 24.27 to 18.43."
+cardTags:
+  - Answer engine optimization
+  - Structured data
+  - Entity authorship
+  - Technical SEO
 eleventyNavigation:
   key: geo-aeo-authority-pilot
   order: 2

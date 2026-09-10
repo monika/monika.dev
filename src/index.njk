@@ -19,43 +19,25 @@ title: Home
             <h2 class="case-studies__heading">Case Studies</h2>
             <p class="case-studies__intro">Selected in-house work at AdRoll, 2020&ndash;2026.</p>
 
+            {%- for study in collections.caseStudyListing %}
             <article class="case-study-card">
 
-                <h3 class="case-study-card__title">GEO / AEO Authority Pilot</h3>
-                <p class="case-study-card__role">Technical SEO, Content Strategy, Web Development</p>
+                <h3 class="case-study-card__title">{{ study.data.title }}</h3>
+                <p class="case-study-card__role">{{ study.data.role }}</p>
 
-                <p>Applied structured entity data (Schema.org) alongside hub-and-spoke-style topic cluster, validated against a control group with a Difference-in-Differences framework.</p>
-                <p>Result: +11.75% organic search lift from internal linking, +24.1% with verified SME authorship added; average search position improved from 24.27 to 18.43.</p>
-
-                <ul class="case-study-card__tags">
-                    <li class="case-study-card__tag">Answer engine optimization</li>
-                    <li class="case-study-card__tag">Structured data</li>
-                    <li class="case-study-card__tag">Entity authorship</li>
-                    <li class="case-study-card__tag">Technical SEO</li>
-                </ul>
-
-                <a class="case-study-card__link button" href="/case-studies/geo-aeo-authority-pilot/">Read Case Study</a>
-
-            </article>
-
-            <article class="case-study-card">
-
-                <h3 class="case-study-card__title">AdRoll 3.0: Website Design &amp; Development</h3>
-                <p class="case-study-card__role">Web Design &amp; Development</p>
-
-                <p>Site-wide rebrand and brand consolidation &mdash; folding two brands back into one identity and one site on a compressed timeline, without losing SEO equity or confusing existing customers.</p>
-                <p>Sixty days post-launch: zero support tickets related to brand confusion, +87% first-time visitors to core pages, +42% homepage traffic.</p>
+                <p>{{ study.data.cardDescription or study.data.intro }}</p>
+                {% if study.data.cardResult %}<p>{{ study.data.cardResult }}</p>{% endif %}
 
                 <ul class="case-study-card__tags">
-                    <li class="case-study-card__tag">Rebrand</li>
-                    <li class="case-study-card__tag">Design systems</li>
-                    <li class="case-study-card__tag">Front-end development</li>
-                    <li class="case-study-card__tag">Statamic</li>
+                    {%- for tag in study.data.cardTags or study.data.about %}
+                    <li class="case-study-card__tag">{{ tag }}</li>
+                    {%- endfor %}
                 </ul>
 
-                <a class="case-study-card__link button" href="/case-studies/site-rebrand/">Read Case Study</a>
+                <a class="case-study-card__link button" href="{{ study.url }}">Read Case Study</a>
 
             </article>
+            {%- endfor %}
 
         </div>
         </div>

@@ -9,7 +9,10 @@
       "name": title,
       "description": intro,
       "image": meta.baseURL + socialCards[thumbnail] if thumbnail else meta.baseURL + meta.image,
+      "dateCreated": year | string,
+      "about": about | schemaThings,
       "isPartOf": { "@id": meta.baseURL + "/#website" },
+      "publisher": { "@id": meta.baseURL + "/#person" },
       "creator": {
         "@type": "Role",
         "roleName": role,
