@@ -2,6 +2,21 @@
 <html lang="en">
 <head>
     {% include "partials/head.njk" %}
+    {% set projectSchema = {
+      "@context": "https://schema.org",
+      "@type": "CreativeWork",
+      "@id": meta.baseURL + page.url,
+      "name": title,
+      "description": intro,
+      "image": meta.baseURL + socialCards[thumbnail] if thumbnail else meta.baseURL + meta.image,
+      "isPartOf": { "@id": meta.baseURL + "/#website" },
+      "creator": {
+        "@type": "Role",
+        "roleName": role,
+        "creator": { "@id": meta.baseURL + "/#person" }
+      }
+    } %}
+    <script type="application/ld+json">{{ projectSchema | dump | safe }}</script>
 </head>
 <body class="page-project">
 

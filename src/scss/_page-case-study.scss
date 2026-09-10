@@ -17,6 +17,10 @@
     }
   }
 
+  main h3 {
+    font-size: 1.8rem;
+  }
+
   main h2 + p em {
     font-family: obviously, 'Obviously Fallback', sans-serif;
     font-weight: 400;
@@ -43,6 +47,28 @@
 
     @media screen and (max-width: $break-small) {
       font-size: 1.8rem;
+    }
+  }
+
+  /* Inline citation markers. Sized down from the surrounding text so the
+     link's hover bar (set globally on `a`) doesn't overpower a single digit. */
+  sup a:before {
+    height: 2px;
+    bottom: -1px;
+  }
+
+  .references {
+    font-size: 1.4rem;
+
+    li {
+      margin-bottom: 0.8rem;
+    }
+
+    /* Lands the linked-to entry mid-viewport rather than flush against the
+       browser chrome, and flags it so a reader can tell which one they jumped to. */
+    li:target {
+      scroll-margin-top: 2rem;
+      background: $light-blue;
     }
   }
 }

@@ -4,6 +4,7 @@ intro: Structured entity data as a response to LLM-mediated search — a two-sta
 role: Technical SEO, Content Strategy, Web Development
 context: AdRoll
 order: 2
+draft: false
 about:
   - Answer engine optimization
   - Generative engine optimization
@@ -41,11 +42,6 @@ I drafted up an internal hub-and-spoke linking plan centered around a topic that
 The hub-and-spoke system would be centered around a topic related to a recent go-to-market (GTM) motion on the AdRoll platform. In-depth, data-rich topical content had been created and I wanted to methodically link a select subset of that content together to build our authority in the topic while providing important context for LLMs around our GTM offering.
 
 The hub itself automatically gathered *all* topically related content available on the marketing site. From that larger list of content, a specific subsection of spoke articles linked to a separate analysis with link text specifying the technical nature of the report.
-
-<figure>
-<img src="/images/chart-link_equity.svg" alt="Diagram showing the highly cited analysis article sending link equity to three chosen spoke articles and the topical hub, which separately links out to the rest of the site's topical content.">
-<figcaption>Link equity chart outlining the flow of equity from a highly cited data-rich article to specifically chosen articles and an overall topical hub.</figcaption>
-</figure>
 
 ### Phase Two
 
