@@ -109,6 +109,10 @@
     margin-bottom: 1.6rem;
   }
 
+  p {
+    max-width: 72ch;
+  }
+
   /* The same topic list that feeds the JSON-LD `about` property, surfaced as
      visible text — so what the page tells a machine and what it tells a reader
      are the same claim, kept in one place. */
