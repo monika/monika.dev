@@ -7,7 +7,12 @@
       "@type": "Article",
       "headline": title,
       "description": intro,
-      "author": { "@id": meta.baseURL + "/#person" },
+      "image": meta.baseURL + meta.image,
+      "author": {
+        "@type": "Role",
+        "roleName": role,
+        "author": { "@id": meta.baseURL + "/#person" }
+      },
       "publisher": { "@id": meta.baseURL + "/#person" },
       "mainEntityOfPage": meta.baseURL + page.url,
       "about": about | schemaThings
@@ -22,9 +27,9 @@
 
         <div class="layout">
 
-            <p class="case-study__eyebrow">{{ context }}</p>
+            {% if role %}<p class="case-study__eyebrow">{{ role }}</p>{% endif %}
             <h1 class="page-title">{{ title }}</h1>
-            {% if role %}<p class="case-study__role">{{ role }}</p>{% endif %}
+
 
             {{ content | safe }}
 
@@ -32,9 +37,7 @@
 
     </main>
 
-    {# Only case studies marked `full` are built, so this list is drawn from
-       those alone — a gated entry has no page to link to. #}
-    {%- set publishedStudies = collections.caseStudyListing | selectPublished -%}
+    {%- set publishedStudies = collections.caseStudyListing -%}
     {%- if publishedStudies.length > 1 %}
     <nav class="case-studies" aria-labelledby="case-study-pagination">
 

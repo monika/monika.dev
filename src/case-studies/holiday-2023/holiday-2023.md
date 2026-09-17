@@ -4,7 +4,7 @@ intro: Sole visual designer and developer on AdRoll's retro-gaming-themed holida
 role: Web Design & Development
 context: AdRoll
 order: 5
-availability: hidden
+draft: true
 about:
   - Campaign design
   - Visual design

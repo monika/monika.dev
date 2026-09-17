@@ -3,12 +3,34 @@
 @use 'variables' as *;
 
 .case-studies {
-  background-color: $blue;
+  background-color: $black;
+  background-position: top;
+
   position: relative;
 
   .layout {
     position: relative;
     z-index: 5;
+  }
+
+  &:after {
+    content: '';
+
+    display: block;
+    width: 97%;
+    height: 101%;
+    /* Root-relative: the stylesheet is inlined into <head>, so a relative path
+       would resolve against the page URL rather than a stylesheet location. */
+    background-image: url('/images/bg-x-blue.svg');
+    background-position: -13px -13px;
+
+    position: absolute;
+    top: -22px;
+    left: 0;
+
+    @media screen and (max-width: $break-small) {
+      width: 100%;
+    }
   }
 
   &__heading {
@@ -17,7 +39,7 @@
     margin-bottom: 0.5em;
     font-weight: 600;
     color: $white;
-    @include text-shadow($black);
+    @include text-shadow($blue);
 
     @media screen and (max-width: $break-small) {
       font-size: 3.2rem;
@@ -87,6 +109,10 @@
     margin-bottom: 1.6rem;
   }
 
+  p {
+    max-width: 72ch;
+  }
+
   /* The same topic list that feeds the JSON-LD `about` property, surfaced as
      visible text — so what the page tells a machine and what it tells a reader
      are the same claim, kept in one place. */
@@ -111,13 +137,5 @@
 
     /* Overrides the global `ul li` bottom padding — these sit on one line. */
     padding-bottom: 0.4rem;
-  }
-
-  /* Stands in for the "Read Case Study" button on gated entries, so the card
-     still ends on an action — just one that goes to the inbox. */
-  &__gated {
-    max-width: 70ch;
-    margin: 0;
-    font-style: italic;
   }
 }

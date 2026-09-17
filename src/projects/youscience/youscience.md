@@ -1,9 +1,14 @@
 ---
 title: YouScience
+year: 2014
 thumbnail: img-youscience
 thumbnailAlt: A YouScience test dashboard, listing the timed aptitude sections a student unlocks in sequence.
 intro: An aptitude testing suite built to help students lean into their strengths and save thousands of dollars a year in college.
 role: Visual Design, Interaction design, Prototyping
+about:
+  - User experience design
+  - Interaction design
+  - Prototyping
 displayOrder: 6
 eleventyNavigation:
   key: YouScience

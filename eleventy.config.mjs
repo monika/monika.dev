@@ -248,11 +248,6 @@ export default function (eleventyConfig) {
     });
   });
 
-  // Narrows a case study list to the entries that actually have a page built
-  eleventyConfig.addFilter('selectPublished', function(items) {
-    return (items || []).filter((item) => item.data.availability === 'full');
-  });
-
   // Shapes a list of topic strings into schema.org Thing nodes for JSON-LD `about`
   eleventyConfig.addFilter('schemaThings', function(items) {
     return (items || []).map((name) => ({ '@type': 'Thing', name }));

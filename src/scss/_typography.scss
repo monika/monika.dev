@@ -212,4 +212,14 @@ ul {
       padding-bottom: 0;
     }
   }
+  ul {
+    list-style-type: circle;
+    margin-top: 1.6rem;
+    li {
+      padding-bottom: 0.5rem;
+      &:last-of-type {
+        padding-bottom: 0;
+      }
+    }
+  }
 }

@@ -4,7 +4,7 @@ intro: Conceived, built, and owned AdRoll.com's Algolia sitewide search and the 
 role: Web Design & Development
 context: AdRoll
 order: 3
-availability: gated
+draft: true
 about:
   - Site search
   - Interface design
