@@ -1,6 +1,6 @@
 ---
 title: "Speaking the LLM's Language: A GEO Authority Pilot Program"
-intro: Testing whether structured data and verified authorship change how AI trusts a site's content — a 24.1% organic lift over 30 days, with average search position moving from 24.27 to 18.43.
+intro: Testing whether structured data and verified authorship change how AI trusts a site's content — a 24.1% incremental search lift over 30 days, with average search position moving from 24.27 to 18.43.
 role: Technical SEO, Content Strategy, Web Development
 order: 2
 draft: false
@@ -10,7 +10,7 @@ about:
   - Entity disambiguation
   - Structured data
 cardDescription: Applied structured entity data (Schema.org) alongside hub-and-spoke-style topic cluster, validated against a control group with a Difference-in-Differences framework.
-cardResult: "Pilot program result: +11.75% organic lift from internal linking alone, +24.1% organic lift with verified SME authorship added; average search position for pilot URLs moved from 24.27 to 18.43."
+cardResult: "Pilot program result: +11.75% incremental search lift from internal linking alone, +24.1% incremental search lift with verified SME authorship added; average search position for pilot URLs moved from 24.27 to 18.43."
 cardTags:
   - Answer engine optimization
   - Generative engine optimization
@@ -29,7 +29,7 @@ eleventyNavigation:
  - Hub-and-Spoke Linking: A structured content map to consolidate authority.
  - Author Disambiguation: Using JSON-LD schema to verify SME authority and trust.
 
-**The Outcome:** Structural linking alone drove an 11.75% organic lift over 15 days. Adding verified authorship pushed that to a 24.1% organic lift over 30 days, alongside a separate, real shift in average search ranking position for the pilot group of URLs, from 24.27 to 18.43.
+**The Outcome:** Structural linking alone drove an 11.75% incremental search lift over 15 days. Adding verified authorship pushed that to a 24.1% incremental search lift over 30 days, alongside a separate, real shift in average search ranking position for the pilot group of URLs, from 24.27 to 18.43.
 
 
 ## The story
@@ -81,13 +81,13 @@ By disambiguating the author and providing more validation signals, we gave LLMs
 
 I created a difference-in-difference report comparing the pilot program’s articles to articles with the same topic that weren’t part of the pilot; the results were reviewed internally by our SEO manager, Content manager, and Marketing strategist. I didn't have a direct way to measure whether LLMs specifically were citing this content more, so these search-side numbers were an available proxy signal.
 
-"Organic lift" used here is a DiD-isolated effect: the pilot program's growth in non-branded search impressions, minus however much the control group moved over that same window. It's not raw growth alone, it's growth specifically attributable to the pilot, with general market and seasonal movement filtered out.
+"Incremental search lift" is the growth we can attribute to the pilot. I isolated this by comparing how much the treated pages grew measured against the untreated pages within the same time period. The gap is the incremental search lift.
 
 | Phase | What changed? | Timeframe | Result |
 | :---- | :---- | :---- | :---- |
-| Phase 1 | Structural linking only (hub-and-spoke) | 15 Days | \+11.75% organic lift |
+| Phase 1 | Structural linking only (hub-and-spoke) | 15 Days | \+11.75% incremental search lift |
 | Phase 1 | Daily impression volume | 15 Days | \~+6.4% |
-| Phase 2 | Author disambiguation (SME schema) | 30 Days | \+24.1% organic lift |
+| Phase 2 | Author disambiguation (SME schema) | 30 Days | \+24.1% incremental search lift |
 | Phase 2 | Average search position, treated cluster | 30 Days | 24.27 → 18.43 |
 
 Beyond the headline figures, the DiD model isolated four separate metrics for the treatment group that indicate user value, content quality, and audience engagement. Each was measured against how the control group moved over the same window:
@@ -97,7 +97,7 @@ Beyond the headline figures, the DiD model isolated four separate metrics for th
 * 0.04 percentage point lift in CTR
 * Average position improvement of 2.31 spots
 
-The control group declined, averaging a 2.9% drop in visibility over the same time period. This trend ruled out the topic itself gaining general interest since only the pages that received the internal linking and structured authorship saw the organic lift.
+The control group declined, averaging a 2.9% drop in visibility over the same time period. This trend ruled out the topic itself gaining general interest since only the pages that received the internal linking and structured authorship saw the incremental search lift.
 
 Individual search query rankings inside the topic told a similar story, each a jump from page-two obscurity into a top-3 or page-one placement:
 
