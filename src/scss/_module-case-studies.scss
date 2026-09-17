@@ -3,12 +3,34 @@
 @use 'variables' as *;
 
 .case-studies {
-  background-color: $blue;
+  background-color: $black;
+  background-position: top;
+
   position: relative;
 
   .layout {
     position: relative;
     z-index: 5;
+  }
+
+  &:after {
+    content: '';
+
+    display: block;
+    width: 97%;
+    height: 101%;
+    /* Root-relative: the stylesheet is inlined into <head>, so a relative path
+       would resolve against the page URL rather than a stylesheet location. */
+    background-image: url('/images/bg-x-blue.svg');
+    background-position: -13px -13px;
+
+    position: absolute;
+    top: -22px;
+    left: 0;
+
+    @media screen and (max-width: $break-small) {
+      width: 100%;
+    }
   }
 
   &__heading {
@@ -17,7 +39,7 @@
     margin-bottom: 0.5em;
     font-weight: 600;
     color: $white;
-    @include text-shadow($black);
+    @include text-shadow($blue);
 
     @media screen and (max-width: $break-small) {
       font-size: 3.2rem;

@@ -27,9 +27,9 @@
 
         <div class="layout">
 
-            <p class="case-study__eyebrow">{{ context }}</p>
+            {% if role %}<p class="case-study__eyebrow">{{ role }}</p>{% endif %}
             <h1 class="page-title">{{ title }}</h1>
-            {% if role %}<p class="case-study__role">{{ role }}</p>{% endif %}
+
 
             {{ content | safe }}
 

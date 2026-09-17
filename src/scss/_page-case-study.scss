@@ -67,9 +67,11 @@
 
   aside {
     font-style: italic;
-    border-left: 2px solid $black;
+    font-size: 1.4rem;
+    border-left: 2px solid $blue;
     padding-left: 1.2rem;
     margin-top: 3.6rem;
+    max-width: 75ch;
   }
 
   table {
@@ -102,10 +104,18 @@
     margin-left: 0;
     margin-right: 0;
     text-align: left;
+
+    img {
+      border: 5px solid $black;
+      box-shadow: -12px 12px $black;
+    }
   }
 
   figcaption {
-    margin-top: 0.8rem;
+    max-width: 75ch;
+    margin-top: 1.6rem;
+    padding-left: 1.2rem;
+    border-left: 2px solid $blue;
     font-size: 1.4rem;
     font-style: italic;
   }

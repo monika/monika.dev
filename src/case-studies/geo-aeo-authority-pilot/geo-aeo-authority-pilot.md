@@ -2,7 +2,6 @@
 title: "Speaking the LLM's Language: A GEO Authority Pilot Program"
 intro: Testing whether structured data and verified authorship change how AI trusts a site's content — a 24.1% organic lift over 30 days, with average search position moving from 24.27 to 18.43.
 role: Technical SEO, Content Strategy, Web Development
-context: AdRoll
 order: 2
 draft: false
 about:
@@ -14,9 +13,9 @@ cardDescription: Applied structured entity data (Schema.org) alongside hub-and-s
 cardResult: "Pilot program result: +11.75% organic lift from internal linking alone, +24.1% organic lift with verified SME authorship added; average search position for pilot URLs moved from 24.27 to 18.43."
 cardTags:
   - Answer engine optimization
+  - Generative engine optimization
+  - Entity disambiguation
   - Structured data
-  - Entity authorship
-  - Technical SEO
 eleventyNavigation:
   key: geo-aeo-authority-pilot
   order: 2
@@ -37,7 +36,7 @@ eleventyNavigation:
 
 ### The context
 
-Most recently, I was the principal web designer and developer in AdRoll’s marketing department, as a member of the creative team. Like many other marketing departments, we were seeing an overall drop in organic search traffic and a rise in LLM traffic for our domain, [adroll.com](http://adroll.com).
+Most recently, I was the principal web designer and developer in AdRoll’s marketing department, as a member of the creative team. Like many other marketing departments, we were seeing an overall drop in organic search traffic and a rise in LLM traffic for our domain, [adroll.com](http://www.adroll.com).
 
 My thinking near the end of 2025, based on our own analytics, was that users were increasingly reaching for LLMs as a means of researching us as a platform, instead of coming to our marketing site directly, whatever stage of the funnel they were at. This change wasn’t happening in isolation, and it’s not done yet. On June 3, 2026, Cloudflare CEO Matthew Prince posted that "bots have now passed human traffic online for the first time in the Internet's history,"<sup><a href="#ref-prince-tweet">1</a></sup> pointing to Cloudflare Radar's own data.<sup><a href="#ref-cloudflare-radar">2</a></sup> Reported figures put the split at roughly 57.5% bots to 42.5% humans.
 

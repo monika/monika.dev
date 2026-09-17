@@ -3,35 +3,8 @@
 @use 'variables' as *;
 
 .projects {
-  background-color: $black;
-  background-position: top;
+  background-color: $blue;
 
-  position: relative;
-
-  .layout {
-    position: relative;
-    z-index: 5;
-  }
-
-  &:after {
-    content: '';
-
-    display: block;
-    width: 97%;
-    height: 101%;
-    /* Root-relative: the stylesheet is inlined into <head>, so a relative path
-       would resolve against the page URL rather than a stylesheet location. */
-    background-image: url('/images/bg-x-blue.svg');
-    background-position: -13px -13px;
-
-    position: absolute;
-    top: -22px;
-    left: 0;
-
-    @media screen and (max-width: $break-small) {
-      width: 100%;
-    }
-  }
   &__heading {
     font-size: 4.8rem;
     margin-top: 0;
@@ -75,7 +48,7 @@
 
       border-radius: 10px;
       border-style: solid;
-      border-color: $blue;
+      border-color: $black;
       border-width: 50px 0 0 0;
 
       grid-column: 1 / 3;
@@ -97,7 +70,7 @@
       height: 350px;
       border-radius: 0 0 10px 10px;
       border-style: solid;
-      border-color: $blue;
+      border-color: $black;
       border-width: 0 3px 3px 3px;
     }
 
@@ -110,10 +83,10 @@
     &__content {
       padding: 3%;
       background: $white;
-      color: $blue;
+      color: $black;
 
-      border: 3px solid $blue;
-      box-shadow: -12px 12px $blue;
+      border: 3px solid $black;
+      box-shadow: -12px 12px $black;
 
       position: relative;
       z-index: 5;
