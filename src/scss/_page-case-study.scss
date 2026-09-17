@@ -19,6 +19,13 @@
 
   main h3 {
     font-size: 1.8rem;
+    margin-top: 3.6rem;
+  }
+
+  main h4 {
+    font-size: 1.6rem;
+    margin-top: 2.4rem;
+    font-weight: 400;
   }
 
   main h2 + p em {
@@ -35,26 +42,72 @@
     margin-bottom: 0;
   }
 
-  /* Metadata, not a heading — styled to match the display type it replaced. */
   .case-study__role {
     margin-top: 0.4rem;
     margin-bottom: 0;
-    font-family: obviously-wide, 'Obviously Wide Fallback', sans-serif;
-    font-size: 2.4rem;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.25;
     text-transform: capitalize;
-
-    @media screen and (max-width: $break-small) {
-      font-size: 1.8rem;
-    }
   }
 
-  /* Inline citation markers. Sized down from the surrounding text so the
-     link's hover bar (set globally on `a`) doesn't overpower a single digit. */
-  sup a:before {
-    height: 2px;
-    bottom: -1px;
+  sup {
+    
+    a {
+
+      font-weight: 700;
+
+      &:hover { color: $pink; }
+      &:before { content: none;}
+
+    }
+
+  }
+
+  aside {
+    font-style: italic;
+    border-left: 2px solid $black;
+    padding-left: 1.2rem;
+    margin-top: 3.6rem;
+  }
+
+  table {
+    border-collapse: collapse;
+    border: 2px solid $black;
+    color: $black;
+    margin-top: 3.8rem;
+    margin-bottom: 3.8rem;
+
+    th,
+    td {
+      padding: 0.8rem 1.2rem;
+      text-align: left;
+      vertical-align: middle;
+      border-bottom: 1px solid $grey;
+    }
+
+    th {
+      border-bottom: 2px solid $black;
+      font-weight: 700;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+  }
+
+  figure {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+  }
+
+  figcaption {
+    margin-top: 0.8rem;
+    font-size: 1.4rem;
+    font-style: italic;
   }
 
   .references {
