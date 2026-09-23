@@ -9,8 +9,8 @@ about:
   - Generative engine optimization
   - Entity disambiguation
   - Structured data
-cardDescription: Applied structured entity data (Schema.org) alongside hub-and-spoke-style topic cluster, validated against a control group with a Difference-in-Differences framework.
-cardResult: "Pilot program result: +11.75% incremental search lift from internal linking alone, +24.1% incremental search lift with verified SME authorship added; average search position for pilot URLs moved from 24.27 to 18.43."
+cardDescription: Applied the same thinking behind web accessibility to LLMs, giving machines more context about our content and who wrote it through schema.org structured data and a hub-and-spoke internal linking system, scoped as a small pilot before committing to a site-wide rollout.
+cardResult: "A solid technical SEO update with a GEO bet on top: the SME author resolved into a verified Knowledge Graph entity, and search rankings for the pilot pages moved from position 24.27 to 18.43, validated against a control group."
 cardTags:
   - Answer engine optimization
   - Generative engine optimization
@@ -23,44 +23,48 @@ eleventyNavigation:
 
 ## Overview
 
-**The Challenge:** As LLM traffic to AdRoll’s marketing site increased, and human visibility decreased, I wanted to find out if we could become more legible to AI systems by providing additional structured metadata.
+**The Challenge:** Our analytics suggested more people were researching AdRoll through LLMs instead of visiting our site directly. Our site was already accessible to people, but semantic HTML tells a machine what content is, not who's saying it or why it can be trusted. I wanted to know if we could give LLMs that missing context.
 
-**The Strategy:** I implemented a two-phased GEO pilot:
- - Hub-and-Spoke Linking: A structured content map to consolidate authority.
- - Author Disambiguation: Using JSON-LD schema to verify SME authority and trust.
+**The Strategy:** Treat LLMs like any other user relying on assistive technology, and give them more to work with using tools we already had:
+ - Hub-and-Spoke Linking: A structured internal linking map to consolidate topical authority.
+ - Author Disambiguation: JSON-LD schema to verify who wrote our content.
 
-**The Outcome:** Structural linking alone drove an 11.75% incremental search lift over 15 days. Adding verified authorship pushed that to a 24.1% incremental search lift over 30 days, alongside a separate, real shift in average search ranking position for the pilot group of URLs, from 24.27 to 18.43.
+ **The Thinking:** Rather than commit to a full entity disambiguation rollout with no evidence it would pay off, I scoped a low-risk, low-cost pilot around a recent GTM topic. It was built as a solid technical SEO update first, with LLM legibility as the bet on top. Worst case, I'd spend a week learning that schema enrichment doesn't move the needle.
+
+**The Outcome:** Our SME resolved into a verified Knowledge Graph entity, and search rankings for the pilot pages moved from 24.27 to 18.43, validated against a control group.
 
 
 ## The story
 
 ### The context
 
-Most recently, I was the principal web designer and developer in AdRoll’s marketing department, as a member of the creative team. Like many other marketing departments, we were seeing an overall drop in organic search traffic and a rise in LLM traffic for our domain, [adroll.com](http://www.adroll.com).
+Most recently, I was the principal web designer and developer in AdRoll's marketing department, as a member of the creative team. Like many other marketing departments, we were seeing a rise in LLM traffic for our domain, adroll.com.
 
-My thinking near the end of 2025, based on our own analytics, was that users were increasingly reaching for LLMs as a means of researching us as a platform, instead of coming to our marketing site directly, whatever stage of the funnel they were at. This change wasn’t happening in isolation, and it’s not done yet. On June 3, 2026, Cloudflare CEO Matthew Prince posted that "bots have now passed human traffic online for the first time in the Internet's history,"<sup><a href="#ref-prince-tweet">1</a></sup> pointing to Cloudflare Radar's own data.<sup><a href="#ref-cloudflare-radar">2</a></sup> Reported figures put the split at roughly 57.5% bots to 42.5% humans.
+My thinking at the end of 2025, based on our own analytics, was that users were increasingly reaching for LLMs as a means of researching us as a platform, instead of coming to our marketing site directly, in whatever stage of the funnel they were at, and that usage was steadily increasing.
 
-If LLMs are built to favor content they can trace back to a real, verifiable source, and to discount or hallucinate around content they can't, could we provide any type of validation? Could we make ourselves more trusted and usable by LLMs in general? By extension, do the LLMs speaking for us know the correct things about us?
+<aside>On June 3, 2026, Cloudflare CEO Matthew Prince posted that "bots have now passed human traffic online for the first time in the Internet's history,"<sup><a href="#ref-prince-tweet">1</a></sup> pointing to Cloudflare Radar's own data.<sup><a href="#ref-cloudflare-radar">2</a></sup> Reported figures put the split at roughly 57.5% bots to 42.5% humans.</aside>
+
+I don't expect the number to decline, but the case for these updates doesn't depend on that, either. I wanted our offerings and expertise to be as accessible to LLMs as they were to people, by actually giving both more contextual data to work with through structured data and intentional topical internal linking.
 
 ### The problem
 
-After learning that LLMs interface with online content using the same assistive technology that people do, I suspected that the LLMs were having as difficult a time as people were. Our marketing site already delivered accessible, semantic HTML, but semantic HTML tells a machine what the content is (a heading, a summary, a list) but not who is saying it and whether they can be trusted. Were there other methods of communicating this kind of metatextual information to LLMs? Could I improve how our content is found and understood by LLMs? Could I improve how our content is trusted by LLMs?
+In researching how LLMs interface with content online, I learned that they interface with content using similar assistive technology that people do. I suspected that the LLMs were having as difficult a time as people were, given that fewer than 5% of the top million home pages pass automated accessibility checks, according to WebAIM's annual audit.<sup><a href="#ref-webaim">3</a></sup>
 
-This turns out to be a facet of AEO/GEO (Answer Engine Optimization / Generative Engine Optimization): optimizing content to be found and cited by AI systems the way traditional SEO optimizes for search engines.
+Our marketing site delivered accessible, semantic HTML, but semantic HTML tells a machine what the content is (a heading, a paragraph, a list) but not who is saying it and whether it can be trusted. Were there signals we could include or other methods of communicating this kind of contextual information to LLMs, like ARIA tags for screen readers? Could I accommodate the LLM crawlers any better than we already were? Could I do that easily and systematically, exposing the most amount of valuable information possible with the least amount of effort for the marketing team?
 
 ### The solution
 
-I drafted, collaborated, and executed on a pilot program built to concentrate link equity in a hub-and-spoke internal linking plan and authority onto a valuable organic search topic, backed by disambiguated human authorship, in order to find out whether authority and authenticity positively affects usage in LLMs and search engines.
+I drafted, collaborated, and executed on a pilot program built to concentrate topical equity in a hub-and-spoke internal linking plan, backed by disambiguated human authorship. I wanted our offerings and expertise to be accessible to LLMs the same systematic way we'd already made them accessible to people, through structured data, not by hoping it worked, but by actually giving the systems more to work with.
 
-I conceptualized this pilot program to be low risk, easy to implement, and nominal to maintain. As a more visual metaphor, I pictured this system providing a map for any LLMs looking for relevant topical content on our marketing site based on metadata we’ve systematically included in our site markup. The overall production system was also designed to be low lift and easily repeatable in our CMS so it was accessible by our content team, uncoupling it from my bandwidth outside of updates or improvements.
+I conceptualized this pilot program to have a solid technical SEO update at its core, while attempting to move the needle one way or another on LLM legibility. The pilot was low risk, easy to implement within our CMS, and nominal to maintain by our content team, uncoupling the system from my bandwidth so it could expand as fast as new entries could be filled out with vetted information.
 
 #### Phase One
 
-I drafted up an internal hub-and-spoke linking plan centered around a topic that directly related to a recent GTM and shared it with the marketing team’s SEO manager and Content manager, along with two other topic options for GTMs that would be continuing through the end of the year. We decided to move forward with the initially proposed topic.
+I drafted an internal hub-and-spoke linking plan centered around a topic that directly related to a recent go-to-market (GTM) motion and shared it with the marketing team's SEO manager and Content manager, along with two other topic options for GTMs that would be continuing through the end of the year. We decided to move forward with the initially proposed topic.
 
-The hub-and-spoke system would be centered around a topic related to a recent go-to-market (GTM) motion on the AdRoll platform. In-depth, data-rich topical content had been created and I wanted to methodically link a select subset of that content together to build our authority in the topic while providing important context for LLMs around our GTM offering.
+Because of the recent GTM, in-depth, data-rich topical content had been created and I wanted to methodically link a select subset of that content together to purposefully build our authority in the topic while providing important context around our GTM offering.
 
-The hub itself automatically gathered *all* topically related content available on the marketing site. From that larger list of content, a specific subsection of spoke articles linked to a separate analysis with link text specifying the technical nature of the report.
+The hub itself was built to automatically gather all topically related content available on the marketing site. From that larger list of topical content, a specific subsection of data-rich articles was decided on. Those specific articles linked to a new analysis with link text specifying the technical nature of the report.
 
 <figure>
 {% image "diagram-link_authority_flow", "Diagram of the hub-and-spoke structure: a starred, highly cited topical data-driven report links via a CTA link to the central Topic Hub, which fans out CTA and direct links to five spoke content types — topical webinars, blog posts, whitepapers, case studies, and a related product page — each paired with its own related-resources or FAQ module, with dashed contextual text links tying the report, hub, and spokes together.", "(max-width: 648px) 80vw, 70vw" %}
@@ -69,37 +73,37 @@ The hub itself automatically gathered *all* topically related content available 
 
 #### Phase Two
 
-Phase one ran for two weeks and proved positive with an initial difference-in-difference (DiD) report, so our hub-and-spoke plan was resonating with LLMs. Could I continue to define and validate our authority within this topic space? Could we validate our content as vetted, quality information? Yes, I could specify the industry experience of the author of these new articles.
+Phase one ran for two weeks and saw positive results with an initial difference-in-difference (DiD) report. Were there other levers to pull that could continue to define and validate our authority within this topic space? Yes, I could specify the identity and industry experience of the author of these new articles.
 
-Our GTM motions included identifying a Subject Matter Expert (SME) as the author for key campaign content. To establish clear trust signals for AI search engines, I enriched the SME's on-site profile with structured metadata covering industry awards, professional credentials, and verified career history within JSON-LD schema.
+Our GTM motions include identifying an SME (subject matter expert) as an author of some of the articles released during these motions. I enriched the SME's on-site author profile with metadata about their industry awards, professional profiles, and job experience inside the basic JSON-LD schema already present on their author profile. JSON-LD is a structured metadata format that tells machines specific facts about a page, like who wrote it.
 
-This structured format explicitly communicated author credentials to LLMs, verifying that the SME publishing on our site was the same recognized industry professional featured in major industry conferences and publications.
+This structured format explicitly communicated author credentials to machines, in an effort to verify that the SME publishing on our site was the same recognized industry professional featured in major industry conferences and publications. Our SME successfully disambiguated into a verified Knowledge Graph entity, confirmed externally by Google's own systems as a distinct, notable person.
 
-By disambiguating the author and providing more validation signals, we gave LLMs more reasons to trust us. In theory, this activates the same latent authority signals in a site's logic layer that Princeton's foundational GEO study<sup><a href="#ref-geo-study">3</a></sup> points to. Their research found that signals like citations, statistics, and authoritative sourcing could meaningfully boost a source's visibility and citation frequency in AI-generated responses. (Could this also be a form of brand awareness?)
+By disambiguating the author and providing more validation signals, we gave search engines, and potentially LLMs, more reasons to trust us, not to target inclusion in any one AI feature specifically, but to give any machine reading the page a real way to verify who was speaking.
 
 ## The results
 
-I created a difference-in-difference report comparing the pilot program’s articles to articles with the same topic that weren’t part of the pilot; the results were reviewed internally by our SEO manager, Content manager, and Marketing strategist. I didn't have a direct way to measure whether LLMs specifically were citing this content more, so these search-side numbers were an available proxy signal.
+I created a difference-in-difference report through Gemini comparing the pilot program's articles to articles within the same topic that weren't part of the pilot; the results were reviewed internally by our SEO manager, Content manager, and Marketing strategist. I didn't have a direct way to measure whether LLMs specifically were using this content more, an entire measurement category that didn't really exist yet. These search-side numbers are the real, standalone result. Whatever they suggest about LLMs is a bonus, not the point.
 
-"Incremental search lift" is the growth we can attribute to the pilot. I isolated this by comparing how much the treated pages grew measured against the untreated pages within the same time period. The gap is the incremental search lift.
+"Incremental organic lift" is the growth we can attribute to the pilot. I isolated this by comparing how much the treated pages grew measured against the untreated pages within the same time period. The gap is the incremental organic lift.
 
 | Phase | What changed? | Timeframe | Result |
 | :---- | :---- | :---- | :---- |
-| Phase 1 | Structural linking only (hub-and-spoke) | 15 Days | \+11.75% incremental search lift |
+| Phase 1 | Structural linking only (hub-and-spoke) | 15 Days | \+11.75% incremental organic lift |
 | Phase 1 | Daily impression volume | 15 Days | \~+6.4% |
-| Phase 2 | Author disambiguation (SME schema) | 30 Days | \+24.1% incremental search lift |
+| Phase 2 | Author disambiguation (SME schema) | 30 Days | \+24.1% incremental organic lift |
 | Phase 2 | Average search position, treated cluster | 30 Days | 24.27 → 18.43 |
 
-Beyond the headline figures, the DiD model isolated four separate metrics for the treatment group that indicate user value, content quality, and audience engagement. Each was measured against how the control group moved over the same window:
+Beyond the headline figures, the DiD model isolated four separate metrics for the treatment group, each measured against how the control group moved over the same window:
 
 * Added ~605 daily impressions
 * Roughly one additional daily click
 * 0.04 percentage point lift in CTR
 * Average position improvement of 2.31 spots
 
-The control group declined, averaging a 2.9% drop in visibility over the same time period. This trend ruled out the topic itself gaining general interest since only the pages that received the internal linking and structured authorship saw the incremental search lift.
+The control group declined, averaging a 2.9% drop in visibility over the same period. That ruled out an alternative explanation, that the topic itself was just gaining general interest. If it were, the untreated content should have risen too. Instead, only the pages that received the internal linking and structured authorship moved.
 
-Individual search query rankings inside the topic told a similar story, each a jump from page-two obscurity into a top-3 or page-one placement:
+Individual query rankings inside the topic told the same story, each a jump from page-two obscurity into a top-3 or page-one placement:
 
 * Primary term climbed from position 8.9 to 2.9
 * Secondary broad-category term moved from 15.3 to 10.5
@@ -107,19 +111,19 @@ Individual search query rankings inside the topic told a similar story, each a j
 
 <aside>A follow-up check across a longer window through March showed that most treatment pages maintained or improved their gains. Our primary term's position climbed further from 11.75 to 9.93, and one landing page jumped from 25.22 to 16.29. While one of the six pages regressed and another dropped out of visibility, the core mechanism expressed durability for the majority of the content over time.</aside>
 
+Whatever this pilot ultimately did or didn't do for how LLMs represent us, a question I never had the tools to answer directly, it stands on its own as a legitimate technical SEO investment. Real internal linking architecture and structured, verified authorship data turned out to be valuable regardless of the LLM angle.
+
 ## The judgement
 
-I didn't design this pilot to be high-risk, and that was deliberate. I wasn’t setting up brittle, proprietary systems similar to the use of IE conditional comments back in Aughts. This was all handled with default web architecture, schema.org and JSON-LD, public information, all applied deliberately to our site markup. Worst case, I spent a week finding out that schema enrichment doesn't move the needle in terms of building trust with LLMs in the short-term.
+I didn't design this pilot to be high-risk, and that was deliberate. I wasn't setting up brittle, proprietary systems similar to the use of IE conditional comments for custom HTML and CSS back in the Aughts. This was all handled with default web architecture, schema.org and JSON-LD, public information, all applied deliberately to our site markup. If I learned nothing else, I would have a better idea of the impact that schema enrichment has on SEO (and AEO, once we had tracking set up) and be able to prioritize future updates.
 
 ## The reflection
 
-This pilot confirmed something I'd suspected: the same principles that make a site legible to a screen reader make it legible to an LLM. We have the ability to make ourselves more usable to LLMs by guiding with metadata information similar to ARIA for screen readers. It also proved that the system to accomplish this was inexpensive and repeatable: one developer using tools that already existed, to surface information that already exists, and incorporated the workflow into our CMS to enable content authors to maintain any updates going forward as needed. Keeping it small wasn't just caution, it was the point: prove the mechanism works before committing to something bigger, like full entity disambiguation across the site.
+Did I answer my original question? Partially. I can confirm we can influence how search engines treat and rank structured, verified content. I didn't have the tools to directly track LLM citation behavior at the time. Based on the same reasoning behind screen readers also struggling to find contextual data, I theorized that the same structural data and linking system now benefiting our search rankings was equally available to any LLM reading those pages.
 
-Did I answer my original question? Partially. We can influence how search engines treat and rank structured, verified content. At the time, I didn't have the tools to directly track LLM citation behavior, so I'm inferring positive LLM results based on these positive search results. Both systems are built to favor content they can trace to a real, verifiable source<sup><a href="#ref-geo-study">3</a></sup>, a positive search-side signal gives me reason to believe the same held for LLMs, even without being able to confirm it directly.
+It was a positive enough signal, though, that I kept the train going, and on two tracks at once: shipping a rolling series of updates that extended this same method — author disambiguation and hub-and-spoke plans for upcoming GTM topics — while also starting the broader retrofit work for evergreen topics and the wider disambiguation groundwork for the marketing site.
 
-It was a positive enough signal, though, that I kept going, and on two tracks at once: shipping a rolling series of updates that extended this same method — author disambiguation and hub-and-spoke plan with upcoming GTM topics — while also starting the broader retrofit work for evergreen topics and the wider disambiguation groundwork for the marketing site.
-
-I wasn't the only one on the marketing team pulling on this thread, either. A small working group was building direct AI crawler and citation tracking from our server logs. I also proposed Wikidata entries as the natural next point of collaboration, a shared source of truth the team could build from together. If I pitched this again today, I’d also position it as a form of brand safety.
+I wasn't the only one on the marketing team pulling on this thread, either. An internal working group was building direct AI bot tracking from our server logs. I also proposed Wikidata entries as the next point of collaboration, a shared source of truth the team should build from together. If I pitched this again today, I'd also position it as a form of brand safety.
 
 ## The next steps
 
@@ -159,6 +163,5 @@ I wasn't the only one on the marketing team pulling on this thread, either. A sm
 
 <ol class="references">
 <li id="ref-prince-tweet">Prince, Matthew [@eastdakota]. (2026, June 3). "Welp, that happened faster than I predicted..." X (formerly Twitter). <a href="https://x.com/eastdakota/status/2062212701414187452">https://x.com/eastdakota/status/2062212701414187452</a></li>
-<li id="ref-cloudflare-radar">Cloudflare Radar. (2026). "Global Traffic Trends &amp; Agentic Bot Data." Cloudflare. <a href="https://radar.cloudflare.com/traffic">https://radar.cloudflare.com/traffic</a></li>
-<li id="ref-geo-study">Aggarwal, Pranjal, et al. (2023). "GEO: Generative Engine Optimization." Princeton University. <a href="https://arxiv.org/abs/2311.09735">https://arxiv.org/abs/2311.09735</a></li>
+<li id="ref-cloudflare-radar">Cloudflare Radar. (2026). "Global Traffic Trends &amp; Agentic Bot Data." Cloudflare. <a href="https://radar.cloudflare.com/traffic">https://radar.cloudflare.com/traffic</a></li> <li id="ref-webaim">WebAIM. (2026). "The WebAIM Million: The 2026 report on the accessibility of the top 1,000,000 home pages." <a href="https://webaim.org/projects/million/">https://webaim.org/projects/million/</a></li>
 </ol>
