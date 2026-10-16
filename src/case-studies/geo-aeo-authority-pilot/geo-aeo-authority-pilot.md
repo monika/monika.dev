@@ -1,6 +1,8 @@
 ---
 title: "Speaking the LLM's Language: Accessibility for a New Kind of User"
+metaTitle: "Speaking the LLM's Language"
 intro: "A low-risk pilot to make our marketing site as legible to LLMs as it already was to people, using JSON-LD structured data and internal linking with tools we already had. It stands on its own as a technical SEO investment; whether LLMs understood us better, I didn't have a way to measure at the time."
+description: "A low-risk pilot that treated LLMs like users of assistive technology, using structured data and internal linking. Pilot pages moved from 24.27 to 18.43."
 role: Technical SEO, Content Strategy, Web Development
 order: 2
 draft: false

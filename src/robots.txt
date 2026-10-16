@@ -1,8 +1,8 @@
 User-agent: *
 Allow: /
 
-# Case studies are still drafts. They're kept out of the index with a page-level
-# noindex rather than a Disallow here — a disallowed URL can't be crawled, so the
-# crawler would never see the noindex and the URL could still surface from a link.
+# Draft case studies are excluded from the build entirely (see
+# case-studies.11tydata.js: eleventyExcludeFromCollections and permalink: false),
+# so no page exists at those URLs. That's why there's no Disallow entry for them.
 
 Sitemap: https://monika.dev/sitemap.xml
