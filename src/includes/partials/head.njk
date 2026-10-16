@@ -3,9 +3,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>{% if title != "Home" %}{{ title }} | {% endif %}{{ meta.title }}</title>
+<title>{% if title != "Home" %}{{ metaTitle or title }} | {{ meta.name }}{% else %}{{ meta.title }}{% endif %}</title>
 
-<meta name="description" content="{{ intro if intro else meta.description }}">
+<meta name="description" content="{{ description if description else (intro if intro else meta.description) }}">
 
 <meta name="robots" content="{% if noindex %}noindex,nofollow{% else %}index,follow{% endif %}">
 <meta name="generator" content="Eleventy">
