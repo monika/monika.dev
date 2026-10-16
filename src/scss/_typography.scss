@@ -19,6 +19,16 @@ body {
   }
 }
 
+/* Overrides normalize.css's `font-weight: bolder`. Relative to the body's
+   300 weight, "bolder" resolves to 400 — a weight Fira Sans isn't
+   self-hosted at (only 300 and 700 exist, see _fonts.scss), so browsers
+   fall back to the lighter 300 face instead of jumping to 700. Set the
+   weight explicitly so strong/b actually bold. */
+b,
+strong {
+  font-weight: 700;
+}
+
 a {
   position: relative;
   z-index: 1;

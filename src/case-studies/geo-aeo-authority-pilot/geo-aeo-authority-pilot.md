@@ -138,10 +138,10 @@ I also wasn't the only member of the marketing team pulling on this thread. An i
 
 ### Team credits
 
-**Rochelle Burnside** \- Content Marketing Manager  
-**Shae Henrie** \- Brand Marketing Manager, Lead Content & Social Strategist  
-**Tejasvini Karunakarbabu** \- Marketing Strategist  
-**Wilson Lau** \- Lead Marketing Manager, SEO & Customer Intelligence
+Rochelle Burnside \- *Content Marketing Manager*  
+Shae Henrie \- *Brand Marketing Manager, Lead Content & Social Strategist*  
+Tejasvini Karunakarbabu \- *Marketing Strategist*  
+Wilson Lau \- *Lead Marketing Manager, SEO & Customer Intelligence*
 
 ### References
 
