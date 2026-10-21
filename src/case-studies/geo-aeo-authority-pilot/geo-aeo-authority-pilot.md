@@ -1,8 +1,8 @@
 ---
 title: "Speaking the LLM's Language: Accessibility for a New Kind of User"
 metaTitle: "Speaking the LLM's Language"
-intro: "A low-risk pilot to make our marketing site as legible to LLMs as it already was to people, using JSON-LD structured data and internal linking with tools we already had. It stands on its own as a technical SEO investment; whether LLMs understood us better, I didn't have a way to measure at the time."
-description: "A low-risk pilot that treated LLMs like users of assistive technology, using structured data and internal linking. Pilot pages moved from 24.27 to 18.43."
+intro: "A low-risk pilot to make our marketing site legible to LLMs and prove our content came from real people with real expertise, using structured data and internal linking we already had the tools for. Search rankings moved; whether LLMs understood us better, I didn't have a way to measure at the time."
+description: "A low-risk pilot that treated LLMs like users of assistive technology and verified our author's expertise. Pilot pages moved from 24.27 to 18.43."
 role: Technical SEO, Content Strategy, Web Development
 order: 2
 draft: false
@@ -14,7 +14,7 @@ about:
   - Structured data
   - Internal linking
   - Web accessibility
-cardDescription: "Treated LLMs like any other user relying on assistive technology, giving them the same contextual information our human visitors had through JSON-LD structured data and a hub-and-spoke internal linking system, scoped as a low-risk pilot before committing to a full entity disambiguation rollout."
+cardDescription: "Treated LLMs like any other user relying on assistive technology, giving them the context to understand our site and verify who wrote it, through JSON-LD structured data and a hub-and-spoke internal linking system, scoped as a low-risk pilot."
 cardResult: "Our author disambiguated into a verified Knowledge Graph entity, and search rankings for the pilot pages moved from 24.27 to 18.43, validated against a control group within the same topic."
 cardTags:
   - Answer engine optimization
@@ -31,27 +31,23 @@ eleventyNavigation:
 
 ## Overview
 
-**The Challenge:** Our analytics suggested that more people were researching AdRoll through large language models (LLMs) instead of visiting our marketing site directly.
+**The Challenge:** Organic search traffic to our marketing site was declining and AI-generated answers in search engines were reducing click-through rates across the industry. With so much content being AI-generated, could we stand out by proving we were real people with real expertise?
 
-**The Approach:** Treat LLMs like any other user browsing our site, relying on assistive technology, and give them contextual information:
+**The Approach:** Treat large language models (LLMs) like any other user who relies on assistive technology, and give them the context to understand our site and the ability to verify who we are:
  - Hub-and-Spoke Linking: An intentional internal linking map to consolidate topical authority.
- - Author Disambiguation: JSON-LD schema (machine-readable structured data) to verify who wrote our content.
+ - Author Disambiguation: JSON-LD schema (machine-readable structured data) to confirm that our content came from a real person with verifiable credentials.
 
-**The Thinking:** Rather than commit to a full entity disambiguation rollout before understanding the benefits, I scoped a low-risk pilot program focused on a search topic related to a recent go-to-market (GTM) motion for the AdRoll platform.
+**The Thinking:** Rather than commit to a full entity disambiguation rollout before understanding the risks and benefits, I scoped a low-risk pilot program focused on a search topic related to a recent go-to-market (GTM) motion for the AdRoll platform.
 
-**The Outcome:** Our author disambiguated into a verified entity in Google's Knowledge Graph (its database of real-world people and things), and search rankings for the pilot pages moved from 24.27 to 18.43, validated against a control group within the same topic. Whether LLMs understood us better, I didn't have a way to measure at the time.
+**The Outcome:** Our author disambiguated into a verified entity in Google's Knowledge Graph (a database of real-world people and things), and search rankings for the pilot pages moved from 24.27 to 18.43, validated against a control group within the same topic. Whether LLMs understood us better, I didn't have a way to measure at the time, but it's a question I want to answer in my next role. I'm available for full-time, remote roles in the US.
 
 ## The context
 
-Most recently, I was the principal web designer and developer in AdRoll's marketing department, as a member of the creative team. Like many other marketing departments, we were seeing a rise in LLM traffic for our domain, [adroll.com](https://www.adroll.com).
+Most recently, I was the principal web designer and developer in AdRoll's marketing department, as a member of the creative team. Like many marketing departments, we were seeing a rise in LLM traffic to [adroll.com](https://www.adroll.com), and by late 2025 I suspected people were researching us through LLMs instead of visiting our site, at whatever stage of the funnel they were in.
 
-My thinking near the end of 2025, based on those analytics, was that our users were increasingly reaching for LLMs as a tool for researching us as a platform more often than coming to our marketing site directly, at whatever stage of the funnel they were in.
+Cloudflare CEO Matthew Prince posted in June 2026 that "bots have now passed human traffic online for the first time in the Internet's history,"<sup><a href="#ref-prince-tweet">1</a></sup> pointing to Cloudflare Radar's own data.<sup><a href="#ref-cloudflare-radar">2</a></sup> Pew Research found that Google users clicked through to a website about half as often when an AI summary appeared.<sup><a href="#ref-pew">3</a></sup> I didn't see these trends declining, so I wanted to make sure LLMs had the same access to our site's content as human users did. This is a facet of AEO/GEO (Answer Engine Optimization / Generative Engine Optimization): optimizing content to be found by AI systems the way traditional SEO optimizes for search engines.
 
-Cloudflare CEO Matthew Prince ended up posting in June 2026 that "bots have now passed human traffic online for the first time in the Internet's history,"<sup><a href="#ref-prince-tweet">1</a></sup> pointing to Cloudflare Radar's own data.<sup><a href="#ref-cloudflare-radar">2</a></sup> Reported figures put the split at roughly 57.5% bots to 42.5% humans. I didn't see this trend declining, so I wanted to make sure LLMs had the same access to our site's content as human users did.
-
-This is a facet of AEO/GEO (Answer Engine Optimization / Generative Engine Optimization): optimizing content to be found by AI systems the way traditional SEO optimizes for search engines.
-
-In researching how LLMs interface with content online, I learned that they use assistive technology similar to what people use. Given that fewer than 5% of the top million home pages pass automated accessibility checks, according to WebAIM's annual audit,<sup><a href="#ref-webaim">3</a></sup> I suspected LLMs were having as difficult a time as people were.
+In researching how LLMs interface with content online, I learned that they use assistive technology similar to what people use. Given that fewer than 5% of the top million home pages pass automated accessibility checks, according to WebAIM's annual audit,<sup><a href="#ref-webaim">4</a></sup> I suspected LLMs were having as difficult a time as people were.
 
 Our marketing site delivered accessible, semantic HTML, but that only tells a machine what the content is (a heading, a paragraph, a list), and not who is saying it and, by extension, whether it can be trusted. Were there signals, similar to what ARIA tags provide for screen readers, available for LLMs? Could I expose these signals easily and systematically, sharing the most valuable information with the least oversight by the marketing team?
 
@@ -150,5 +146,6 @@ Wilson Lau \- *Lead Marketing Manager, SEO & Customer Intelligence*
 <ol class="references">
 <li id="ref-prince-tweet">Prince, Matthew [@eastdakota]. (2026, June 3). "Welp, that happened faster than I predicted..." X (formerly Twitter). <a href="https://x.com/eastdakota/status/2062212701414187452">https://x.com/eastdakota/status/2062212701414187452</a></li>
 <li id="ref-cloudflare-radar">Cloudflare Radar. (2026). "Global Traffic Trends &amp; Agentic Bot Data." Cloudflare. <a href="https://radar.cloudflare.com/traffic">https://radar.cloudflare.com/traffic</a></li>
+<li id="ref-pew">Pew Research Center. (2025, July 22). "Google users are less likely to click on links when an AI summary appears in the results." <a href="https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/">https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/</a></li>
 <li id="ref-webaim">WebAIM. (2026). "The WebAIM Million: The 2026 report on the accessibility of the top 1,000,000 home pages." <a href="https://webaim.org/projects/million/">https://webaim.org/projects/million/</a></li>
 </ol>
