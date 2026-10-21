@@ -45,7 +45,7 @@ eleventyNavigation:
 
 Most recently, I was the principal web designer and developer in AdRoll's marketing department, as a member of the creative team. Like many marketing departments, we were seeing a rise in LLM traffic to [adroll.com](https://www.adroll.com), and by late 2025 I suspected people were researching us through LLMs instead of visiting our site, at whatever stage of the funnel they were in.
 
-Cloudflare CEO Matthew Prince posted in June 2026 that "bots have now passed human traffic online for the first time in the Internet's history,"<sup><a href="#ref-prince-tweet">1</a></sup> pointing to Cloudflare Radar's own data.<sup><a href="#ref-cloudflare-radar">2</a></sup> Pew Research found that Google users clicked through to a website about half as often when an AI summary appeared.<sup><a href="#ref-pew">3</a></sup> I didn't see these trends declining, so I wanted to make sure LLMs had the same access to our site's content as human users did. This is a facet of AEO/GEO (Answer Engine Optimization / Generative Engine Optimization): optimizing content to be found by AI systems the way traditional SEO optimizes for search engines.
+Cloudflare CEO Matthew Prince posted in June 2026 that "bots have now passed human traffic online for the first time in the Internet's history,"<sup><a href="#ref-prince-tweet">1</a></sup> pointing to Cloudflare Radar's own data.<sup><a href="#ref-cloudflare-radar">2</a></sup> Pew Research found that Google users clicked through to a website about half as often when an AI summary appeared.<sup><a href="#ref-pew">3</a></sup> I didn't see these trends declining, so I wanted to make sure LLMs had the same access to our site's content as human users did.
 
 In researching how LLMs interface with content online, I learned that they use assistive technology similar to what people use. Given that fewer than 5% of the top million home pages pass automated accessibility checks, according to WebAIM's annual audit,<sup><a href="#ref-webaim">4</a></sup> I suspected LLMs were having as difficult a time as people were.
 
@@ -126,7 +126,7 @@ I also wasn't the only member of the marketing team pulling on this thread. An i
 
 ### Drafted:
 
-* Establish AEO/GEO strategic frameworks within standard GTM campaign planning workflows
+* Establish AEO/GEO (SEO for AI systems) strategic frameworks within standard GTM campaign planning workflows
 * Standardize corporate Wikidata records following recent brand consolidation
 * Train the content team on how to edit, maintain, and implement new topics and SMEs in the CMS, with supporting documentation
 * Drive site-wide entity disambiguation initiatives, partnering with SEO and content leads on strategic topic prioritization
