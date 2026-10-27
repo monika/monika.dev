@@ -141,6 +141,10 @@ Shae Henrie \- *Brand Marketing Manager, Lead Content & Social Strategist*
 Tejasvini Karunakarbabu \- *Marketing Strategist*  
 Wilson Lau \- *Lead Marketing Manager, SEO & Customer Intelligence*
 
+### Awards
+
+2026 OMMA Award, Excellence in Search Marketing: SEO Campaign [(MediaPost)](https://www.mediapost.com/ommaawards/winners/), awarded to the AdRoll Organic Team. The hub-and-spoke internal linking and author disambiguation work described in this case study contributed to that campaign.
+
 ### References
 
 <ol class="references">
