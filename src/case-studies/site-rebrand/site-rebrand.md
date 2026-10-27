@@ -2,7 +2,7 @@
 title: "AdRoll 3.0: Site-Wide Rebrand"
 metaTitle: "AdRoll 3.0: Site-Wide Rebrand"
 intro: "A full marketing site rebrand in a matter of weeks, for a firm launch date at Unbound, built on the site's existing modular foundation so one module change could reach every page that used it."
-description: "A site-wide rebrand shipped on time for AdRoll's Unbound 2025 launch, using a modular foundation, batch stakeholder workflow, and Gemini-assisted pipeline."
+description: "A site-wide rebrand shipped on time for AdRoll's Unbound 2025 launch, using a new design system, a batch stakeholder workflow, and a Gemini-assisted pipeline. Silver, Best Brand Consolidation."
 role: Web Design & Development
 context: AdRoll
 order: 1
@@ -13,9 +13,9 @@ about:
   - Front-end development
   - Statamic
   - Workflow automation
-cardDescription: "Rebuilt the AdRoll marketing site for a new brand and a firm launch date, using a modular foundation, a batch workflow for stakeholder feedback, and a Gemini-assisted pipeline to generate page code."
-cardResult: "Launched on schedule with no switchover issues, with more pages updated than the launch required. 60 days later: +42% homepage traffic and +87% first-time visitors to core pages."
-award: "Silver, Best Brand Consolidation, Transform Awards North America"
+cardDescription: "Rebuilt the AdRoll marketing site for a new brand and a firm launch date, with a center-anchored design system, a batch workflow for stakeholder feedback, and a Gemini-assisted pipeline to generate page code."
+cardResult: "Launched on schedule with no switchover issues, and finished early enough to extend the rebrand to the events platform, email systems, and partner directories for launch day. Won Silver, Best Brand Consolidation, in the 2026 Transform Awards."
+award: "2026, Silver, Best Brand Consolidation, Transform Awards North America"
 cardTags:
   - Rebrand
   - Design systems
@@ -35,46 +35,53 @@ eleventyNavigation:
 
 **The Thinking:** A full rebuild was not possible in the time available. The modular foundation made targeted changes possible across more of our marketing pages at once.
 
-**The Outcome:** The site launched on schedule with no switchover issues, and more pages were updated than the launch required. Navigation changes moved more traffic toward high-intent and product pages.
+**The Outcome:** The site launched on schedule with no switchover issues, and more pages were updated than the launch required.
 
 ## The context
 
 In August 2025, AdRoll announced that RollWorks would rejoin AdRoll as AdRoll ABM (account-based marketing). We were also moving upmarket and needed to speak with a new voice to both our B2B and D2C customers. In turn, our marketing site had to reflect both changes just before the brand merge was announced at Unbound 2025.
 
-We faced an incredibly condensed timeline to integrate updated brand and creative guidelines across our entire web ecosystem. The challenge wasn't just a visual reskin; we had to scale changes across multiple internal stakeholder lines (including Product, Brand, Content, Lifecycle, Partnerships, Marketing Ops, Events, and ABM) while maintaining strict timelines and resource constraints.
+We faced an incredibly condensed timeline to integrate updated brand and creative guidelines across our entire web ecosystem. The challenge wasn't just a visual reskin; we had to scale visual updates across multiple internal stakeholder lines (including Product, Brand, Content, Lifecycle, Partnerships, Marketing Ops, Events, and ABM) while maintaining strict timelines and resource constraints.
 
-Creative Director Jesse Vaughan led the brand refresh and provided guidelines. I was the principal designer and developer driving the update of the site based on our new branding.
+Creative Director Jesse Vaughan led the brand refresh and provided guidelines. I was the principal designer and developer driving the update of the site based on our new branding guidelines.
 
 ## The solution
 
-To execute quickly without sacrificing quality, I structured a production pipeline around a highly organized batch workflow that allowed me to maintain a steady development rhythm and feedback loop:
+Our brand was updating to focus on mid-sized marketing teams, and that needed to be reflected on our marketing site. A new set of brand guidelines emphasized the idea of Organic Intelligence:
+
+> "Organic Intelligence, natural texture meeting digital depth." - Jesse Vaughan, Creative Director
+
+The site ebbs along an invisible centerline in the browser as users scroll up and down each page. I created a design system featuring several center-anchored content modules whose content flows out from that center point, natural textures, familiar typefaces, illustrated iconography, and white space to emphasize our brand's new "trusty, clever mentor" voice.
+
+Once I mocked up several types of pages and content modules, I converted them into Figma components in order to rapidly prototype remaining page updates.
+
+In order to update our codebase efficiently without sacrificing quality, I structured a production pipeline around a highly organized batch workflow that allowed me to maintain a constant development rhythm and design feedback loop:
 
 ### Asynchronous batch management
 
-I organized the site into thematic sections that mapped directly to internal stakeholder responsibilities and sign-off. I managed incoming visual updates and revision requests in discrete batches, keeping feedback isolated so it didn't derail the main development tracks.
+I organized the site into thematic sections that mapped directly to stakeholder responsibilities and sign-off. I managed revisions in discrete batches, keeping feedback isolated so it didn't derail the main development tracks.
 
 ### Automated development pipeline
 
-I built a Gemini development pipeline to automate code production. I fed approved copy documents and web page outlines into a custom Gemini gem (a saved, reusable Gemini configuration), which mapped the content directly into custom semantic HTML modules that I created. This pipeline handled the bulk of structural generation, allowing me to focus on any active development requests while systematically working through stakeholder visual feedback loops in parallel.
+I created a Gemini development pipeline to automate code production. I fed approved copy documents and web page outlines into a custom Gemini gem (a saved, reusable Gemini configuration), which mapped the content directly into custom semantic HTML modules that I created. This pipeline handled the bulk of structural generation, allowing me to focus on any active development needs while working through visual feedback loops with stakeholders.
 
 ### System engineering & core frameworks
 
-* Created component-driven Figma modules for rapid layouts, mapping specific information types to exact structural modules.
-* Built reusable HTML/CSS modules using BEM (Block, Element, Modifier) naming conventions and wholesale CSS Grid updates using Bulma for accelerated page generation.
+* I created Figma components in order to rapidly prototype page layouts, mapping specific content types to targeted components.
+* I built and updated reusable HTML/CSS modules using BEM (Block, Element, Modifier) naming conventions and wholesale CSS Grid updates using Bulma for accelerated page generation.
 
 ## The results
 
-We successfully launched on time for our firm Unbound deadline and added extra sections beyond our original scope. Navigation structure updates successfully redirected traffic to more high-intent pages, and the wholesale CSS grid update simplified the migration of content from the old site.
-
-Jesse Vaughan's published case study reports a 42% increase in homepage traffic and an 87% increase in first-time visitors to core pages, 60 days after launch.<sup><a href="#ref-vaughan">1</a></sup>
+Because of the automation I included in my workflow, I was able to work ahead of schedule and include further brand updates to our events platform, email systems, and partner directories for launch day. The updated site navigation successfully funneled more traffic to more high-intent pages, and the wholesale CSS grid update simplified the migration of content.
 
 ## The next steps
 
-Following the success of the project, I formulated a roadmap to continue refining platform stability and conversion metrics:
+Following the success of the project, I formulated a roadmap to continue refining platform stability, replication, and conversion metrics:
 
 * **Performance tuning:** Tackle lingering Core Web Vitals (CWV) and JavaScript bloat issues stemming from Google Tag Manager and third-party tracking scripts.
+* **Design system documentation:** Document the design system in formats available for human and agentic understanding, unlocking it for broader development.
 * **Conversion optimization:** Coordinate with our A/B testing specialist to test layout effectiveness on sign-ups and integrate personalized web components.
-* **Technical AEO/GEO audit:** Review the codebase for improvements.
+* **Technical AEO (answer engine optimization) and GEO (generative engine optimization) audit:** Review the codebase for improvements.
 * **System modernization:** Explore the integration of motion design as a native brand element to further modernize the web platform.
 
 ## Appendix
@@ -87,10 +94,4 @@ Jesse Vaughan \- *Creative Director*
 
 ### Awards
 
-Silver, Best Brand Consolidation, Transform Awards North America ([Transform Magazine](https://www.transformmagazine.net/awards/north-america/the-winners/)), awarded to AdRoll. The site rebrand described in this case study was part of that work.
-
-### References
-
-<ol class="references">
-<li id="ref-vaughan">Vaughan, Jesse. "AdRoll 3.0" case study.</li>
-</ol>
+2026, Silver, Best Brand Consolidation, Transform Awards North America ([Transform Magazine](https://www.transformmagazine.net/articles/2026/transform-awards-proud-to-announce-north-america-2026-winners/)).

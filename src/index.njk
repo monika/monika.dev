@@ -28,12 +28,6 @@ title: Home
                 <p>{{ study.data.cardDescription or study.data.intro }}</p>
                 {% if study.data.cardResult %}<p>{{ study.data.cardResult }}</p>{% endif %}
 
-                <ul class="case-study-card__tags">
-                    {%- for tag in study.data.cardTags or study.data.about %}
-                    <li class="case-study-card__tag">{{ tag }}</li>
-                    {%- endfor %}
-                </ul>
-
                 <a class="case-study-card__link button" href="{{ study.url }}">Read Case Study</a>
 
             </article>
