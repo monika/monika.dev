@@ -3,7 +3,11 @@
 @use 'variables' as *;
 
 .page-case-study {
-  main p {
+  /* One measure for running text: lists share the paragraph width so they
+     wrap at the same line length. Nested lists inherit it from their parent. */
+  main p,
+  main ul,
+  main ol {
     max-width: 75ch;
   }
 

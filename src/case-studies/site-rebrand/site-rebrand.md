@@ -67,8 +67,7 @@ I created a Gemini development pipeline to automate code production. I fed appro
 
 ### System engineering & core frameworks
 
-* I created Figma components in order to rapidly prototype page layouts, mapping specific content types to targeted components.
-* I built and updated reusable HTML/CSS modules using BEM (Block, Element, Modifier) naming conventions and wholesale CSS Grid updates using Bulma for accelerated page generation.
+I built and updated reusable HTML/CSS modules using BEM (Block, Element, Modifier) naming conventions, mapping each content type to a targeted module. I migrated our site's layout grid to Bulma's layout component in order to both modernize and accelerate page generation.
 
 ## The results
 
