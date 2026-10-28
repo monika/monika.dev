@@ -1,49 +1,96 @@
 ---
-title: "AdRoll 3.0: Website Design & Development"
-intro: Site-wide rebrand and brand consolidation — folding two brands back into one identity and one site on a compressed timeline, without losing SEO equity or confusing existing customers.
+title: "AdRoll 3.0: Site-Wide Rebrand"
+metaTitle: "AdRoll 3.0: Site-Wide Rebrand"
+intro: "A full marketing site rebrand in a matter of weeks, for a firm launch date at Unbound, built on the site's existing modular foundation so one module change could reach every page that used it."
+description: "A site-wide rebrand shipped on time for AdRoll's Unbound 2025 launch, using a new design system, a batch stakeholder workflow, and a Gemini-assisted pipeline. Silver, Best Brand Consolidation."
 role: Web Design & Development
 context: AdRoll
 order: 1
-draft: true
+draft: false
 about:
   - Rebrand
   - Design systems
   - Front-end development
   - Statamic
-cardResult: "Sixty days post-launch: zero support tickets related to brand confusion, +87% first-time visitors to core pages, +42% homepage traffic."
+  - Workflow automation
+cardDescription: "Rebuilt the AdRoll marketing site for a new brand and a firm launch date, with a center-anchored design system, a batch workflow for stakeholder feedback, and a Gemini-assisted pipeline to generate page code."
+cardResult: "Launched on schedule with no switchover issues, and finished early enough to extend the rebrand to the events platform, email systems, and partner directories for launch day. Won Silver, Best Brand Consolidation, in the 2026 Transform Awards."
+award: "2026, Silver, Best Brand Consolidation, Transform Awards North America"
+cardTags:
+  - Rebrand
+  - Design systems
+  - Front-end development
+  - Statamic
+  - Workflow automation
 eleventyNavigation:
   key: site-rebrand
   order: 1
 ---
 
-## The Problem
+## Overview
 
-AdRoll and RollWorks — split into two brands in 2018 — needed to fold back into one identity and one site in 2025, on a compressed timeline, while retaining SEO equity and avoiding customer confusion during the merge.
+**The Challenge:** AdRoll folded its ABM products back into the core brand and began serving B2B buyers as well as D2C. The marketing site needed a full rebrand in a matter of weeks, for a firm launch date at Unbound on August 27, 2025.
 
-## The Approach
+**The Approach:** Rebuild the rebrand on the site's existing modular foundation, so one module change could reach every page that used it. Keep design conversations moving with stakeholders through defined deadlines.
 
-Working within a brand identity system led by Creative Director Jesse Vaughan (colors, typography, logo, brand persona), I designed and built the actual website: page layouts, UX, and the day-to-day implementation that translated the brand system into real, shipped pages. I owned the build alongside a small cross-functional team.
+**The Thinking:** A full rebuild was not possible in the time available. The modular foundation made targeted changes possible across more of our marketing pages at once.
 
-## Outcome
+**The Outcome:** The site launched on schedule with no switchover issues, and more pages were updated than the launch required.
 
-**Sixty days post-launch, measured against the sixty days prior** (published by Jesse Vaughan, Creative Director):
+## The context
 
-- Zero support tickets related to brand confusion
-- +87% first-time visitors to core pages
-- +42% homepage traffic
+In August 2025, AdRoll announced that RollWorks would rejoin AdRoll as AdRoll ABM (account-based marketing). We were also moving upmarket and needed to speak with a new voice to both our B2B and D2C customers. In turn, our marketing site had to reflect both changes just before the brand merge was announced at Unbound 2025.
 
-**Engagement (GA4, self-measured):** average engagement time rose sharply in the launch window — from ~127s in the four weeks prior to ~179s in the four weeks after, a ~41% increase, peaking at 230.5s in mid-September.
+We faced an incredibly condensed timeline to integrate updated brand and creative guidelines across our entire web ecosystem. The challenge wasn't just a visual reskin; we had to scale visual updates across multiple internal stakeholder lines (including Product, Brand, Content, Lifecycle, Partnerships, Marketing Ops, Events, and ABM) while maintaining strict timelines and resource constraints.
 
-## Why It Matters
+Creative Director Jesse Vaughan led the brand refresh and provided guidelines. I was the principal designer and developer driving the update of the site based on our new branding guidelines.
 
-Translating a brand system into a real, working site — on a compressed timeline, without breaking what people already relied on — is its own discipline, distinct from the identity work itself. This project is where that system met actual users, actual pages, and actual traffic.
+## The solution
 
-## Responsibilities
+Our brand was updating to focus on mid-sized marketing teams, and that needed to be reflected on our marketing site. A new set of brand guidelines emphasized the idea of Organic Intelligence:
 
-- Page layout and UX design within the new brand system
-- Front-end implementation
-- Day-to-day build ownership alongside a cross-functional team
+> "Organic Intelligence, natural texture meeting digital depth." - Jesse Vaughan, Creative Director
 
-<small>Tools: Figma, VS Code, Statamic CMS, Sass.<br>
-Team: Jesse Vaughan (Creative Director), Keaton Averman, Laura Barker, JP Flores, Monika Hoex.<br>
-Sources: Google Analytics 4 (engagement data, self-measured); “AdRoll 3.0” case study by Jesse Vaughan (60-day outcome metrics, publicly published).</small>
+The site ebbs along an invisible centerline in the browser as users scroll up and down each page. I created a design system featuring several center-anchored content modules whose content flows out from that center point, natural textures, familiar typefaces, illustrated iconography, and white space to emphasize our brand's new "trusty, clever mentor" voice.
+
+Once I mocked up several types of pages and content modules, I converted them into Figma components in order to rapidly prototype remaining page updates.
+
+In order to update our codebase efficiently without sacrificing quality, I structured a production pipeline around a highly organized batch workflow that allowed me to maintain a constant development rhythm and design feedback loop:
+
+### Asynchronous batch management
+
+I organized the site into thematic sections that mapped directly to stakeholder responsibilities and sign-off. I managed revisions in discrete batches, keeping feedback isolated so it didn't derail the main development tracks.
+
+### Automated development pipeline
+
+I created a Gemini development pipeline to automate code production. I fed approved copy documents and web page outlines into a custom Gemini gem (a saved, reusable Gemini configuration), which mapped the content directly into custom semantic HTML modules that I created. This pipeline handled the bulk of structural generation, allowing me to focus on any active development needs while working through visual feedback loops with stakeholders.
+
+### System engineering & core frameworks
+
+I built and updated reusable HTML/CSS modules using BEM (Block, Element, Modifier) naming conventions, mapping each content type to a targeted module. I migrated our site's layout grid to Bulma's layout component in order to both modernize and accelerate page generation.
+
+## The results
+
+Because of the automation I included in my workflow, I was able to work ahead of schedule and include further brand updates to our events platform, email systems, and partner directories for launch day. The updated site navigation successfully funneled more traffic to more high-intent pages, and the wholesale CSS grid update simplified the migration of content.
+
+## The next steps
+
+Following the success of the project, I formulated a roadmap to continue refining platform stability, replication, and conversion metrics:
+
+* **Performance tuning:** Tackle lingering Core Web Vitals (CWV) and JavaScript bloat issues stemming from Google Tag Manager and third-party tracking scripts.
+* **Design system documentation:** Document the design system in formats available for human and agentic understanding, unlocking it for broader development.
+* **Conversion optimization:** Coordinate with our A/B testing specialist to test layout effectiveness on sign-ups and integrate personalized web components.
+* **Technical AEO (answer engine optimization) and GEO (generative engine optimization) audit:** Review the codebase for improvements.
+* **System modernization:** Explore the integration of motion design as a native brand element to further modernize the web platform.
+
+## Appendix
+
+### Team credits
+
+Raquel Addessi \- *Project Manager*  
+Laura Barker \- *Copywriter*  
+Jesse Vaughan \- *Creative Director*
+
+### Awards
+
+2026, Silver, Best Brand Consolidation, Transform Awards North America ([Transform Magazine](https://www.transformmagazine.net/articles/2026/transform-awards-proud-to-announce-north-america-2026-winners/)).

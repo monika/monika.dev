@@ -36,7 +36,7 @@
   &__heading {
     font-size: 4.8rem;
     margin-top: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: 3.2rem;
     font-weight: 600;
     color: $white;
     @include text-shadow($blue);
@@ -50,6 +50,56 @@
     max-width: 60ch;
     color: $white;
     margin-bottom: 3.2rem;
+  }
+
+  /* Each title sits on a white card so it stays legible over the blue X
+     pattern. The global link underline (a:before) and its white hover colour
+     are switched off here; the card replaces them. */
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0 0 1.2rem;
+    padding: 0;
+  }
+
+  li a {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    background: $white;
+    color: $black;
+
+    /* The card is the resting affordance, so the pink is hidden until hover.
+       It then grows from the bottom-left corner like the global link hover,
+       but is pinned inside the card (no overhang). */
+    &:before {
+      left: 0;
+      bottom: 0;
+      width: 90%;
+      height: 3px;
+      opacity: 0;
+    }
+
+    &:hover,
+    &:focus {
+      color: $white;
+
+      &:before {
+        opacity: 1;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  /* Same white card as the rest; a pink edge marks the page you're on. */
+  li[aria-current='page'] a {
+    border-left: 0.8rem solid $pink;
   }
 
   /* Closes the set rather than introducing the next one, so it reads at intro
@@ -92,7 +142,6 @@
 
   &__title {
     margin-top: 0;
-    margin-bottom: 0.8rem;
 
     a {
       color: $black;
@@ -111,31 +160,5 @@
 
   p {
     max-width: 72ch;
-  }
-
-  /* The same topic list that feeds the JSON-LD `about` property, surfaced as
-     visible text — so what the page tells a machine and what it tells a reader
-     are the same claim, kept in one place. */
-  &__tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    list-style: none;
-    padding: 0;
-    margin: 0 0 2.4rem;
-  }
-
-  &__tag {
-    padding: 0.4rem 1.2rem;
-    border: 2px solid $blue;
-
-    font-family: obviously, 'Obviously Fallback', sans-serif;
-    font-size: 1.4rem;
-    line-height: 1.4;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-
-    /* Overrides the global `ul li` bottom padding — these sit on one line. */
-    padding-bottom: 0.4rem;
   }
 }
