@@ -23,7 +23,7 @@ title: Home
             <article class="case-study-card">
 
                 <h3 class="case-study-card__title">{{ study.data.title }}</h3>
-                <p class="case-study-card__role">{{ study.data.role }}</p>
+                <p class="case-study-card__role"><span class="case-study-card__role-label">Project Role:</span> {{ study.data.role }}</p>
 
                 <p>{{ study.data.cardDescription or study.data.intro }}</p>
                 {% if study.data.cardResult %}<p>{{ study.data.cardResult }}</p>{% endif %}

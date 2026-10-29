@@ -15,9 +15,9 @@
       },
       "publisher": { "@id": meta.baseURL + "/#person" },
       "mainEntityOfPage": meta.baseURL + page.url,
-      "about": about | schemaThings
+      "about": about | schemaThings,
+      "award": award
     } %}
-    {% if award %}{% set articleSchema = articleSchema | merge({ "award": award }) %}{% endif %}
     <script type="application/ld+json">{{ articleSchema | dump | safe }}</script>
 </head>
 <body class="page-case-study">
