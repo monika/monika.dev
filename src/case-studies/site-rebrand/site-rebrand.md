@@ -69,7 +69,7 @@ I created a Gemini development pipeline to automate code production. I fed appro
 
 I built and updated reusable HTML/CSS modules using BEM (Block, Element, Modifier) naming conventions, mapping each content type to a targeted module. I migrated our site's layout grid to Bulma's layout component in order to both modernize and accelerate page generation.
 
-## The results
+## The result
 
 Because of the automation I included in my workflow, I was able to work ahead of schedule and include further brand updates to our events platform, email systems, and partner directories for launch day. The updated site navigation successfully funneled more traffic to more high-intent pages, and the wholesale CSS grid update simplified the migration of content.
 

@@ -74,7 +74,7 @@ JSON-LD is a structured metadata format that tells machines specific facts about
 
 This structured format explicitly communicated author credentials to machines, verifying that the SME on our site was the same industry professional featured at conferences and in publications. Our SME successfully disambiguated into a verified Knowledge Graph entity.
 
-## The results
+## The result
 
 I set up the DiD report through Gemini, comparing the pilot pages against untreated pages on the same topic, and had it reviewed internally by our SEO manager, content manager, and marketing strategist. The gap between the two groups is the "incremental organic lift." I didn't have a way to measure LLM usage directly, so search results were my proxy.
 
