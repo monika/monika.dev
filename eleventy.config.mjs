@@ -241,6 +241,18 @@ export default function (eleventyConfig) {
     })
   );
 
+  /* A cropped UI state shown as-is, no window around it, with its description
+     as the caption. Capped by the stylesheet so it stays near its native size. */
+  eleventyConfig.addAsyncShortcode('uiState', async (basename, alt, caption) => {
+    const image = await picture(basename, alt, '(max-width: 648px) 90vw, 960px', {
+      widths: [800, 1400, 2000],
+      quality: IMAGE_QUALITY.text,
+      imgClass: 'ui-state__image'
+    });
+
+    return `<figure class="ui-state">${image}<figcaption>${escapeHtml(caption)}</figcaption></figure>`;
+  });
+
   /* A tall page screenshot in a browser window you scroll through, as on the
      homepage's project listing but usable anywhere. `wide` is the full-width
      variant, which asks the pipeline for larger derivatives to match.

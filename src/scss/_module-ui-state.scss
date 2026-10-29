@@ -1,0 +1,16 @@
+/* UI State
+   A cropped interface screenshot shown on its own, with its description as the
+   caption. Capped so the image isn't stretched past what the source can hold.
+------------------------------------- */
+
+.ui-state {
+  max-width: 96rem;
+  margin: 3.2rem 0 4.8rem;
+}
+
+.ui-state__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}

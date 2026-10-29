@@ -42,13 +42,11 @@ Nobody asked me to fix this. I spotted it while working on other marketing site 
 
 **Design every state.** The search interface has three, and I designed the layout of each.
 
-{% browserFrame "img-search-default", "The AdRoll site header with the search field focused and a panel open below it. A Popular Searches column lists retargeting, testing, holiday, magic, and dooh. A Popular Search Results grid shows six curated links: Pricing, Managed Services, Connected TV Advertising, Account-based Marketing, a Snowflake customer story, and the State of Digital Advertising Report.", "Default: before anyone types, six curated links to high-intent pages." %}
+{% uiState "img-search-default", "The AdRoll site header with the search field focused and a panel open below it. A Recent Searches list (what is d2c, retargeting) and a Popular Searches list (dooh, testing, lifetime) sit beside Popular Search Results: six curated links to Pricing, Managed Services, Connected TV Advertising, Account-based Marketing, a Snowflake customer story, and the State of Digital Advertising Report.", "Default, before anyone types: recent and popular searches beside six curated links to high-intent pages. It's the most-seen screen in any search interface, so I designed it as a routing tool, and curating it also let us point traffic at a new page or case study." %}
 
-The default state is the most-seen screen in any search interface, so I treated it as a design decision instead of leftover space. Curating it also gave us a way to point traffic at a new page or case study.
+{% uiState "img-search-results", "The search panel after typing connected tv. A Recent Searches list shows connected tv beside Results for connected tv: six results labeled News, Marketing Platform, Blog, and Resource Library, with matches highlighted and a See All Results button below.", "Results: results labeled by content type, with matches highlighted and a link to the full results page." %}
 
-{% browserFrame "img-search-results", "The search panel after typing ctv. Suggested searches (ctv measurement, ctv full funnel, ctv best) sit beside results for ctv, each labeled by content type: blog posts and news items, with matches highlighted, and a See All Results button below.", "Results: suggested searches and labeled results, with a link to the full results page." %}
-
-{% browserFrame "img-search-empty", "The search panel after typing asdf. It reads No results for asdf, lists tips (check spelling, use fewer words, search for a less specific term), and links to popular terms: Retargeting, Programmatic advertising, and Display advertising.", "No results: tips and evergreen topics instead of a dead end." %}
+{% uiState "img-search-empty", "The search panel after typing developers. It reads No results for developers, lists tips (double-check the spelling, use fewer words, search for a less specific term), and links to popular terms: Retargeting, Programmatic advertising, and Display advertising.", "No results: tips and evergreen topics, so a failed search doesn't end in a dead end." %}
 
 **Read the logs every week.** Search only pays off if someone reads what comes in. I analyzed the Algolia data weekly and reported it to the content, revenue marketing, and product marketing teams, turning recurring failed searches into content briefs for the editorial team.
 

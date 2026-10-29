@@ -26,6 +26,7 @@
 @use 'module-project-listing';
 @use 'module-project-detail';
 @use 'module-browser-frame';
+@use 'module-ui-state';
 @use 'module-case-studies';
 
 /* The Prism theme is deliberately NOT loaded here. Only three pages carry a
