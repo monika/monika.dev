@@ -56,7 +56,7 @@ Reading the logs also turned up a bug. The search input was appending a trailing
 
 Thirteen weeks, March 31 to June 28, 2026, from the raw Algolia exports:
 
-* **13 weeks** of first-party search data the company didn't have before.
+* **First-party search data** the company didn't have before.
 * **46%** of searches were empty queries, the default state. Nearly half of all search activity happened on the screen I designed before anyone typed.
 * **95%** of the tracked clicks from that state landed in the six curated links.
 * **1.4%** of searches returned no results.
