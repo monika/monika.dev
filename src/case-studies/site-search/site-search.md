@@ -2,7 +2,7 @@
 title: "Sitewide Search: Learning What Visitors Couldn't Find"
 metaTitle: "Sitewide Search: Learning What Visitors Couldn't Find"
 intro: "A self-initiated sitewide search for AdRoll.com, built on the CMS's native Algolia integration and designed around what visitors see before they type. It gave the company its first first-party record of what people came looking for, and what they couldn't find."
-description: "Designed and launched sitewide search for AdRoll.com, then planned the reporting around it. 9,706 searches in 13 weeks, 95% of default-state clicks landing in six curated links."
+description: "Designed and launched sitewide search for AdRoll.com, then planned the reporting around it. Nearly half of all searches started in the default panel, and 95% of its clicks landed in six curated links."
 role: Web Design & Development
 context: AdRoll
 order: 3
@@ -14,7 +14,7 @@ about:
   - Information architecture
   - Front-end development
 cardDescription: "Saw that adroll.com had no sitewide search and no record of what visitors were looking for. Launched Algolia search through the CMS's native integration, designed its three interface states, and planned the reporting meant to turn search logs into content briefs."
-cardResult: "9,706 searches in 13 weeks, giving the company first-party intent data it didn't have before. 95% of clicks from the default, pre-typing state landed in six curated links."
+cardResult: "Thirteen weeks of first-party search data the company didn't have before. 95% of clicks from the default, pre-typing state landed in six curated links."
 cardTags:
   - Site search
   - Interface design
@@ -50,26 +50,26 @@ Nobody asked me to fix this. I spotted it while working on other marketing site 
 
 **Read the logs.** Analytics only work if someone is reading them. I analyzed the Algolia exports myself, and my goal was to own the reporting that would carry the findings to the content, revenue, and product marketing teams, so failed searches could become content briefs. That reporting, including automating it into the marketing team's Slack channels, hadn't started when my role ended in June 2026.
 
-Reading the logs also turned up a bug. The search input was appending a trailing space to over 90% of queries, so Algolia treated "remarketing " and "remarketing" as different searches: the clean term returned 515 hits and the spaced one only 21, which also broke our synonyms and split the analytics. I wrote it up in a January 2026 report, and with Gemini's help fixed it by trimming the query before it reaches Algolia.
+Reading the logs also turned up a bug. The search input was appending a trailing space to over 90% of queries, so Algolia treated "remarketing " and "remarketing" as different searches: the clean term returned roughly 25 times as many results as the spaced one, which also broke our synonyms and split the analytics. I wrote it up in a January 2026 report, and with Gemini's help fixed it by trimming the query before it reaches Algolia.
 
 ## The result
 
 Thirteen weeks, March 31 to June 28, 2026, from the raw Algolia exports:
 
-* **9,706** searches, giving the company first-party intent data it didn't have before.
-* **46%** of them (4,500) were empty queries, the default state. Nearly half of all search activity happened on the screen I designed before anyone typed.
-* **95%** of the tracked clicks from that state landed in the six curated links (137 of 144).
-* **133** searches (about 1.4%) returned no results.
-* **753** distinct queries returned results but got no clicks. That's the content-gap signal.
+* **13 weeks** of first-party search data the company didn't have before.
+* **46%** of searches were empty queries, the default state. Nearly half of all search activity happened on the screen I designed before anyone typed.
+* **95%** of the tracked clicks from that state landed in the six curated links.
+* **1.4%** of searches returned no results.
+* **Hundreds** of distinct queries returned results but got no clicks. That's the content-gap signal.
 
 A query that's searched often and never clicked is demand already proven against content that's missing or can't be found. Counts per query were modest, so I read them for patterns:
 
-* **Brand unification:** 78 searches for the exact phrase, 377 results, zero clicks, and no dedicated page.
-* **Programmatic spend forecasts:** repeated searches across several phrasings, 77 results, no clicks. Visitors wanted a forecast we didn't have.
-* **Developers:** "developers" and "tech.adroll.com" returned nothing, and "api" returned three results for 24 searches. That's a developer audience with no entry point.
-* **Intent mismatches:** "D2C" returned 157 results and no clicks, because the acronym didn't match how our content was written. A customer case study returned 567 results for its own name and no clicks.
+* **Brand unification:** searched often, plenty of results returned, zero clicks, and no dedicated page.
+* **Programmatic spend forecasts:** repeated searches across several phrasings, results returned, no clicks. Visitors wanted a forecast we didn't have.
+* **Developers:** "developers" and "tech.adroll.com" returned nothing, and "api" returned only a handful of results. That's a developer audience with no entry point.
+* **Intent mismatches:** "D2C" returned plenty of results and no clicks, because the acronym didn't match how our content was written. A customer case study got no clicks even when searched by its own name.
 
-It also pointed the other way. Nine queries with at least five searches had a 100% click-through rate, including "contextual ad targeting" and "demand side platform", which marked content strong enough to promote elsewhere.
+It also pointed the other way. Several queries that were searched repeatedly had a 100% click-through rate, including "contextual ad targeting" and "demand side platform", which marked content strong enough to promote elsewhere.
 
 ## The next steps
 
