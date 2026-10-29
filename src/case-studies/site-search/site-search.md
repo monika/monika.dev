@@ -76,6 +76,6 @@ It also pointed the other way. Several queries that were searched repeatedly had
 Where I planned to take it:
 
 * **Start the reporting.** Own a regular report for the content, revenue, and product marketing teams, and automate it by sending Algolia analytics into the marketing team's Slack channels with our corporate Gemini pipeline.
-* **Broaden what's searchable.** Index more content per entry so results match what visitors expect. Different page types store their content differently, so each would need its own approach.
+* **Broaden what's searchable.** Index more content per entry so results match what visitors expect. Each page type stores its content differently.
 * **Keep tuning synonyms.** Keep matching the words visitors use interchangeably, like ctv, connected tv, and ott, or abm and account-based marketing.
 * **Optimize the rest of Algolia.** Check the six curated links against how each page performs, and add rules for high-intent queries that dead-end today, like routing "competitors" to a customer story.
