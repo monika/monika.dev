@@ -14,3 +14,9 @@
   height: auto;
   border-radius: 6px;
 }
+
+/* Clears the image's offset shadow, which the case study's default caption gap
+   doesn't. Matches the browser frames. */
+figure.ui-state figcaption {
+  margin-top: 2.8rem;
+}
