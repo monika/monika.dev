@@ -26,6 +26,11 @@
     padding-bottom: 2rem;
     margin: 0;
   }
+  &__titles {
+    max-width: 70ch;
+    margin: 0 0 1.6rem;
+    font-style: italic;
+  }
   /* Sits between the h1 lockup and the display-sized intro, so it stays at body
      size — the weight is in the last sentence, not the type scale. */
   &__statement {

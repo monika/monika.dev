@@ -121,7 +121,7 @@
 
 .case-study-card {
   background: $white;
-  color: $blue;
+  color: $black;
   border: 3px solid $black;
   box-shadow: -12px 12px $black;
   padding: 3%;
@@ -141,16 +141,55 @@
   }
 
   &__title {
+    max-width: 48ch;
+    line-height: 1.4;
     margin-top: 0;
+    color: $black;
+    font-weight: 700;
 
     a {
       color: $black;
     }
   }
 
+  &__link {
+    padding: 1.2rem 1.8rem;
+    background: $blue;
+    color: $white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    letter-spacing: 0.08em;
+
+    /* Stepped 3px corners, built with clip-path so they stay hard-edged. */
+    clip-path: polygon(
+      0 3px, 1px 3px, 1px 1px, 3px 1px, 3px 0,
+      calc(100% - 3px) 0, calc(100% - 3px) 1px, calc(100% - 1px) 1px, calc(100% - 1px) 3px, 100% 3px,
+      100% calc(100% - 3px), calc(100% - 1px) calc(100% - 3px), calc(100% - 1px) calc(100% - 1px), calc(100% - 3px) calc(100% - 1px), calc(100% - 3px) 100%,
+      3px 100%, 3px calc(100% - 1px), 1px calc(100% - 1px), 1px calc(100% - 3px), 0 calc(100% - 3px)
+    );
+
+    /* Drop the global pink link underline. */
+    &:before {
+      display: none;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: $black;
+      color: $white;
+    }
+
+    /* clip-path would cut off the focus outline, so square it off while focused. */
+    &:focus {
+      clip-path: none;
+    }
+  }
+
   &__role {
     margin: 0 0 1.6rem;
-    font-weight: 700;
+    font-style: italic;
   }
 
   &__intro {
