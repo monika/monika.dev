@@ -2,7 +2,7 @@
 title: "Sitewide Search: Learning What Visitors Couldn't Find"
 metaTitle: "Sitewide Search: Learning What Visitors Couldn't Find"
 intro: "A self-initiated sitewide search for AdRoll.com, built on the CMS's native Algolia integration and designed around what visitors see before they type. It gave the company its first first-party record of what people came looking for, and what they couldn't find."
-description: "Designed and launched sitewide search for AdRoll.com, then ran the weekly reporting around it. 9,706 searches in 13 weeks, 95% of default-state clicks landing in six curated links."
+description: "Designed and launched sitewide search for AdRoll.com, then drafted the reporting schedule around it. 9,706 searches in 13 weeks, 95% of default-state clicks landing in six curated links."
 role: Web Design & Development
 context: AdRoll
 order: 3
@@ -13,7 +13,7 @@ about:
   - Search analytics
   - Information architecture
   - Front-end development
-cardDescription: "Saw that adroll.com had no sitewide search and no record of what visitors were looking for. Launched Algolia search through the CMS's native integration, designed its three interface states, and ran the weekly reporting that turned search logs into content briefs."
+cardDescription: "Saw that adroll.com had no sitewide search and no record of what visitors were looking for. Launched Algolia search through the CMS's native integration, designed its three interface states, and drafted the reporting schedule meant to turn search logs into content briefs."
 cardResult: "9,706 searches in 13 weeks, giving the company first-party intent data it didn't have before. 95% of clicks from the default, pre-typing state landed in six curated links."
 cardTags:
   - Site search
@@ -48,7 +48,7 @@ Nobody asked me to fix this. I spotted it while working on other marketing site 
 
 {% uiState "img-search-empty", "The search panel after typing developers. It reads No results for developers, lists tips (double-check the spelling, use fewer words, search for a less specific term), and links to popular terms: Retargeting, Programmatic advertising, and Display advertising.", "No results: tips and evergreen topics, so a failed search doesn't end in a dead end." %}
 
-**Read the logs every week.** Search only pays off if someone reads what comes in. I analyzed the Algolia data weekly and reported it to the content, revenue marketing, and product marketing teams, turning recurring failed searches into content briefs for the editorial team.
+**Check the logs.** Analytics only work if someone is reading them. I drafted a report schedule to inform the content, revenue, and product marketing teams, in an effort to turn failed searches into content briefs.
 
 Reading the logs also turned up a bug. The search input was appending a trailing space to over 90% of queries, so Algolia treated "remarketing " and "remarketing" as different searches: the clean term returned 515 hits and the spaced one only 21, which also broke our synonyms and split the analytics. I wrote it up in a January 2026 report, and with Gemini's help fixed it by trimming the query before it reaches Algolia.
 
