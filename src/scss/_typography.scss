@@ -233,3 +233,12 @@ ul {
     }
   }
 }
+
+/* The thick blue rule (the same blue as the figcaption rule) sits at the left edge of the text column; the padding
+   keeps the quote indented from it, matching the old browser-default indent. */
+blockquote {
+  margin: 3.2rem 0;
+  padding-left: 4rem;
+  border-left: 4px solid $blue;
+  font-style: italic;
+}

@@ -103,11 +103,16 @@ function imageSource(basename) {
 }
 
 async function picture(basename, alt, sizes, options = {}) {
-  const { quality = IMAGE_QUALITY.photo, pictureClass, imgClass } = options;
+  const {
+    quality = IMAGE_QUALITY.photo,
+    widths = IMAGE_WIDTHS,
+    pictureClass,
+    imgClass
+  } = options;
 
   const metadata = await Image(imageSource(basename), {
     ...IMAGE_OUTPUT,
-    widths: IMAGE_WIDTHS,
+    widths,
     formats: ['webp', 'jpeg'],
     sharpJpegOptions: { quality, mozjpeg: true },
     sharpWebpOptions: { quality }
@@ -120,6 +125,9 @@ async function picture(basename, alt, sizes, options = {}) {
     pictureAttributes: pictureClass ? { class: pictureClass } : {}
   });
 }
+
+const escapeHtml = (text) =>
+  String(text).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 // Reads the thumbnails the project pages declare, so adding a project doesn't
 // mean remembering to update a list here.
@@ -232,6 +240,32 @@ export default function (eleventyConfig) {
       quality: IMAGE_QUALITY.text
     })
   );
+
+  /* A tall page screenshot in a browser window you scroll through, as on the
+     homepage's project listing but usable anywhere. `wide` is the full-width
+     variant, which asks the pipeline for larger derivatives to match.
+
+     The scroll area is focusable and labelled: without that, a keyboard user
+     has no way to reach the part of the page below the frame's fold. The
+     caption is the label, so the two can't drift apart. */
+  eleventyConfig.addAsyncShortcode('browserFrame', async (basename, alt, caption, variant) => {
+    const wide = variant === 'wide';
+    const image = await picture(
+      basename,
+      alt,
+      wide ? '(max-width: 648px) 90vw, 1200px' : '(max-width: 648px) 90vw, 430px',
+      {
+        widths: wide ? [800, 1400, 2400] : [400, 800, 1200],
+        // A tiny rendering of many pages leans hard on every pixel being clean.
+        quality: wide ? 85 : undefined,
+        imgClass: 'browser-frame__image'
+      }
+    );
+
+    // One line, no indentation: this lands inside Markdown, where a blank line
+    // ends an HTML block and four spaces start a code block.
+    return `<figure class="browser-figure${wide ? ' browser-figure--wide' : ''}"><div class="browser-frame"><div class="browser-frame__mask" tabindex="0" role="region" aria-label="${escapeHtml(caption.replace(/\.$/, ''))} (scrollable)">${image}</div></div><figcaption>${escapeHtml(caption)}</figcaption></figure>`;
+  });
 
   // Custom Project Listing Sort Order
   eleventyConfig.addCollection('projectListing', function(collection) {
