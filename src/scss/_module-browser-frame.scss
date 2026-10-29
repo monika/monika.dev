@@ -1,0 +1,96 @@
+/* Browser Frame
+   A tall screenshot in a window you scroll through. Mirrors the project
+   thumbnails on the homepage, but isn't tied to the project listing.
+------------------------------------- */
+
+@use 'variables' as *;
+
+/* Pairs of frames, side by side where there's room. Capped so each frame stays
+   about the size of a thumbnail rather than stretching with the viewport. */
+.browser-frames {
+  display: grid;
+  max-width: 86rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4rem 3.2%;
+  align-items: start;
+  margin: 3.2rem 0 5.2rem;
+
+  @media screen and (max-width: $break-small) {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.browser-figure {
+  margin: 0;
+
+  &--wide {
+    max-width: 1200px;
+    margin: 4rem 0 5.2rem;
+  }
+
+  /* Clears the frame's offset shadow, which the page's default caption gap
+     doesn't. */
+  figcaption {
+    margin-top: 2.8rem;
+  }
+
+  .browser-frame {
+    display: block;
+    position: relative;
+    background-color: $grey;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: $black;
+    border-width: 50px 0 0 0;
+    box-shadow: -12px 12px $black;
+
+    /* Window controls. The dots are decoration, so they get an empty alt. */
+    &:before {
+      content: '⚪ ⚪ ⚪';
+      content: '⚪ ⚪ ⚪' / '';
+
+      position: absolute;
+      top: -40px;
+      left: 12px;
+      z-index: 5;
+    }
+  }
+
+  .browser-frame__mask {
+    display: block;
+    overflow-y: scroll;
+    height: 350px;
+    border-radius: 0 0 10px 10px;
+    border-style: solid;
+    border-color: $black;
+    border-width: 0 3px 3px 3px;
+    background: $white;
+
+    &:focus-visible {
+      outline: 3px solid $blue;
+      outline-offset: 3px;
+    }
+
+    picture {
+      display: block;
+    }
+  }
+
+  &--wide .browser-frame__mask {
+    height: 600px;
+
+    @media screen and (max-width: $break-small) {
+      height: 350px;
+    }
+  }
+
+  /* Beats the page-wide figure image treatment (border and offset shadow),
+     which would otherwise draw a second frame around the screenshot. */
+  .browser-frame__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 0;
+    box-shadow: none;
+  }
+}

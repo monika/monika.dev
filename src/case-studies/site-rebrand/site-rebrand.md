@@ -49,7 +49,7 @@ Creative Director Jesse Vaughan led the brand refresh and provided guidelines. I
 
 Our brand was updating to focus on mid-sized marketing teams, and that needed to be reflected on our marketing site. A new set of brand guidelines emphasized the idea of Organic Intelligence:
 
-> "Organic Intelligence, natural texture meeting digital depth." - Jesse Vaughan, Creative Director
+> "Organic Intelligence, natural texture meeting digital depth."<br>- Jesse Vaughan, Creative Director
 
 The site ebbs along an invisible centerline in the browser as users scroll up and down each page. I created a design system featuring several center-anchored content modules whose content flows out from that center point, natural textures, familiar typefaces, illustrated iconography, and white space to emphasize our brand's new "trusty, clever mentor" voice.
 
@@ -72,6 +72,20 @@ I built and updated reusable HTML/CSS modules using BEM (Block, Element, Modifie
 ## The results
 
 Because of the automation I included in my workflow, I was able to work ahead of schedule and include further brand updates to our events platform, email systems, and partner directories for launch day. The updated site navigation successfully funneled more traffic to more high-intent pages, and the wholesale CSS grid update simplified the migration of content.
+
+<div class="browser-frames">
+
+{% browserFrame "img-adroll-3-home", "The redesigned AdRoll homepage: a centered headline beside an illustrated hero photo, customer logos, a list of platform strengths, and customer results, followed by resource links.", "The updated AdRoll homepage." %}
+
+{% browserFrame "img-adroll-3-customers", "The Customer Stories page: a headline reading More than 110,000 brands have trusted AdRoll to help them grow, filter menus for industry, region, company size and capabilities, a grid of customer result cards with logos and headline numbers, page navigation, award badges, and a closing call to action above the site footer.", "Our customer stories listing with live filters." %}
+
+{% browserFrame "img-adroll-3-calculator", "The pricing strategy discount calculator: a rocky landscape header, monthly, annual and cost-of-service inputs, and revenue, profit and gross margin results, followed by definitions, tips and related resources.", "An interactive discount calculator using the new design system." %}
+
+{% browserFrame "img-adroll-3-campaign", "A CTV advertising landing page with the headline Capture attention, deepen connections, and boost ROI with AdRoll CTV ads, a demo request form between two photographic side panels, five benefits, award badges, and a customer callout, above the site footer.", "A CTV campaign landing page." %}
+
+</div>
+
+{% browserFrame "img-adroll-3-masonry", "A grid of AdRoll marketing pages in four columns: capability, channel, industry, solution and product pages, each built from the same centered modules, typography and illustration style.", "The design and module system at work across the site.", "wide" %}
 
 ## The next steps
 
