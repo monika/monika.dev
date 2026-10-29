@@ -244,8 +244,8 @@ export default function (eleventyConfig) {
   /* A cropped UI state shown as-is, no window around it, with its description
      as the caption. Capped by the stylesheet so it stays near its native size. */
   eleventyConfig.addAsyncShortcode('uiState', async (basename, alt, caption) => {
-    const image = await picture(basename, alt, '(max-width: 648px) 90vw, 960px', {
-      widths: [800, 1400, 2000],
+    const image = await picture(basename, alt, '(max-width: 648px) 90vw, 800px', {
+      widths: [800, 1600, 1800],
       quality: IMAGE_QUALITY.text,
       imgClass: 'ui-state__image'
     });
