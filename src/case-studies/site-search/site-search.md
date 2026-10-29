@@ -52,9 +52,11 @@ The default state is the most-seen screen in any search interface, so I treated 
 
 **Read the logs every week.** Search only pays off if someone reads what comes in. I analyzed the Algolia data weekly and reported it to the content, revenue marketing, and product marketing teams, turning recurring failed searches into content briefs for the editorial team.
 
+Reading the logs also turned up a bug. The search input was appending a trailing space to over 90% of queries, so Algolia treated "remarketing " and "remarketing" as different searches: the clean term returned 515 hits and the spaced one only 21, which also broke our synonyms and split the analytics. I wrote it up in a January 2026 report, and with Gemini's help fixed it by trimming the query before it reaches Algolia.
+
 ## The result
 
-Thirteen weeks in spring 2026 (late March to late June), from the raw Algolia exports:
+Thirteen weeks, March 31 to June 28, 2026, from the raw Algolia exports:
 
 * **9,706** searches, giving the company first-party intent data it didn't have before.
 * **46%** of them (4,500) were empty queries, the default state. Nearly half of all search activity happened on the screen I designed before anyone typed.
