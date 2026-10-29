@@ -71,4 +71,4 @@ A query that's searched often and never clicked is demand already proven against
 
 It also pointed the other way. Nine queries with at least five searches had a 100% click-through rate, including "contextual ad targeting" and "demand side platform", which marked content strong enough to promote elsewhere.
 
-The timeline stretched because I wove this work in between the marketing department's web requests, and I learned to speak up for the time to do work I knew mattered. That is what made the GEO/AEO pilot possible next. What I'd do differently is have the plan for sharing and acting on search insights ready before launch, instead of building it as I went.
+This project taught me to speak up for the time to pursue work I knew mattered, and that is what made the GEO/AEO pilot possible next. What I'd do differently is have the plan for sharing and acting on search insights ready before launch, instead of building it as I went.
