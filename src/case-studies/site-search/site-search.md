@@ -71,4 +71,11 @@ A query that's searched often and never clicked is demand already proven against
 
 It also pointed the other way. Nine queries with at least five searches had a 100% click-through rate, including "contextual ad targeting" and "demand side platform", which marked content strong enough to promote elsewhere.
 
-This project taught me to speak up for the time to pursue work I knew mattered, and that is what made the GEO/AEO pilot possible next. What I'd do differently is have the plan for sharing and acting on search insights ready before launch, instead of building it as I went.
+## The next steps
+
+Where I planned to take it:
+
+* **Start the reporting.** Own a regular report for the content, revenue, and product marketing teams, and automate it by sending Algolia analytics into the marketing team's Slack channels with our corporate Gemini pipeline.
+* **Broaden what's searchable.** Index more content per entry so results match what visitors expect. Different page types store their content differently, so each would need its own approach.
+* **Keep tuning synonyms.** Keep matching the words visitors use interchangeably, like ctv, connected tv, and ott, or abm and account-based marketing.
+* **Optimize the rest of Algolia.** Check the six curated links against how each page performs, and add rules for high-intent queries that dead-end today, like routing "competitors" to a customer story.
