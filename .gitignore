@@ -88,5 +88,7 @@ typings/
 .dynamodb/
 
 # Custom Ignore Options
+# Local tooling that prepares mockup images from source exports
+scripts/
 .DS_Store
 dist/
