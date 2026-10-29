@@ -32,7 +32,7 @@ adroll.com had no sitewide search. That left two problems: visitors who knew wha
 
 Every failed search is a visitor telling you, in their own words, what you haven't published or can't be found by. That information was never being collected.
 
-Nobody asked me to fix this. I spotted it while working on other marketing site needs, and I had to hold time for it against a full production queue.
+Nobody asked me to fix this. I spotted it while working on other marketing site needs. My time was committed first to the marketing team's production queue, so I had to deliberately hold time for it.
 
 ## The approach
 
@@ -48,7 +48,7 @@ Nobody asked me to fix this. I spotted it while working on other marketing site 
 
 {% uiState "img-search-empty", "The search panel after typing developers. It reads No results for developers, lists tips (double-check the spelling, use fewer words, search for a less specific term), and links to popular terms: Retargeting, Programmatic advertising, and Display advertising.", "No results: tips and evergreen topics, so a failed search doesn't end in a dead end." %}
 
-**Check the logs.** Analytics only work if someone is reading them. I drafted a report schedule to inform the content, revenue, and product marketing teams, in an effort to turn failed searches into content briefs.
+**Check the logs.** Analytics only work if someone is reading them. I drafted a report schedule to inform the content, revenue, and product marketing teams, in an effort to turn failed searches into content briefs. I planned to automate it, sending Algolia analytics into the marketing team's Slack channels, but my role ended in June 2026 before the schedule or the automation was in place.
 
 Reading the logs also turned up a bug. The search input was appending a trailing space to over 90% of queries, so Algolia treated "remarketing " and "remarketing" as different searches: the clean term returned 515 hits and the spaced one only 21, which also broke our synonyms and split the analytics. I wrote it up in a January 2026 report, and with Gemini's help fixed it by trimming the query before it reaches Algolia.
 
@@ -71,4 +71,4 @@ A query that's searched often and never clicked is demand already proven against
 
 It also pointed the other way. Nine queries with at least five searches had a 100% click-through rate, including "contextual ad targeting" and "demand side platform", which marked content strong enough to promote elsewhere.
 
-The deadline slid while I supported the production queue, and I learned to speak up for the time to do work I knew mattered. That is what made the GEO/AEO pilot possible next. What I'd do differently is have the plan for sharing and acting on search insights ready before launch, instead of building it as I went. I'd started sending Algolia analytics to the marketing team's Slack channels, and that automation wasn't finished when my role ended in June 2026.
+The deadline slid because the marketing team's production queue came first, and I learned to speak up for the time to do work I knew mattered. That is what made the GEO/AEO pilot possible next. What I'd do differently is have the plan for sharing and acting on search insights ready before launch, instead of building it as I went.
