@@ -52,6 +52,18 @@
     margin-bottom: 3.2rem;
   }
 
+  /* Fixed 2 x 2 grid for the four listed studies; one column on small screens.
+     The row gap leaves room for the cards' 12px offset shadow. */
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4rem 4.8rem;
+
+    @media screen and (max-width: $break-small) {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
   /* Each title sits on a white card so it stays legible over the blue X
      pattern. The global link underline (a:before) and its white hover colour
      are switched off here; the card replaces them. */
@@ -125,11 +137,11 @@
   border: 3px solid $black;
   box-shadow: -12px 12px $black;
   padding: 3%;
-  margin: 0 0 4rem;
 
-  &:last-child {
-    margin-bottom: 0;
-  }
+  /* Cards in a row match height, with the button pinned to the bottom. */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
   &__eyebrow {
     margin: 0 0 0.4rem;
@@ -153,6 +165,7 @@
   }
 
   &__link {
+    margin-top: auto;
     padding: 1.2rem 1.8rem;
     background: $blue;
     color: $white;
