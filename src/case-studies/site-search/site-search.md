@@ -30,7 +30,7 @@ eleventyNavigation:
 
 adroll.com had no sitewide search. That left two problems: visitors who knew what they wanted but not where it lived had only the navigation (and on mobile, search is how many people navigate), and we had no way to see what visitors looked for and found, looked for and didn't find, or found and didn't click.
 
-Every failed search is a visitor telling you, in their own words, what you haven't published or can't be found by. That information was never being collected.
+Every failed search is a visitor telling you, in their own words, what you haven't published or what can't be found. That information was never being collected.
 
 Nobody asked me to fix this. I spotted it while working on other marketing site needs. I was supporting the marketing department's web needs, and I wove this experimental work in between their requests for web updates.
 
@@ -60,7 +60,7 @@ Thirteen weeks, March 31 to June 28, 2026, from the raw Algolia exports:
 * **46%** of searches were empty queries, the default state. Nearly half of all search activity happened on the screen I designed before anyone typed.
 * **95%** of the tracked clicks from that state landed in the six curated links.
 * **1.4%** of searches returned no results.
-* **Hundreds** of distinct queries returned results but got no clicks. That's the content-gap signal.
+* **Hundreds** of distinct queries returned results but got no clicks. That's the content-gap signal ready to share.
 
 A query that's searched often and never clicked is demand already proven against content that's missing or can't be found. Counts per query were modest, so I read them for patterns:
 

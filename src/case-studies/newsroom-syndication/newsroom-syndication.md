@@ -41,7 +41,7 @@ The newsroom was also managed and maintained by our Brand Director, Courtney Her
 
 **Make it the home for our own news, too.** The same structure holds the news and series content we published ourselves, so it wasn't only a wrapper for links to other sites.
 
-**Attach the authors.** Because every story now had its own page, I could pair it with the SME program from the GEO/AEO pilot. When a story is written by or references one of our leaders, the page generates schema that points to the same disambiguated author, so the credibility we'd built carried over to news instead of stopping at the blog.
+**Attach the authors.** Because every story now had its own page, I could pair it with the SME program from the GEO/AEO pilot. When a story is written by or references one of our leaders, the page generates JSON schema that points to the same disambiguated author, so the credibility we'd built carries over to news instead of stopping at the blog.
 
 <div class="browser-frames">
 
@@ -59,7 +59,7 @@ Both pages are designs of mine: a listing that filters between media coverage an
 
 ## The result
 
-* **Every past newsroom entry retrofitted.** The full archive was backfilled into pages that are searchable and indexable.
+* **Every past newsroom entry was retrofitted.** The full archive was backfilled into pages that are searchable and indexable.
 * **Readers stay on our site** when they open a news story.
 * **News is part of sitewide search**, so we can now see which kinds of news visitors interact with.
 * **More pages carry our authors.** Each story is another page where the disambiguated author's credentials reach machines, strengthening our entities.
@@ -71,5 +71,6 @@ Where I planned to take it:
 
 * **Disambiguate leadership.** Many stories are by or about our leaders, and there are plenty of third-party profiles to verify their identities. I started with our new CEO, Vibhor Kapoor: I collected his bio information and had it approved, but it wasn't set up on the site before my role ended. It was explicit schema definition and nothing that could break existing pages, which made it low risk for what the pilot results suggested would be high reward.
 * **Keep the cycle of authority turning.** Each new story reinforces the entities already defined, at the cost of pasting in an entry and a canonical URL.
-
-One idea I've had since: this workflow could grow into an agentic one, with the entry, canonical URL and entity references prepared for review instead of entered by hand.
+* **Report on it.** Track whether the newsroom pages answer the demand we found: Search Console impressions and clicks for "adroll news", plus which news stories visitors open from sitewide search. I was drafting this when my role ended, but it wasn't set up.
+* **Automate via agentic AI.** This workflow could easily turn into an agentic one, with the entry, canonical URL, and entity references prepared for review instead of entered by hand. A process built to be easy enough for manual publishing is easy to hand to an agent.
+* **Map authority flow.** The same agent could map how authority flows across our key topics and read Google Search Console to draft link plans for the content team to review, so we could see how disambiguation affects citability and organic search performance.
