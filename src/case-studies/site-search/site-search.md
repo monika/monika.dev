@@ -2,7 +2,7 @@
 title: "Sitewide Search: Learning What Visitors Couldn't Find"
 metaTitle: "Sitewide Search: Learning What Visitors Couldn't Find"
 intro: "A self-initiated sitewide search for AdRoll.com, built on the CMS's native Algolia integration and designed around what visitors see before they type. It gave the company its first first-party record of what people came looking for, and what they couldn't find."
-description: "Designed and launched sitewide search for AdRoll.com, then planned the reporting around it. Nearly half of all searches started in the default panel, and 95% of its clicks landed in six curated links."
+description: "Designed and launched sitewide search for AdRoll.com, then planned the reporting around it. Nearly half of all searches started in the default panel, and 95% of empty-state search clicks landed in the top six curated results."
 role: Web Design & Development
 context: AdRoll
 order: 3
@@ -14,7 +14,7 @@ about:
   - Information architecture
   - Front-end development
 cardDescription: "Saw that adroll.com had no sitewide search and no record of what visitors were looking for. Launched Algolia search through the CMS's native integration, designed its three interface states, and planned the reporting meant to turn search logs into content briefs."
-cardResult: "Thirteen weeks of first-party search data the company didn't have before. 95% of clicks from the default, pre-typing state landed in six curated links."
+cardResult: "Thirteen weeks of first-party search data the company didn't have before. 95% of empty-state search clicks landed in the top six curated results."
 cardTags:
   - Site search
   - Interface design
@@ -48,18 +48,19 @@ Nobody asked me to fix this. I spotted it while working on other marketing site 
 
 {% uiState "img-search-empty", "The search panel after typing developers. It reads No results for developers, lists tips (double-check the spelling, use fewer words, search for a less specific term), and links to popular terms: Retargeting, Programmatic advertising, and Display advertising.", "No results: tips and evergreen topics, so a failed search doesn't end in a dead end." %}
 
-**Read the logs.** Analytics only work if someone is reading them. I analyzed the Algolia exports myself, and my goal was to own the reporting that would carry the findings to the content, revenue, and product marketing teams, so failed searches could become content briefs. That reporting, including automating it into the marketing team's Slack channels, hadn't started when my role ended in June 2026.
+**Read the logs.** Analytics only work if someone is reading them. Analyzed search data to identify content gaps and high-intent demand. Weekly reporting was planned but not shared before the layoff.
 
 Reading the logs also turned up a bug. The search input was appending a trailing space to over 90% of queries, so Algolia treated "remarketing " and "remarketing" as different searches: the clean term returned roughly 25 times as many results as the spaced one, which also broke our synonyms and split the analytics. I wrote it up in a January 2026 report, and with Gemini's help fixed it by trimming the query before it reaches Algolia.
 
 ## The result
 
-Thirteen weeks, March 31 to June 28, 2026, from the raw Algolia exports:
+9,706 searches over 13 weeks (Mar 27 to Jun 24, 2026), from the raw Algolia exports:
 
 * **First-party search data** the company didn't have before.
 * **46%** of searches were empty queries, the default state. Nearly half of all search activity happened on the screen I designed before anyone typed.
-* **95%** of the tracked clicks from that state landed in the six curated links.
+* **95%** of empty-state search clicks landed in the top six curated results.
 * **1.4%** of searches returned no results.
+* Fixed a trailing-space bug that was causing analytics issues.
 * **Hundreds** of distinct queries returned results but got no clicks. That's the content-gap signal ready to share.
 
 A query that's searched often and never clicked is demand already proven against content that's missing or can't be found. Counts per query were modest, so I read them for patterns:
@@ -75,7 +76,7 @@ It also pointed the other way. Several queries that were searched repeatedly had
 
 Where I planned to take it:
 
-* **Start the reporting.** Own a regular report for the content, revenue, and product marketing teams, and automate it by sending Algolia analytics into the marketing team's Slack channels with our corporate Gemini pipeline.
+* **Finish the reporting.** Share the search findings in a regular report.
 * **Broaden what's searchable.** Index more content per entry so results match what visitors expect. Each page type stores its content differently.
 * **Keep tuning synonyms.** Keep matching the words visitors use interchangeably, like ctv, connected tv, and ott, or abm and account-based marketing.
 * **Optimize the rest of Algolia.** Check the six curated links against how each page performs, and add rules for high-intent queries that dead-end today, like routing "competitors" to a customer story.
